@@ -1,37 +1,28 @@
 {
-    "examples":[
+    "videos":[
         {
             "id": 1,
             "title": "Who were the Aramaeans? (Early Aramaean Kingdoms of the Iron Age)",
-            "screenshot": "assets/img/screenshot_inggreen.png",
-            "url": "https://www.youtube.com/watch?v=P-OL13x9WNI",
-            "type": "Consulting firm",
-            "background": "lightsalmon",
-            "color": "yellow"
+            "thumbnail": "http://i3.ytimg.com/vi/P-OL13x9WNI/hqdefault.jpg",
+            "url": "https://www.youtube.com/watch?v=P-OL13x9WNI"
         },
         {
             "id": 2,
             "title": "The last Aramean christians in Tur Abdin",
-            "screenshot": "assets/img/screenshot_aramean_institute.png",
-            "url": "https://www.youtube.com/watch?v=34lgZpXB6jo",
-            "type": "Institute",
-            "background": "gold"
+            "thumbnail": "assets/img/screenshot_aramean_institute.png",
+            "url": "https://www.youtube.com/watch?v=34lgZpXB6jo"
         },
         {
             "id": 3,
             "title": "THE HIDDEN PEARL Documentary History Of Arameans People",
-            "screenshot": "",
-            "url": "https://www.youtube.com/watch?v=IJc-h4wWAvg",
-            "type": "Organization",
-            "background": ""
+            "thumbnail": "",
+            "url": "https://www.youtube.com/watch?v=IJc-h4wWAvg"
         },
         {
-            "id": 4,
-            "title": ".",
-            "screenshot": "assets/img/screenshot_josef.png",
-            "url": "https://www.josef.st",
-            "type": "Personal",
-            "background": ""
+            "id": 3,
+            "title": "THE HIDDEN PEARL Documentary History Of Arameans People",
+            "thumbnail": "",
+            "url": "https://www.youtube.com/watch?v=IJc-h4wWAvg"
         }
     ]
 }
