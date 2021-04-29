@@ -1,4 +1,4 @@
-<script src="../dist/front.js" title="Marketplace" onload="dom.class('body?tag', 'remove', 'bg')" template="true" enumsource="marketplace"></script>
+<script src="../dist/front.js"></script>
 
 <template>
     <aside index="0"></aside>
@@ -8,13 +8,11 @@
 <article class="tac">
 <section class="mt2 mw90p flc">
     <h6 globalize="marketplace" class="bcred w10 white br1 mb1">Videos</h6>
-    <div class="box cards gut5- br0- zoom-" json="true" iterate="examples" datasource="./assets/json/home.json">
+    <div class="box cards gut5- br0- zoom-" json="true" iterate="videos" datasource="./assets/json/home.json">
         <a jsonget="url" if="{{ jsonget:url_target }};0;target:_self" target="_blank">
             <figure jsonset="id" class="p1">
-                <img class="w5r m0a" jsonget="icon">
+                <img class="w15r m0a" jsonget="thumbnail">
                 <figcaption class="fwb" jsonget="title"></figcaption>
-                <small jsonget="author"></small>
-                <small class="z09" jsonget="version" jsonbefore="Version: "></small>
             </figure>
         </a>
     </div>
