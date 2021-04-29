@@ -6,15 +6,15 @@
 </template>
 
 <article class="tac">
-<section class="mt2 mw90p flc">
-    <h6 globalize="marketplace" class="bcred w10 white br1 mb1">Videos</h6>
-    <div class="box cards gut5- br0- zoom-" json="true" iterate="videos" datasource="./assets/json/home.json">
-        <a jsonget="url" if="{{ jsonget:url_target }};0;target:_self" target="_blank">
-            <figure jsonset="id" class="p1">
-                <img class="w15r m0a" jsonget="thumbnail">
-                <figcaption class="fwb" jsonget="title"></figcaption>
-            </figure>
-        </a>
-    </div>
-</section>
+    <section class="flc bcwhitesmoke">
+        <h6 globalize="marketplace" class="bcred w10 white br1 mb1">Videos</h6>
+        <div class="box cards gut5- br025- zoom- bcwhite-" json="true" iterate="videos" datasource="./assets/json/home.json">
+            <a jsonget="url" if="{{ jsonget:url_target }};0;target:_self" target="_blank">
+                <figure jsonset="id" class="p1">
+                    <img class="w100 m0a" jsonget="thumbnail">
+                    <figcaption class="fwb" jsonget="title"></figcaption>
+                </figure>
+            </a>
+        </div>
+    </section>
 </article>
