@@ -5,10 +5,33 @@
     <aside index="1"></aside>
 </template>
 
-<article class="tac">
-    <section class="flc bcwhitesmoke pauto">
+<article class="bcwhitesmoke">
+
+    <section class="df lg_w100p- lg_fdc lg_p10p pauto- flc">
+        <div class="w40">
+            <img src="assets/img/personal_information.svg" class="w90">
+        </div>
+        <div class="w60 lh1">
+            <h1 class="fs13 fwb" i18n="home_title">Register yourself as Aramean</h1>
+            <p class="mt05 z12 black07" i18n="home_subtitle">Register yourself to help us share statitics with the Aramean Institute and related organizations. Personal information is gathered for the purpose of gain access to orem ipsum dolor sit amet. Nunc tincidunt consequat augue sed dapibus.</p>
+            <p class="mt2"><a href="participate/registration.html" class="button br2 bcred shade0 h3">Register now</a></p>
+        </div>
+    </section>
+
+    <section style="background: url('assets/img/world.svg');background-size:cover;" class="pr h80">
+        <article class="white w70 xm_w80p">
+            <h1 class="fs17" jsonget="title">Explore Aramean places and ruins</h1>
+            <h3 class="beige tshade1" jsonget="summary">Explore Aramean places and ruins around the diaspora.</h3>
+            <a href="article/aram-israel-relations.html" jsonget="link" class="button p1 bcblack white mt2 br05 xm_w100p" globalize="explore">Explore</a>
+        </article>
+        <figure class="bcblack07 pa t0 l0">
+           
+        </figure>
+    </section>
+
+    <section class="tal bcwhitesmoke pauto">
         <small globalize="videos" class="bcred p05 white di ttu z09 fwb">Videos</small>
-        <div class="box cards gut5- br025- bcwhite-" json="true" iterate="videos" datasource="./assets/json/home.json">
+        <div class="box cards gut5- br0- bcwhite-" json="true" iterate="videos" datasource="./assets/json/home.json">
             <a jsonget="url" if="{{ jsonget:url_target }};0;target:_self" target="_blank">
                 <figure jsonset="id" class="p05 z09 black08">
                     <img class="w100 m0a" jsonget="thumbnail">
