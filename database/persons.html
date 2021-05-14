@@ -6,6 +6,7 @@
     <h1>Participants</h1>
     <div id="persons" class="box cards list br0- flc- mt2" iterate="true" json="true" datasource="{{ storage:api.persons.endpoint }}" dataheader="{{ storage:api.persons.headers }}" onerror="alert('Fetch error')" onsuccess="alert('Fetch OK')" datasourceonchange="json" filter="true" jsonindex="0">
         <figure class="p1 bcwhite">
+            <img src="" jsonget="born.country_code" jsonbefore="https://3el.github.io/front/dist/design/front/flags/famfamfam/" jsonafter=".gif" class="f0">
             <p class="f2 pl1" filteron="true" methodfocus="put">{{ jsonget:firstname.swe }} {{ jsonget:middlename.swe }} {{ jsonget:lastname.swe }}</p>
         </figure>
     </div>
