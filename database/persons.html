@@ -1,6 +1,37 @@
 <script src="https://3el.github.io/front/dist/front.js" template="../index"></script>
-
 <title>Database</title>
+<template>
+    <aside index="0"></aside>
+    <aside index="1">
+        <nav class="sidebar light w15r xxxl_w20r">
+            <div class="p1">
+                <small class="pb1 ttu" globalize="search">Name</small>
+                <input type="text" onkeyup="filter()">
+            </div>
+            <div class="p1">
+                <small class="pb1 ttu" globalize="icons">Country</small>
+                <select>
+                    <option>All</option>
+                </select>
+            </div>
+            <small class="p1 ttu" globalize="styles">Tribe</small>
+            <ul>
+                <li><a><i class="icon24 pr05">&#9642;</i> Jacobite</a></li>
+                <li><a><i class="icon24 pr05">&#9642;</i> Maronite</a></li>
+                <li><a><i class="icon24 pr05">&#9642;</i> Nestorian</a></li>
+                <li><a><i class="icon24 pr05">&#9642;</i> Melkite</a></li>
+            </ul>
+            <hr />
+            <div class="p1">
+                <small class="pb1 ttu" globalize="categories">Categories</small>
+                <select>
+                    <option>All</option>
+                </select>    
+            </div>
+         </nav>
+     </aside>
+</template>
+
 <section class="pauto" storage="api">
 
     <h1>Database</h1>
