@@ -16,21 +16,15 @@
 
         Birthdate:
         <div class="box gap1-">
-            <select>
-                <option>Year</option>
-                <option>Option 1</option>
-                <option>Option 2</option>
+            <select variable="i:1900" iterate="140;i++">
+                <option>{{ i }}</option>
             </select>
-            <select>
-                <option>Month</option>
-                <option>Option 1</option>
-                <option>Option 2</option>
+            <select variable="i:1" iterate="12;i++">
+                    <option>{{ i }}</option>
             </select>
-            <select>
-                <option>Day</option>
-                <option>Option 1</option>
-                <option>Option 2</option>
-            </select>
+            <select variable="i:1" iterate="31;i++">
+                <option format="age">{{ i }}</option>
+        </select>
         </div>
 
         <input type="checkbox" value="1" checked> I agree on <a href="#">terms</a>
