@@ -30,7 +30,7 @@
         Country of birth:
         <div class="box gap1-">
             <select name="birth_country" iterate="true" json="true" datasource="https://snoulbshaqjnlgwfevpz.supabase.co/rest/v1/countries?order=country" dataheader="apikey:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlIjoiYW5vbiIsImlhdCI6MTYyMTA0Mzc4NywiZXhwIjoxOTM2NjE5Nzg3fQ.vok7K5RJkQTP25mLjJ09co5neL4wxt5O1oIdd9E9m40">
-                <option value="{{ jsonget:id }}" jsonget="country"></option>
+                <option value="{{ jsonget:id }}" jsonget="country.eng"></option>
             </select>
         </div>
 
