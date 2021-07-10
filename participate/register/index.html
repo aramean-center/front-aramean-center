@@ -7,29 +7,29 @@
 
     <form class="df fdc gaph2-" method="post" datasource="https://tmqmoxcasyhxxxqknevp.supabase.co/rest/v1/persons" dataheader="apikey:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlIjoiYW5vbiIsImlhdCI6MTYyNTM0NjM2MSwiZXhwIjoxOTQwOTIyMzYxfQ.3PDCNsUHb4gVwtRi_GTDA93sk3l9Usmd6YdA2OHxbY0" ondone="alert('Thank you! Your registration will be reviewed in 24 hours!')">
         <div class="group outline-">
-            <input name="first_name" type="text" class="phdark" placeholder="Firstname" required>
-            <input name="middle_name" type="text" class="phdark" placeholder="Middle name">
-            <input name="last_name" type="text" class="phdark" placeholder="Lastname" required>
+            <input name="first_name" type="text" class="phdark bw1 bos8 bocblack02" placeholder="Firstname" required>
+            <input name="middle_name" type="text" class="phdark bw1 bos8 bocblack02" placeholder="Middle name">
+            <input name="last_name" type="text" class="phdark bw1 bos8 bocblack02" placeholder="Lastname" required>
         </div>
 
-        <input name="email" type="text" class="phdark" placeholder="E-mail" required>
+        <input name="email" type="text" class="phdark bw1 bos8 bocblack02" placeholder="E-mail" required>
     
         Date of birth:
         <div class="box gap1-">
-            <select name="birth_date_year" variable="i:1900" iterate="140;i++">
+            <select class="phdark bw1 bos8 bocblack02" name="birth_date_year" variable="i:1900" iterate="140;i++">
                 <option>{{ i }}</option>
             </select>
-            <select name="birth_date_day" variable="i:1" iterate="12;i++">
+            <select class="phdark bw1 bos8 bocblack02" name="birth_date_day" variable="i:1" iterate="12;i++">
                 <option>{{ i }}</option>
             </select>
-            <select name="birth_date_month" variable="i:1" iterate="31;i++">
+            <select class="phdark bw1 bos8 bocblack02" name="birth_date_month" variable="i:1" iterate="31;i++">
                 <option>{{ i }}</option>
             </select>
         </div>
 
         Country of birth:
         <div class="box gap1-">
-            <select name="birth_country" iterate="true" json="true" datasource="https://snoulbshaqjnlgwfevpz.supabase.co/rest/v1/countries?order=country->>eng" dataheader="apikey:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlIjoiYW5vbiIsImlhdCI6MTYyMTA0Mzc4NywiZXhwIjoxOTM2NjE5Nzg3fQ.vok7K5RJkQTP25mLjJ09co5neL4wxt5O1oIdd9E9m40">
+            <select class="phdark bw1 bos8 bocblack02" name="birth_country" iterate="true" json="true" datasource="https://snoulbshaqjnlgwfevpz.supabase.co/rest/v1/countries?order=country->>eng" dataheader="apikey:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlIjoiYW5vbiIsImlhdCI6MTYyMTA0Mzc4NywiZXhwIjoxOTM2NjE5Nzg3fQ.vok7K5RJkQTP25mLjJ09co5neL4wxt5O1oIdd9E9m40">
                 <option value="{{ jsonget:id }}" jsonget="country.eng">{{ jsonget:country.eng }}</option>
             </select>
         </div>
