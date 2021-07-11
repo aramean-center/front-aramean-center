@@ -5,7 +5,6 @@
     "direction": "ltr",
     "translations":
         {
-            "add": "Lägg till",
             "animations": "Animationer",
             "attribute": "Attribut",
             "background_color": "Bakgrundsfärg",
@@ -48,6 +47,7 @@
             "positioned": "Positionerad",
             "preview": "Förhandsgranska",
             "regular": "Vanlig",
+            "register_now": "Registrera nu",
             "remove": "Radera",
             "rounded": "Avrundad",
             "run": "Kör",
@@ -70,6 +70,8 @@
             "variables": "Variabler",
             "views": "Vyer",
             "widget": "Widget",
-            "widgets": "Widgets"
+            "widgets": "Widgets",
+
+            "home_title": "Registrera dig själv som etnisk Araméer",
         }
 }
