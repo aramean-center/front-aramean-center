@@ -1,0 +1,9 @@
+{
+    "name": "Arabic",
+    "code": "ara",
+    "direction": "rtl",
+    "translations":
+        {
+            "home_title": "سجل نفسك كعرق آرامي"
+        }
+}
