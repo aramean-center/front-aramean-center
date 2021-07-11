@@ -4,6 +4,8 @@
     "direction": "rtl",
     "translations":
         {
-            "home_title": "רשום את עצמך כארמי אתני"
+            "explore": "לחקור",
+            "home_title": "רשום את עצמך כארמי אתני",
+            "register_now": "הירשם עכשיו"
         }
 }

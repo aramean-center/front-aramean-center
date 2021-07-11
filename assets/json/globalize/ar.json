@@ -4,6 +4,8 @@
     "direction": "rtl",
     "translations":
         {
-            "home_title": "سجل نفسك كعرق آرامي"
+            "explore": "يكتشف",
+            "home_title": "سجل نفسك كعرق آرامي",
+            "register_now": "سجل الان"
         }
 }
