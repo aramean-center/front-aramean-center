@@ -4,8 +4,12 @@
     "direction": "rtl",
     "translations":
         {
+            "email": "אימייל",
             "explore": "לחקור",
+            "first_name": "שם פרטי",
             "home_title": "רשום את עצמך כארמי אתני",
+            "last_name": "שם משפחה",
+            "middle_name": "שם אמצעי",
             "register_now": "הירשם עכשיו"
         }
 }

@@ -4,8 +4,12 @@
     "direction": "rtl",
     "translations":
         {
+            "email": "البريد الإلكتروني",
             "explore": "يكتشف",
+            "first_name": "الاسم الأول",
             "home_title": "سجل نفسك كعرق آرامي",
+            "last_name": "الكنية",
+            "middle_name": "الاسم الوسطى",
             "register_now": "سجل الان"
         }
 }
