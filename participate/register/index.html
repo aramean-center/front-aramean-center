@@ -5,7 +5,7 @@
     <p>Register yourself to help us share information with the Aramean Institute and related organizations.<br>Personal data will be used for research purposes.</p>
     <hr class="mt2">
 
-    <form class="df fdc gaph2-" method="post" datasource="https://tmqmoxcasyhxxxqknevp.supabase.co/rest/v1/persons" dataheader="apikey:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlIjoiYW5vbiIsImlhdCI6MTYyNTM0NjM2MSwiZXhwIjoxOTQwOTIyMzYxfQ.3PDCNsUHb4gVwtRi_GTDA93sk3l9Usmd6YdA2OHxbY0" ondone="alert('Thank you! Your registration will be reviewed in 24 hours!')">
+    <form class="df fdc gaph2-" method="post" datasource="{{ storage:api.persons.endpoint }}" dataheader="{{ storage:api.persons.headers }}" ondone="alert('Thank you! Your registration will be reviewed in 24 hours!')">
         <div class="group outline-">
             <input name="first_name" type="text" class="phdark bw1 bos8 bocblack02" placeholder="First Name" globalize="first_name"required>
             <input name="middle_name" type="text" class="phdark bw1 bos8 bocblack02" placeholder="Middle Name" globalize="middle_name">
