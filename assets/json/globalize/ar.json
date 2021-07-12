@@ -5,6 +5,9 @@
     "direction": "rtl",
     "translations":
         {
+            "country_of_birth": "بلد الميلاد",
+            "country_of_residence": "بلد الإقامة",
+            "date_of_birth": "تاريخ الولادة",
             "email": "البريد الإلكتروني",
             "explore": "يكتشف",
             "first_name": "الاسم الأول",

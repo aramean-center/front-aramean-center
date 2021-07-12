@@ -5,6 +5,9 @@
     "direction": "rtl",
     "translations":
         {
+            "country_of_birth": "ארץ לידה",
+            "country_of_residence": "מדינת מגורים",
+            "date_of_birth": "תאריך לידה",
             "email": "אימייל",
             "explore": "לחקור",
             "first_name": "שם פרטי",
