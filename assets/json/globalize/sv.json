@@ -5,6 +5,9 @@
     "direction": "ltr",
     "translations":
         {
+            "country_of_birth": "Födelseland",
+            "country_of_residence": "Bosättningsland",
+            "date_of_birth": "Födelsedatum",
             "email": "E-post",
             "explore": "Utforska",
             "first_name": "Förnamn",
