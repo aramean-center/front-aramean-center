@@ -1,6 +1,7 @@
 {
-    "name": "Arabic",
-    "code": "ara",
+    "name": "العربية",
+    "639-1": "ar",
+    "639-2": "ara",
     "direction": "rtl",
     "translations":
         {

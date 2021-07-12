@@ -1,6 +1,7 @@
 {
-    "name": "Swedish",
-    "code": "swe",
+    "name": "Svenska",
+    "639-1": "sv",
+    "639-2": "swe",
     "direction": "ltr",
     "translations":
         {

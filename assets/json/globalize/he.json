@@ -1,6 +1,7 @@
 {
-    "name": "Hebrew",
-    "code": "heb",
+    "name": "עברית",
+    "639-1": "he",
+    "639-2": "heb",
     "direction": "rtl",
     "translations":
         {
