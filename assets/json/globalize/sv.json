@@ -5,12 +5,19 @@
     "direction": "ltr",
     "translations":
         {
+            "country_of_birth": "Födelseland",
+            "country_of_residence": "Bosättningsland",
+            "date_of_birth": "Födelsedatum",
             "email": "E-post",
             "explore": "Utforska",
             "first_name": "Förnamn",
-            "home_title": "Registrera dig själv som etnisk Araméer",
             "last_name": "Efternamn",
             "middle_name": "Mellannamn",
-            "register_now": "Registrera dig nu"
+            "participate": "Delta",
+            "register_now": "Registrera dig nu",
+            "submit_registration": "Skicka registrering",
+
+            "page_home_title": "Registrera dig själv som etnisk Araméer",
+            "page_register_title": "Registrera dig själv som etnisk Araméer"
         }
 }

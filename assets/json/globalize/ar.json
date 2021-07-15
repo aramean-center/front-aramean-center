@@ -5,12 +5,19 @@
     "direction": "rtl",
     "translations":
         {
+            "country_of_birth": "بلد الميلاد",
+            "country_of_residence": "بلد الإقامة",
+            "date_of_birth": "تاريخ الولادة",
             "email": "البريد الإلكتروني",
             "explore": "يكتشف",
             "first_name": "الاسم الأول",
-            "home_title": "سجل نفسك كعرق آرامي",
             "last_name": "الكنية",
             "middle_name": "الاسم الوسطى",
-            "register_now": "سجل الان"
+            "register_now": "سجل الان",
+            "participate": "يشارك",
+            "submit_registration": "تاكيد التسجيل",
+
+            "page_home_title": "سجل نفسك كعرق آرامي",
+            "page_register_title": "سجل نفسك كعرق آرامي"
         }
 }

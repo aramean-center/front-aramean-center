@@ -1,11 +1,11 @@
 <script src="https://3el.github.io/front/dist/front.js" template="../../index"></script>
 
-<section class="pauto">
-    <h1>Register yourself as ethnic Aramean</h1>
+<section class="pauto" storage="api">
+    <h1 globalize="page_register_title">Register yourself as ethnic Aramean</h1>
     <p>Register yourself to help us share information with the Aramean Institute and related organizations.<br>Personal data will be used for research purposes.</p>
     <hr class="mt2">
 
-    <form class="df fdc gaph2-" method="post" datasource="https://tmqmoxcasyhxxxqknevp.supabase.co/rest/v1/persons" dataheader="apikey:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlIjoiYW5vbiIsImlhdCI6MTYyNTM0NjM2MSwiZXhwIjoxOTQwOTIyMzYxfQ.3PDCNsUHb4gVwtRi_GTDA93sk3l9Usmd6YdA2OHxbY0" ondone="alert('Thank you! Your registration will be reviewed in 24 hours!')">
+    <form class="df fdc gaph2-" method="post" datasource="{{ storage:api.persons_collection.endpoint }}" dataheader="{{ storage:api.persons_collection.headers }}" ondone="alert('Thank you! Your registration will be reviewed in 24 hours!')">
         <div class="group outline-">
             <input name="first_name" type="text" class="phdark bw1 bos8 bocblack02" placeholder="First Name" globalize="first_name"required>
             <input name="middle_name" type="text" class="phdark bw1 bos8 bocblack02" placeholder="Middle Name" globalize="middle_name">
@@ -14,7 +14,7 @@
 
         <input name="email" type="text" class="phdark bw1 bos8 bocblack02" placeholder="E-mail" globalize="email" required>
     
-        Date of birth:
+        <i globalize="date_of_birth">Date of birth</i>
         <div class="box gap1-">
             <select class="phdark bw1 bos8 bocblack02" name="birth_date_year" variable="i:1900" iterate="140;i++">
                 <option>{{ i }}</option>
@@ -27,9 +27,9 @@
             </select>
         </div>
 
-        Country of birth:
+        <i globalize="country_of_birth">Country of birth</i>
         <div class="box gap1-">
-            <select class="phdark bw1 bos8 bocblack02" name="birth_country" iterate="true" json="true" datasource="https://snoulbshaqjnlgwfevpz.supabase.co/rest/v1/countries?order=country->>eng" dataheader="apikey:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlIjoiYW5vbiIsImlhdCI6MTYyMTA0Mzc4NywiZXhwIjoxOTM2NjE5Nzg3fQ.vok7K5RJkQTP25mLjJ09co5neL4wxt5O1oIdd9E9m40">
+            <select class="phdark bw1 bos8 bocblack02" name="birth_country" iterate="true" json="true" datasource="{{ storage:api.countries.endpoint }}?order=country->>eng" dataheader="{{ storage:api.countries.headers }}">
                 <option value="{{ jsonget:id }}" jsonget="country.eng">{{ jsonget:country.eng }}</option>
             </select>
         </div>
@@ -41,7 +41,7 @@
             <input name="participate" type="checkbox" value="1" checked> I want to be listed as participant
         </div>
         <div class="group mt1">
-            <input class="button" type="submit" value="Submit registration">
+            <input class="button" type="submit" value="Submit registration" globalize="submit_registration">
         </div>
     </form>
 </section>

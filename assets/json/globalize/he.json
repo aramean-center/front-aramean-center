@@ -5,12 +5,19 @@
     "direction": "rtl",
     "translations":
         {
+            "country_of_birth": "ארץ לידה",
+            "country_of_residence": "מדינת מגורים",
+            "date_of_birth": "תאריך לידה",
             "email": "אימייל",
             "explore": "לחקור",
             "first_name": "שם פרטי",
-            "home_title": "רשום את עצמך כארמי אתני",
             "last_name": "שם משפחה",
             "middle_name": "שם אמצעי",
-            "register_now": "הירשם עכשיו"
+            "participate": "להשתתף",
+            "register_now": "הירשם עכשיו",
+            "submit_registration": "הגש הרשמה",
+
+            "page_home_title": "רשום את עצמך כארמי אתני",
+            "page_register_title": "רשום את עצמך כארמי אתני"
         }
 }
