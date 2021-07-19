@@ -1,11 +1,11 @@
 <script src="https://3el.github.io/front/dist/front.js" template="../../index"></script>
 
-<section class="pauto" storage="api">
+<section id="register" class="pauto" storage="api">
     <h1 globalize="page_register_title">Register yourself as ethnic Aramean</h1>
     <p>Register yourself to help us share information with the Aramean Institute and related organizations.<br>Personal data will be used for research purposes.</p>
     <hr class="mt2">
 
-    <form class="df fdc gaph2-" method="post" datasource="{{ storage:api.persons_collection.endpoint }}" dataheader="{{ storage:api.persons_collection.headers }}" ondone="alert('Thank you! Your registration will be reviewed in 24 hours!')">
+    <form class="df fdc gaph2-" method="post" datasource="{{ storage:api.persons_collection.endpoint }}" dataheader="{{ storage:api.persons_collection.headers }}" ondone="dom.hide('register');dom.show('complete')">
         <div class="group outline-">
             <input name="first_name" type="text" class="phdark bw1 bos8 bocblack02" placeholder="First Name" globalize="first_name"required>
             <input name="middle_name" type="text" class="phdark bw1 bos8 bocblack02" placeholder="Middle Name" globalize="middle_name">
@@ -44,4 +44,10 @@
             <input class="button" type="submit" value="Submit registration" globalize="submit_registration">
         </div>
     </form>
+</section>
+
+<section id="complete" class="pauto tac d0">
+    <h1 globalize="thank_you">Thank you!</h1>
+    <p>Your registration will be reviewed in 24 hours!</p>
+    <i class="icon mt2">&#8962;</i><a href="/">Go to startpage</a>
 </section>
