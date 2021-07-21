@@ -10,6 +10,7 @@
             "email": "E-post",
             "explore": "Utforska",
             "first_name": "Förnamn",
+            "go_to_startpage": "Gå till startsidan",
             "last_name": "Efternamn",
             "middle_name": "Mellannamn",
             "name": "Namn",
@@ -17,8 +18,10 @@
             "register_now": "Registrera dig nu",
             "search": "Sök",
             "submit_registration": "Skicka registrering",
+            "thank_you!": "Tack!",
 
             "page_home_title": "Registrera dig själv som etnisk Araméer",
-            "page_register_title": "Registrera dig själv som etnisk Araméer"
+            "page_register_title": "Registrera dig själv som etnisk Araméer",
+            "page_register_complete": "Din registrering kommer att granskas inom 24 timmar."
         }
 }
