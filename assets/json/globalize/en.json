@@ -1,0 +1,26 @@
+{
+    "name": "English",
+    "code": "eng",
+    "direction": "ltr",
+    "translations":
+        {
+            "country_of_birth": "Country of birth",
+            "date_of_birth": "Date of birth",
+            "email": "E-mail",
+            "explore": "Explore",
+            "first_name": "First Name",
+            "go_to_startpage": "Go to startpage",
+            "last_name": "Last Name",
+            "middle_name": "Middle Name",
+            "name": "Name",
+            "participate": "Participate",
+            "register_now": "Register now",
+            "search": "Search",
+            "submit_registration": "Submit registration",
+            "thank_you!": "Thank you!",
+
+            "page_home_title": "Register yourself as ethnic Aramean",
+            "page_register_title": "Register yourself as ethnic Aramean",
+            "page_register_complete": "Your registration will be reviewed within 24 hours."
+        }
+}
