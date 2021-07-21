@@ -12,6 +12,7 @@
             "first_name": "Förnamn",
             "last_name": "Efternamn",
             "middle_name": "Mellannamn",
+            "name": "Namn",
             "participate": "Delta",
             "register_now": "Registrera dig nu",
             "search": "Sök",
