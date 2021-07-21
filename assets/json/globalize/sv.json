@@ -1,7 +1,6 @@
 {
     "name": "Svenska",
-    "639-1": "sv",
-    "639-2": "swe",
+    "code": "swe",
     "direction": "ltr",
     "translations":
         {
@@ -15,6 +14,7 @@
             "middle_name": "Mellannamn",
             "participate": "Delta",
             "register_now": "Registrera dig nu",
+            "search": "Sök",
             "submit_registration": "Skicka registrering",
 
             "page_home_title": "Registrera dig själv som etnisk Araméer",
