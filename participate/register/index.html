@@ -12,8 +12,10 @@
             <input name="last_name" type="text" class="phdark bw1 bos8 bocblack02" placeholder="Last Name" globalize="last_name" required>
         </div>
 
-        <input name="email" type="text" class="phdark bw1 bos8 bocblack02" placeholder="E-mail" globalize="email" required>
-    
+        <div class="group">
+            <input name="email" type="text" class="phdark f1 bw1 bos8 bocblack02" placeholder="E-mail" globalize="email" required>
+        </div>
+
         <i globalize="date_of_birth">Date of birth</i>
         <div class="box gap1-">
             <select class="phdark bw1 bos8 bocblack02" name="birth_date_year" variable="i:1900" iterate="140;i++">
@@ -28,7 +30,7 @@
         </div>
 
         <i globalize="country_of_birth">Country of birth</i>
-        <div class="box gap1-">
+        <div class="group">
             <select class="phdark bw1 bos8 bocblack02" name="birth_country" iterate="true" json="true" datasource="{{ storage:api.countries.endpoint }}?order=country->>eng" dataheader="{{ storage:api.countries.headers }}">
                 <option value="{{ jsonget:id }}" jsonget="country.eng">{{ jsonget:country.eng }}</option>
             </select>
