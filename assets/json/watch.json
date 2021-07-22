@@ -54,5 +54,52 @@
             "thumbnail": "https://img.youtube.com/vi/8FdIoph7c9Q/0.jpg",
             "url": "https://www.youtube.com/watch?v=8FdIoph7c9Q"
         }
+    ],
+    "gifs":[
+        {
+            "id": 1,
+            "thumbnail": "https://gif.aramean.center/aramean-homer.gif"
+        },
+        {
+            "id": 2,
+            "thumbnail": "https://gif.aramean.center/aramean-dancer.gif"
+        },
+        {
+            "id": 3,
+            "thumbnail": "https://gif.aramean.center/aramean-soccer-love.gif"
+        },
+        {
+            "id": 4,
+            "thumbnail": "https://gif.aramean.center/aramean-bubble-flag1.gif"
+        },
+        {
+            "id": 5,
+            "thumbnail": "https://gif.aramean.center/aramean-burning-flag1.gif"
+        },
+        {
+            "id": 6,
+            "thumbnail": "https://gif.aramean.center/aramean-burning-flag2.gif"
+        },
+        {
+            "id": 7,
+            "thumbnail": "https://gif.aramean.center/aramean-waving-flag.gif"
+        },
+        {
+            "id": 8,
+            "thumbnail": "https://gif.aramean.center/aramean-eagle1.gif"
+        },
+        {
+            "id": 9,
+            "thumbnail": "https://gif.aramean.center/aramean-infrared.gif"
+        },
+        {
+            "id": 10,
+            "thumbnail": "https://gif.aramean.center/aramean-ardo-democratic1.gif"
+        },
+        {
+            "id": 11,
+            "thumbnail": "https://gif.aramean.center/aramean-ardo-democratic2.gif"
+        }
+
     ]
 }

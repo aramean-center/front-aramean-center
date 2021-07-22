@@ -1,11 +1,24 @@
+<script src="https://3el.github.io/front/dist/front.js" template="../index"></script>
+
+<title globalize="watch">Watch</title>
+
 <section id="register" class="pauto" storage="api">
-    <h1>Watch</h1>
-    <div class="box cards gut5- br0- bcwhite-" json="true" iterate="videos" datasource="./assets/json/home.json">
+    <h2 globalize="videos">Videos</h2>
+    <hr class="bcred">
+    <div class="box cards gut5- br0- bcwhite-" json="true" iterate="videos" datasource="./assets/json/watch.json">
         <a jsonget="url" if="{{ jsonget:url_target }};0;target:_self" target="_blank">
             <figure jsonset="id" class="p05 z09 black08">
                 <img class="w100 m0a" jsonget="thumbnail">
                 <figcaption class="fwb p1" jsonget="title"></figcaption>
             </figure>
         </a>
+    </div>
+
+    <h2 globalize="gifs">GIFs</h2>
+    <hr class="bcred">
+    <div class="box cards gut5- br0- bcwhite-" json="true" iterate="gifs" datasource="./assets/json/watch.json">
+        <figure jsonset="id" class="p05 z09 black08">
+                <img class="w100 m0a" jsonget="thumbnail">
+        </figure>
     </div>
 </section>
