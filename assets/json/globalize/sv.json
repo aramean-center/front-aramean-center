@@ -4,6 +4,10 @@
     "direction": "ltr",
     "translations":
         {
+            "about": "Om",
+            "about_us": "Om oss",
+            "cookie": "Kaka",
+            "cookies": "Kakor",
             "country_of_birth": "Födelseland",
             "country_of_residence": "Bosättningsland",
             "date_of_birth": "Födelsedatum",
@@ -15,6 +19,7 @@
             "middle_name": "Mellannamn",
             "name": "Namn",
             "participate": "Delta",
+            "policy": "Integritet",
             "register_now": "Registrera dig nu",
             "search": "Sök",
             "submit_registration": "Skicka registrering",
