@@ -1,27 +1,45 @@
 {
     "alphabet":[
         {
-            "title": {
+            "char": {
                 "swe": "A",
                 "arc": "ܐ"
             }
         },
         {
-            "title": {
+            "char": {
                 "swe": "B",
                 "arc": "ܒ"
             }
         },
         {
-            "title": {
+            "char": {
                 "swe": "G",
                 "arc": "ܓ"
             }
         },
         {
-            "title": {
+            "char": {
                 "swe": "D",
                 "arc": "ܕ"
+            }
+        },
+        {
+            "char": {
+                "swe": "H",
+                "arc": "ܗ"
+            }
+        },
+        {
+            "char": {
+                "swe": "O",
+                "arc": "ܘ"
+            }
+        },
+        {
+            "char": {
+                "swe": "Z",
+                "arc": "ܙ"
             }
         }
     ]
