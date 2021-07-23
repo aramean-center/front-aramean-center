@@ -16,6 +16,7 @@
             "first_name": "Förnamn",
             "go_to_startpage": "Gå till startsidan",
             "last_name": "Efternamn",
+            "listen": "Lyssna",
             "middle_name": "Mellannamn",
             "name": "Namn",
             "participate": "Delta",
@@ -24,6 +25,7 @@
             "search": "Sök",
             "submit_registration": "Skicka registrering",
             "thank_you!": "Tack!",
+            "watch": "Titta",
 
             "page_home_title": "Registrera dig själv som etnisk Araméer",
             "page_register_title": "Registrera dig själv som etnisk Araméer",
