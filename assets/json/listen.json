@@ -37,6 +37,8 @@
         },
 
 
+
+
         {
             "track": 1,
             "title": "Yawno",
@@ -52,7 +54,6 @@
             "title": "Kitlan Hago Bikritho",
             "google_file_id": "https://docs.google.com/uc?export=download&id=1-1vMw4fA9QarV4B936m0v4P4NNF4DE0Xzd"
         },
-
         {
             "track": 4,
             "title": "Karighono Bibritho",
@@ -82,6 +83,60 @@
             "track": 9,
             "title": "O'Turabdin",
             "google_file_id": "https://docs.google.com/uc?export=download&id=1BLffWEouu_TLOdXOMyxWKkYuyGrwqGvG"
+        },
+
+
+        
+        {
+            "track": 1,
+            "title": "Maminsimlan Bibrithathe",
+            "google_file_id": "https://docs.google.com/uc?export=download&id=1vLoKuovtTdN3KkrAA-_pTGGFQqUB39UJ"
+        },
+        {
+            "track": 2,
+            "title": "Nuchroyono",
+            "google_file_id": "https://docs.google.com/uc?export=download&id=1xolORRr3ZEfODgBhfiDgI2Gx1f05YVdn"
+        },
+        {
+            "track": 3,
+            "title": "Amar Minseymono",
+            "google_file_id": "https://docs.google.com/uc?export=download&id=1jjbXCj8X_8f6SqSoG4lzj6Ji-cTZbitO"
+        },
+        {
+            "track": 4,
+            "title": "Brische Dature",
+            "google_file_id": "https://docs.google.com/uc?export=download&id=10NhddCQDBRUTfRCiO687KkTDvQ8b4P3T"
+        },
+        {
+            "track": 5,
+            "title": "Schlomo Lu Athro",
+            "google_file_id": "https://docs.google.com/uc?export=download&id=1_x_63tEKTslOaOCm47FBFsMNZd6WgrRG"
+        },
+        {
+            "track": 6,
+            "title": "Kenorono Liimtheydi",
+            "google_file_id": "https://docs.google.com/uc?export=download&id=1xhw_8B7Rgww1uDXp5ZNd7rW7y0qdw4Ui"
+        },
+        {
+            "track": 7,
+            "title": "Tur-Abdin Athro Dsuryoye",
+            "google_file_id": "https://docs.google.com/uc?export=download&id=1PFMp_ksqPZdINuR81YZa37ehMtr5ovEs"
+        },
+        {
+            "track": 8,
+            "title": "Agameyden Ahascheyden",
+            "google_file_id": "https://docs.google.com/uc?export=download&id=1nMZizrkpZjC43HRoPz4SJ-vVUeUdCYgp"
+        },
+        {
+            "track": 9,
+            "title": "Demhe Dheyni",
+            "google_file_id": "https://docs.google.com/uc?export=download&id=1utRYsJP2Irbif_mWKyYhoNfgtLcm719j"
+        },
+        {
+            "track": 10,
+            "title": "Tach Rukdina Uzimrina",
+            "google_file_id": "https://docs.google.com/uc?export=download&id=1L5N6l9WCADKpg_6VOx1khMRIACVo-VyH"
         }
+
     ]
 }
