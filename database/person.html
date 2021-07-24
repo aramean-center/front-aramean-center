@@ -7,13 +7,23 @@
     <aside index="1"></aside>
 </template>
 
-<section class="pauto" json="words" storage="api" bind3="words:?id">
-    <div id="words" class="box cards list mt05 br0- flc-" iterate="true" datasource="{{ storage:api.persons.endpoint }}?select=*&or=(id.eq.{# ?id #})" dataheader="{{ storage:api.persons.headers }}" onerror="alert('Fetch error')" onsuccess="alert('Fetch OK')">
-        <h1 class="z08 mb2">{{ jsonget:first_name.swe }} {{ jsonget:middle_name.swe }} {{ jsonget:last_name.swe }}</h1>
-        <figure class="p1 bcwhite">
-            <p>First name: {{ jsonget:first_name.swe }}<br>Middle name: {{ jsonget:middle_name.swe }}<br>Last name: {{ jsonget:last_name.swe }}<br><br>
-                Gender: {{ jsonget:gender }}<br>Birthdate: {{ jsonget:birth.date }}<br>Birthplace: {{ jsonget:birth.country_code }}</p>
-            <p>Ethnicity: Aramean</p>
-        </figure>
-    </div>
-</section>
+<article class="pauto">
+    <section json="words" storage="api" bind3="words:?id">
+        <h1>Person</h1>
+        <nav class="crumbs pointer p05 bos6 bocblack01 bw1 bcsnow mt05 br05 gray w0">
+            <ol class="pl05">
+                <li><a href="./database" globalize="database">Database</a></li>
+                <li><a href="./database/persons.html">Persons</a></li>
+                <li>Person</li>
+            </ol>
+        </nav>
+        <div id="words" class="box cards list mt2 br0- flc-" iterate="true" datasource="{{ storage:api.persons.endpoint }}?select=*&or=(id.eq.{# ?id #})" dataheader="{{ storage:api.persons.headers }}" onerror="alert('Fetch error')" onsuccess="alert('Fetch OK')">
+            <h2 class="z08 mb2">{{ jsonget:first_name.swe }} {{ jsonget:middle_name.swe }} {{ jsonget:last_name.swe }}</h2>
+            <figure class="p1 bcwhite">
+                <p>First name: {{ jsonget:first_name.swe }}<br>Middle name: {{ jsonget:middle_name.swe }}<br>Last name: {{ jsonget:last_name.swe }}<br><br>
+                    Gender: {{ jsonget:gender }}<br>Birthdate: {{ jsonget:birth.date }}<br>Birthplace: {{ jsonget:birth.country_code }}</p>
+                <p>Ethnicity: Aramean</p>
+            </figure>
+        </div>
+    </section>
+</article>
