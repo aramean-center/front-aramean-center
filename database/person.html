@@ -6,7 +6,7 @@
 </template>
 
 <section class="pauto" json="words" storage="api" bind3="words:?id">
-    <div id="words" class="box cards list mt05 br0- flc-" iterate="true" datasource="{{ storage:api.persons.endpoint }}?select=*&or=(id.eq.{# ?id #})" dataheader="{{ storage:api.persons.headers }}" onerror="alert('Fetch error')" onsuccess="alert('Fetch OK')">
+    <div id="persons" class="box cards list mt05 br0- flc-" iterate="true" datasource="{{ storage:api.persons.endpoint }}?select=*&or=(id.eq.{# ?id #})" dataheader="{{ storage:api.persons.headers }}" onerror="alert('Fetch error')" onsuccess="alert('Fetch OK')">
         <h1 class="z08 mb2">{{ jsonget:first_name.swe }} {{ jsonget:middle_name.swe }} {{ jsonget:last_name.swe }}</h1>
         <figure class="p1 bcwhite">
             <p>First name: {{ jsonget:first_name.swe }}<br>Middle name: {{ jsonget:middle_name.swe }}<br>Last name: {{ jsonget:last_name.swe }}<br><br>
