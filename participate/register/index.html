@@ -1,55 +1,57 @@
 <script src="https://3el.github.io/front/dist/front.js" template="../index"></script>
 
-<section id="register" class="pauto" storage="api">
-    <h1 globalize="page_register_title">Register yourself as ethnic Aramean</h1>
-    <p>Register yourself to help us share information with the Aramean Institute and related organizations.<br>Personal data will be used for research purposes.</p>
-    <hr class="mt2">
+<article class="wc_xl bcwhite shade1">
+    <section id="register" class="pauto" storage="api">
+        <h1 globalize="page_register_title">Register yourself as ethnic Aramean</h1>
+        <p>Register yourself to help us share information with the Aramean Institute and related organizations.<br>Personal data will be used for research purposes.</p>
+        <hr class="mt2">
 
-    <form class="gaph2-" method="post" datasource="{{ storage:api.persons_collection.endpoint }}" dataheader="{{ storage:api.persons_collection.headers }}" ondone="dom.hide('register');dom.show('complete')">
-        <div class="group outline- gaph2-">
-            <input name="first_name" type="text" class="phdark bw1 bos8 bocblack02" placeholder="First Name" globalize="first_name"required>
-            <input name="middle_name" type="text" class="phdark bw1 bos8 bocblack02" placeholder="Middle Name" globalize="middle_name">
-            <input name="last_name" type="text" class="phdark bw1 bos8 bocblack02" placeholder="Last Name" globalize="last_name" required>
-        </div>
+        <form class="gaph2-" method="post" datasource="{{ storage:api.persons_collection.endpoint }}" dataheader="{{ storage:api.persons_collection.headers }}" ondone="dom.hide('register');dom.show('complete')">
+            <div class="group outline- gaph2-">
+                <input name="first_name" type="text" class="phdark bw1 bos8 bocblack02" placeholder="First Name" globalize="first_name"required>
+                <input name="middle_name" type="text" class="phdark bw1 bos8 bocblack02" placeholder="Middle Name" globalize="middle_name">
+                <input name="last_name" type="text" class="phdark bw1 bos8 bocblack02" placeholder="Last Name" globalize="last_name" required>
+            </div>
 
-        <div class="group">
-            <input name="email" type="text" class="phdark f1 bw1 bos8 bocblack02" placeholder="E-mail" globalize="email" required>
-        </div>
+            <div class="group">
+                <input name="email" type="text" class="phdark f1 bw1 bos8 bocblack02" placeholder="E-mail" globalize="email" required>
+            </div>
 
-        <i globalize="date_of_birth">Date of birth</i>
-        <div class="box gap1-">
-            <select class="phdark bw1 bos8 bocblack02" name="birth_date_year" variable="i:1900" iterate="140;i++">
-                <option>{{ i }}</option>
-            </select>
-            <select class="phdark bw1 bos8 bocblack02" name="birth_date_day" variable="i:1" iterate="12;i++">
-                <option>{{ i }}</option>
-            </select>
-            <select class="phdark bw1 bos8 bocblack02" name="birth_date_month" variable="i:1" iterate="31;i++">
-                <option>{{ i }}</option>
-            </select>
-        </div>
+            <i globalize="date_of_birth">Date of birth</i>
+            <div class="box gap1-">
+                <select class="phdark bw1 bos8 bocblack02" name="birth_date_year" variable="i:1900" iterate="140;i++">
+                    <option>{{ i }}</option>
+                </select>
+                <select class="phdark bw1 bos8 bocblack02" name="birth_date_day" variable="i:1" iterate="12;i++">
+                    <option>{{ i }}</option>
+                </select>
+                <select class="phdark bw1 bos8 bocblack02" name="birth_date_month" variable="i:1" iterate="31;i++">
+                    <option>{{ i }}</option>
+                </select>
+            </div>
 
-        <i globalize="country_of_birth">Country of birth</i>
-        <div class="group">
-            <select class="phdark bw1 bos8 bocblack02" name="birth_country" iterate="true" json="true" datasource="{{ storage:api.countries.endpoint }}?order=country->>eng" dataheader="{{ storage:api.countries.headers }}">
-                <option value="{{ jsonget:id }}" jsonget="country.eng">{{ jsonget:country.eng }}</option>
-            </select>
-        </div>
-        <hr>
-        <div class="group" required>
-            <input name="terms" type="checkbox" value="1"> I agree to the <a href="#">terms and conditions</a>. 
-        </div>
-        <div class="group">
-            <input name="participate" type="checkbox" value="1" checked> I would like to be listed as a participant in the public database.
-        </div>
-        <div class="group mt1">
-            <input class="button" type="submit" value="Submit registration" globalize="submit_registration">
-        </div>
-    </form>
-</section>
+            <i globalize="country_of_birth">Country of birth</i>
+            <div class="group">
+                <select class="phdark bw1 bos8 bocblack02" name="birth_country" iterate="true" json="true" datasource="{{ storage:api.countries.endpoint }}?order=country->>eng" dataheader="{{ storage:api.countries.headers }}">
+                    <option value="{{ jsonget:id }}" jsonget="country.eng">{{ jsonget:country.eng }}</option>
+                </select>
+            </div>
+            <hr>
+            <div class="group" required>
+                <input name="terms" type="checkbox" value="1"> I agree to the <a href="#">terms and conditions</a>. 
+            </div>
+            <div class="group">
+                <input name="participate" type="checkbox" value="1" checked> I would like to be listed as a participant in the public database.
+            </div>
+            <div class="group mt1">
+                <input class="button" type="submit" value="Submit registration" globalize="submit_registration">
+            </div>
+        </form>
+    </section>
 
-<section id="complete" class="pauto tac d0">
-    <h1 globalize="thank_you!">Thank you!</h1>
-    <p globalize="page_register_complete">Your registration will be reviewed within 24 hours.</p>
-    <i class="icon mt2">&#8962;</i><a href="/" globalize="go_to_startpage">Go to startpage</a>
-</section>
+    <section id="complete" class="pauto tac d0">
+        <h1 globalize="thank_you!">Thank you!</h1>
+        <p globalize="page_register_complete">Your registration will be reviewed within 24 hours.</p>
+        <i class="icon mt2">&#8962;</i><a href="/" globalize="go_to_startpage">Go to startpage</a>
+    </section>
+</article>
