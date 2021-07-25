@@ -4,6 +4,9 @@
     "direction": "ltr",
     "translations":
         {
+            "about": "About",
+            "about_us": "About Us",
+            "cookie": "Cookie",
             "country_of_birth": "Country of birth",
             "date_of_birth": "Date of birth",
             "email": "E-mail",
@@ -14,6 +17,7 @@
             "middle_name": "Middle Name",
             "name": "Name",
             "participate": "Participate",
+            "policy": "Policy",
             "register_now": "Register now",
             "search": "Search",
             "submit_registration": "Submit registration",
