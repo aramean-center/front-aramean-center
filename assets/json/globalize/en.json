@@ -14,6 +14,8 @@
             "first_name": "First Name",
             "go_to_startpage": "Go to startpage",
             "last_name": "Last Name",
+            "learn": "Learn",
+            "listen": "Listen",
             "middle_name": "Middle Name",
             "name": "Name",
             "participate": "Participate",
@@ -22,6 +24,7 @@
             "search": "Search",
             "submit_registration": "Submit registration",
             "thank_you!": "Thank you!",
+            "watch": "Watch",
 
             "page_home_title": "Register yourself as ethnic Aramean",
             "page_register_title": "Register yourself as ethnic Aramean",
