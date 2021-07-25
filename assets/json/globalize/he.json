@@ -6,6 +6,7 @@
         {
             "country_of_birth": "ארץ לידה",
             "country_of_residence": "מדינת מגורים",
+            "database": "מאגר מידע",
             "date_of_birth": "תאריך לידה",
             "email": "אימייל",
             "explore": "לחקור",

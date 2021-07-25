@@ -6,6 +6,7 @@
         {
             "country_of_birth": "بلد الميلاد",
             "country_of_residence": "بلد الإقامة",
+            "database": "قاعدة البيانات",
             "date_of_birth": "تاريخ الولادة",
             "email": "البريد الإلكتروني",
             "explore": "يكتشف",
