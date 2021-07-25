@@ -8,9 +8,9 @@
 
         <form class="gaph2-" method="post" datasource="{{ storage:api.persons_collection.endpoint }}" dataheader="{{ storage:api.persons_collection.headers }}" ondone="dom.hide('register');dom.show('complete')">
             <div class="group outline- gaph2-">
-                <input name="first_name" type="text" class="phdark bw1 bos8 bocblack02" placeholder="First Name" globalize="first_name"required>
-                <input name="middle_name" type="text" class="phdark bw1 bos8 bocblack02" placeholder="Middle Name" globalize="middle_name">
-                <input name="last_name" type="text" class="phdark bw1 bos8 bocblack02" placeholder="Last Name" globalize="last_name" required>
+                <input name="first_name" type="text" class="f1 phdark bw1 bos8 bocblack02" placeholder="First Name" globalize="first_name"required>
+                <input name="middle_name" type="text" class="f1 phdark bw1 bos8 bocblack02" placeholder="Middle Name" globalize="middle_name">
+                <input name="last_name" type="text" class="f1 phdark bw1 bos8 bocblack02" placeholder="Last Name" globalize="last_name" required>
             </div>
 
             <div class="group">
@@ -18,7 +18,7 @@
             </div>
 
             <i globalize="date_of_birth">Date of birth</i>
-            <div class="box gap1-">
+            <div class="box gut2-">
                 <select class="phdark bw1 bos8 bocblack02" name="birth_date_year" variable="i:1900" iterate="140;i++">
                     <option>{{ i }}</option>
                 </select>
