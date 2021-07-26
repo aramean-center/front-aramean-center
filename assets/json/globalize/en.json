@@ -28,8 +28,9 @@
             "thank_you!": "Thank you!",
             "watch": "Watch",
 
-            "page_home_title": "Register yourself as ethnic Aramean",
-            "page_register_title": "Register yourself as ethnic Aramean",
+            "page_home_title": "Register yourself as an ethnic Aramean",
+            "page_home_text": "Register to help us share information with the <a class=\"red\" target=\"_blank\" href=\"https://aramean.institute\">Aramean Institute</a> and other Aramean-related organizations.",
+            "page_register_title": "Register yourself as an ethnic Aramean",
             "page_register_complete": "Your registration will be reviewed within 24 hours."
         }
 }
