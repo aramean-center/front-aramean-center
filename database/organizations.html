@@ -1,0 +1,50 @@
+<script src="https://3el.github.io/front/dist/front.js" template="../index"></script>
+<title>Organizations</title>
+<template>
+    <aside index="0"></aside>
+    <aside index="1">
+        <nav class="sidebar bcwhite w15r xxxl_w20r">
+            <h5 class="p1 mt1" globalize="search">Search</h5>
+            <hr>
+            <div class="p1">
+                <small class="pb1 ttu" globalize="name">Name</small>
+                <input type="text" onkeyup="filter()">
+            </div>
+            <div class="p1">
+                <small class="pb1 ttu" globalize="country_of_birth">Country of birth</small>
+                <select>
+                    <option>All</option>
+                </select>
+            </div>
+            <div class="p1">
+                <small class="pb1 ttu" globalize="country_of_residence">Country of residence</small>
+                <select>
+                    <option>All</option>
+                </select>
+            </div>
+         </nav>
+     </aside>
+</template>
+
+<section class="pauto" storage="api">
+
+    <h1>Organizations</h1>
+    <nav class="crumbs pointer p05 bos6 bocblack01 bw1 bcsnow mt05 br05 gray w0">
+        <ol class="pl05">
+            <li><a href="./database" globalize="database">Database</a></li>
+            <li>Organizations</li>
+        </ol>
+    </nav>
+    <nav class="tabs mt1" json="persons">
+        <input type="radio" name="paneldemo" id="tabdemo1" checked="">
+        <label for="tabdemo1">Build ({{ jsonheader:content-range = split('/',1) }})</label>
+        <section class="lg_p0 shade1">
+            <div id="persons" class="box cards list br0- flc-" iterate="true" datasource="{{ storage:api.organizations.endpoint }}?" dataheader="{{ storage:api.organizations.headers }}" onerror="alert('Fetch error')" onsuccess="alert('Fetch OK')">
+                <figure class="p1 bcwhite">
+                    <p class="f2 pl1" filteron="true"><a href="database/organization.html?id={{ jsonget:id }}">{{ jsonget:organization.eng }}</a></p>
+                </figure>
+            </div>        
+        </section>
+    </nav>
+
+</section>
