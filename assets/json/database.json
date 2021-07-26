@@ -7,7 +7,7 @@
                 "eng": "Persons",
                 "swe": "Personer"
             },
-            "url": "",
+            "url": "persons.html",
             "description": "In this database you will find information on people registered as being of Aramean descent."
         },
         {
@@ -17,8 +17,18 @@
                 "eng": "Buildings",
                 "swe": "Byggnader"
             },
-            "url": "",
+            "url": "buildings.html",
             "description": "In this database you will find information on buildings owned by the Arameans."
+        },
+        {
+            "id": 3,
+            "title":
+            {
+                "eng": "Organizations",
+                "swe": "Organisationer"
+            },
+            "url": "organizations.html",
+            "description": "In this database you will find information about organizations under Aramean operation."
         }
     ]
 }

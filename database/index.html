@@ -1,14 +1,20 @@
 <script src="https://3el.github.io/front/dist/front.js" template="../index"></script>
 
 <title globalize="database">Database</title>
+<template>
+    <aside index="0"></aside>
+    <aside index="1"></aside>
+</template>
 
 <section id="database" class="pauto" storage="api">
     <h2 globalize="database">Database</h2>
     <hr class="bcred">
     <div class="box cards gut5- br0- bcwhite-" json="true" iterate="database" datasource="./assets/json/database.json">
-        <figure jsonset="id" class="p05 black08">
-            <h1 class="fwb p1" jsonget="title.eng"></h1>
-            <h7 class="p1" jsonget="description"></h7>
-        </figure>
+        <a href="database/{{ jsonget: url }}">
+            <figure jsonset="id" class="p05 black08">
+                <h2 class="fwb p1" jsonget="title.eng"></h2>
+                <h7 class="p1 pt0" jsonget="description"></h7>
+            </figure>
+        </a>
     </div>
 </section>
