@@ -2,14 +2,23 @@
     "database":[
         {
             "id": 1,
-            "title": "Persons",
+            "title":
+            {
+                "eng": "Persons",
+                "swe": "Personer"
+            },
             "url": "",
             "description": "In this database you will find information on people registered as being of Aramean ethnicity."
         },
         {
             "id": 2,
-            "title": "Buildings",
-            "url": ""
+            "title":
+            {
+                "eng": "Buildings",
+                "swe": "Byggnader"
+            },
+            "url": "",
+            "description": "In this database you will find information on buildings owned by the Arameans."
         }
     ]
 }
