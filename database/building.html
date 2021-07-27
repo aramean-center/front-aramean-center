@@ -1,0 +1,31 @@
+<script src="https://3el.github.io/front/dist/front.js" template="../index"></script>
+
+<title>Building</title>
+
+<template>
+    <aside index="0"></aside>
+    <aside index="1"></aside>
+</template>
+
+<article class="pauto">
+    <section json="words" storage="api" bind3="words:?id">
+        <h1>Building</h1>
+        <nav class="crumbs pointer p05 bos6 bocblack01 bw1 bcsnow mt05 br05 gray w0">
+            <ol class="pl05">
+                <li><a href="./database" globalize="database">Database</a></li>
+                <li><a href="./database/buildings.html">Buildings</a></li>
+                <li>Building</li>
+            </ol>
+        </nav>
+        <div id="words" class="box cards list mt2 br0- flc-" iterate="true" datasource="{{ storage:api.buildings.endpoint }}?select=*&or=(id.eq.{# ?id #})" dataheader="{{ storage:api.buildings.headers }}">
+            <h2 class="z08 mb2">{{ jsonget:name.eng }}</h2>
+            <figure class="p1 bcwhite">
+                <p>Name: {{ jsonget:name.eng }}
+            </figure>
+        </div>
+    </section>
+
+    <section>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAev1q4GNC-VlKYxWQXWfuPQ3pexINKOEY&callback=initMap&libraries=&v=weekly" async></script>
+    </section>
+</article>
