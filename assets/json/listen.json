@@ -1,141 +1,54 @@
 {
-    "music":[
-        {
-            "track": 1,
-            "title": "Zomrina U Roqdina",
-            "google_file_id": "https://docs.google.com/uc?export=download&id=1GR3zmqy6qO_L0L2BNgQNiODukO_Y5jNK"
-        },
-        {
-            "track": 2,
-            "title": "Ema Tolokh Safro",
-            "google_file_id": "https://docs.google.com/uc?export=download&id=16N_68_XusLCLGdNtmwi4Y0RMyMUAZYVu"
-        },
-        {
-            "track": 3,
-            "title": "Koso d'Hubo",
-            "google_file_id": "https://docs.google.com/uc?export=download&id=1-jW7GQZyf8N8gGSPFlrwF1ZExKo5caMX"
-        },
-        {
-            "track": 4,
-            "title": "Layko Azza Marulah",
-            "google_file_id": "https://docs.google.com/uc?export=download&id=1UNW-9OhROO5wdyFA-iTw7B6GxItdviZw"
-        },
-        {
-            "track": 5,
-            "title": "Mar Mun Keb'at",
-            "google_file_id": "https://docs.google.com/uc?export=download&id=1LbQ4_mkJ1l2UqQRfZNqajT18zasqIWpH"
-        },
-        {
-            "track": 6,
-            "title": "L'Aynotokh Kome Habib",
-            "google_file_id": "https://docs.google.com/uc?export=download&id=12f5e8dGsVMU95CkylNyK9Yp5GFAMFKyj"
-        },
-        {
-            "track": 7,
-            "title": "L'Mani Gd'Omina",
-            "google_file_id": "https://docs.google.com/uc?export=download&id=1rhj-cs6ibHd-AhhWqKQtCU83jmy93u0l"
-        },
-
-
-
-
-        {
-            "track": 1,
-            "title": "Yawno",
-            "google_file_id": "https://docs.google.com/uc?export=download&id=1KQtR4c03Vss8S6pBXlNB8Le7zC_RsJNn"
-        },
-        {
-            "track": 2,
-            "title": "Crihla Lebi V Azzayo",
-            "google_file_id": "https://docs.google.com/uc?export=download&id=1Veg8zuVOL14Casken9pVd8KwUo2eyhNW"
-        },
-        {
-            "track": 3,
-            "title": "Kitlan Hago Bikritho",
-            "google_file_id": "https://docs.google.com/uc?export=download&id=1-1vMw4fA9QarV4B936m0v4P4NNF4DE0Xzd"
-        },
-        {
-            "track": 4,
-            "title": "Karighono Bibritho",
-            "google_file_id": "https://docs.google.com/uc?export=download&id=1LejU_Wi69GWWL_1AxV4Zcq3bNPPjgExC"
-        },
-        {
-            "track": 5,
-            "title": "Kenishrin Bahro D' Ayni",
-            "google_file_id": "https://docs.google.com/uc?export=download&id=1HTHPhkdoSJtjqJc2lbsITc_uhwgXdXsm"
-        },
-        {
-            "track": 6,
-            "title": "Ar' O Rab Tho Nashifto",
-            "google_file_id": "https://docs.google.com/uc?export=download&id=1s_1T78wUsmcx4yrnCbIDtLBqEaSk34IW"
-        },
-        {
-            "track": 7,
-            "title": "Hat Hulaghli I Hubo",
-            "google_file_id": "https://docs.google.com/uc?export=download&id=1KOZIMuZ7e5HLGsWPFO0DZrHFvBGzwsnY"
-        },
-        {
-            "track": 8,
-            "title": "Trela Meni V Malaghla",
-            "google_file_id": "https://docs.google.com/uc?export=download&id=1MipNTGt15p-NEmpVqI5XA_fiAqjj2caN"
-        },
-        {
-            "track": 9,
-            "title": "O'Turabdin",
-            "google_file_id": "https://docs.google.com/uc?export=download&id=1BLffWEouu_TLOdXOMyxWKkYuyGrwqGvG"
-        },
-
-
-        
+    "music":[      
         {
             "track": 1,
             "title": "Maminsimlan Bibrithathe",
-            "google_file_id": "https://docs.google.com/uc?export=download&id=1vLoKuovtTdN3KkrAA-_pTGGFQqUB39UJ"
+            "google_drive_url": "https://docs.google.com/uc?export=download&id=1vLoKuovtTdN3KkrAA-_pTGGFQqUB39UJ"
         },
         {
             "track": 2,
             "title": "Nuchroyono",
-            "google_file_id": "https://docs.google.com/uc?export=download&id=1xolORRr3ZEfODgBhfiDgI2Gx1f05YVdn"
+            "google_drive_url": "https://docs.google.com/uc?export=download&id=1xolORRr3ZEfODgBhfiDgI2Gx1f05YVdn"
         },
         {
             "track": 3,
             "title": "Amar Minseymono",
-            "google_file_id": "https://docs.google.com/uc?export=download&id=1jjbXCj8X_8f6SqSoG4lzj6Ji-cTZbitO"
+            "google_drive_url": "https://docs.google.com/uc?export=download&id=1jjbXCj8X_8f6SqSoG4lzj6Ji-cTZbitO"
         },
         {
             "track": 4,
             "title": "Brische Dature",
-            "google_file_id": "https://docs.google.com/uc?export=download&id=10NhddCQDBRUTfRCiO687KkTDvQ8b4P3T"
+            "google_drive_url": "https://docs.google.com/uc?export=download&id=10NhddCQDBRUTfRCiO687KkTDvQ8b4P3T"
         },
         {
             "track": 5,
             "title": "Schlomo Lu Athro",
-            "google_file_id": "https://docs.google.com/uc?export=download&id=1_x_63tEKTslOaOCm47FBFsMNZd6WgrRG"
+            "google_drive_url": "https://docs.google.com/uc?export=download&id=1_x_63tEKTslOaOCm47FBFsMNZd6WgrRG"
         },
         {
             "track": 6,
             "title": "Kenorono Liimtheydi",
-            "google_file_id": "https://docs.google.com/uc?export=download&id=1xhw_8B7Rgww1uDXp5ZNd7rW7y0qdw4Ui"
+            "google_drive_url": "https://docs.google.com/uc?export=download&id=1xhw_8B7Rgww1uDXp5ZNd7rW7y0qdw4Ui"
         },
         {
             "track": 7,
             "title": "Tur-Abdin Athro Dsuryoye",
-            "google_file_id": "https://docs.google.com/uc?export=download&id=1PFMp_ksqPZdINuR81YZa37ehMtr5ovEs"
+            "google_drive_url": "https://docs.google.com/uc?export=download&id=1PFMp_ksqPZdINuR81YZa37ehMtr5ovEs"
         },
         {
             "track": 8,
             "title": "Agameyden Ahascheyden",
-            "google_file_id": "https://docs.google.com/uc?export=download&id=1nMZizrkpZjC43HRoPz4SJ-vVUeUdCYgp"
+            "google_drive_url": "https://docs.google.com/uc?export=download&id=1nMZizrkpZjC43HRoPz4SJ-vVUeUdCYgp"
         },
         {
             "track": 9,
             "title": "Demhe Dheyni",
-            "google_file_id": "https://docs.google.com/uc?export=download&id=1utRYsJP2Irbif_mWKyYhoNfgtLcm719j"
+            "google_drive_url": "https://docs.google.com/uc?export=download&id=1utRYsJP2Irbif_mWKyYhoNfgtLcm719j"
         },
         {
             "track": 10,
             "title": "Tach Rukdina Uzimrina",
-            "google_file_id": "https://docs.google.com/uc?export=download&id=1L5N6l9WCADKpg_6VOx1khMRIACVo-VyH"
+            "google_drive_url": "https://docs.google.com/uc?export=download&id=1L5N6l9WCADKpg_6VOx1khMRIACVo-VyH"
         }
 
     ]
