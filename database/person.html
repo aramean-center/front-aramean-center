@@ -7,18 +7,19 @@
     <aside index="1"></aside>
 </template>
 
-<article class="pauto">
-    <section json="words" storage="api" bind3="words:?id">
+<article class="pauto" storage="api" json="words" bind3="words:?id">
+    <section id="words" datasource="{{ storage:api.persons.endpoint }}?select=*&or=(id.eq.{# ?id #})" dataheader="{{ storage:api.persons.headers }}">
         <h1>Person</h1>
         <nav class="crumbs pointer p05 bos6 bocblack01 bw1 bcsnow mt05 br05 gray w0">
             <ol class="pl05">
                 <li><a href="./database" globalize="database">Database</a></li>
                 <li><a href="./database/persons.html">Persons</a></li>
-                <li>Person</li>
+                <li>{{ jsonget: first_name.swe }}</li>
             </ol>
         </nav>
-        <div id="words" class="box cards list mt2 br0- flc-" iterate="true" datasource="{{ storage:api.persons.endpoint }}?select=*&or=(id.eq.{# ?id #})" dataheader="{{ storage:api.persons.headers }}" onerror="alert('Fetch error')" onsuccess="alert('Fetch OK')">
-            <h2 class="z08 mb2">{{ jsonget:first_name.swe }} {{ jsonget:middle_name.swe }} {{ jsonget:last_name.swe }}</h2>
+        <div class="box cards list mt2 br0- flc-">
+            <h2 class="z08 p1 bcwhite">{{ jsonget:first_name.swe }} {{ jsonget:middle_name.swe }} {{ jsonget:last_name.swe }}</h2>
+            
             <figure class="p1 bcwhite">
                 <p>First name: {{ jsonget:first_name.swe }}<br>Middle name: {{ jsonget:middle_name.swe }}<br>Last name: {{ jsonget:last_name.swe }}<br><br>
                     Gender: {{ jsonget:gender }}<br>Birthdate: {{ jsonget:birth.date }}<br>Birthplace: {{ jsonget:birth.country_code }}</p>
