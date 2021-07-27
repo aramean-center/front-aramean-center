@@ -14,20 +14,21 @@
             <ol class="pl05">
                 <li><a href="./database" globalize="database">Database</a></li>
                 <li><a href="./database/organizations.html">Organizations</a></li>
-                <li>{{ jsonget:name.eng }}</li>
+                <li>{{ jsonget:organization.eng }}</li>
             </ol>
         </nav>
         <div class="box cards list mt2 br0- flc-">
-            <h2 class="p1 bcwhite z08">{{ jsonget:name.eng }}</h2>
+            <h6 class="p1 bcwhitesmoke black08 fwb">{{ jsonget:organization.eng }}</h6>
             <figure class="p1 bcwhite">
-                <p>Name: {{ jsonget:name.eng }}
+                <p>Name: {{ jsonget:organization.eng }}</p>
+                <p>Members: ?</p>
             </figure>
         </div>
 
         <section class="bcwhite p2 shade1">
             <h2 globalize="location">Location</h2>
             <hr class="bcred">
-            <div id="googlemaps" googlemaps="lat:{{ jsonget:geometry.location.lat }},lng:{{ jsonget:geometry.location.lng }}" class="h50r"></div>
+            <div id="googlemaps" googlemaps="lat:1,lng:1" class="h50r"></div>
         </section>
     </section>
 </article>
