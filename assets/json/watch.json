@@ -100,6 +100,15 @@
             "id": 11,
             "thumbnail": "https://gif.aramean.center/aramean-ardo-democratic2.gif"
         }
-
+    ],
+    "graphics":[
+        {
+            "id": 12,
+            "video_url": "https://aramean.center/assets/video/aramean-flag-1.mp4"
+        },
+        {
+            "id": 13,
+            "video_url": "https://aramean.center/assets/video/aramean-flag-2.mp4"
+        }
     ]
 }
