@@ -7,27 +7,27 @@
     <aside index="1"></aside>
 </template>
 
-<article class="pauto">
-    <section json="words" storage="api" bind3="words:?id">
+<article class="pauto" json="words" storage="api" bind3="words:?id">
+    <section id="words" datasource="{{ storage:api.buildings.endpoint }}?select=*&or=(id.eq.{# ?id #})" dataheader="{{ storage:api.buildings.headers }}">
         <h1>Building</h1>
         <nav class="crumbs pointer p05 bos6 bocblack01 bw1 bcsnow mt05 br05 gray w0">
             <ol class="pl05">
                 <li><a href="./database" globalize="database">Database</a></li>
                 <li><a href="./database/buildings.html">Buildings</a></li>
-                <li>Building</li>
+                <li>{{ jsonget:name.eng }}</li>
             </ol>
         </nav>
-        <div id="words" class="box cards list mt2 br0- flc-" iterate="true" datasource="{{ storage:api.buildings.endpoint }}?select=*&or=(id.eq.{# ?id #})" dataheader="{{ storage:api.buildings.headers }}">
-            <h2 class="z08 mb2">{{ jsonget:name.eng }}</h2>
+        <div class="box cards list mt2 br0- flc-">
+            <h2 class="p1 bcwhite z08">{{ jsonget:name.eng }}</h2>
             <figure class="p1 bcwhite">
                 <p>Name: {{ jsonget:name.eng }}
             </figure>
         </div>
-    </section>
 
     <section class="bcwhite p2 shade1">
         <h2 globalize="location">Location</h2>
         <hr class="bcred">
-        <div id="map" class="h50r"></div>
+        <div id="googlemaps" googlemaps="lat:{{ jsonget:geometry.location.lat }},lng:{{ jsonget:geometry.location.lng }}" class="h50r"></div>
     </section>
+</section>
 </article>
