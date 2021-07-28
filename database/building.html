@@ -9,11 +9,11 @@
 
 <article class="pauto" json="words" storage="api" bind3="words:?id">
     <section id="words" datasource="{{ storage:api.buildings.endpoint }}?select=*&or=(id.eq.{# ?id #})" dataheader="{{ storage:api.buildings.headers }}">
-        <h1>Building</h1>
+        <h1 globalize="building">Building</h1>
         <nav class="crumbs pointer p05 bos6 bocblack01 bw1 bcsnow mt05 br05 gray w0">
             <ol class="pl05">
                 <li><a href="./database" globalize="database">Database</a></li>
-                <li><a href="./database/buildings.html">Buildings</a></li>
+                <li><a href="./database/buildings.html" globalize="buildings">Buildings</a></li>
                 <li>{{ jsonget:name.eng }}</li>
             </ol>
         </nav>
@@ -27,7 +27,7 @@
         <section class="bcwhite p2 shade1">
             <h2 globalize="location">Location</h2>
             <hr class="bcred">
-            <div id="googlemaps" googlemaps="lat:{{ jsonget:geometry.location.lat }},lng:{{ jsonget:geometry.location.lng }}" class="h50r"></div>
+            <div id="googlemaps" josef="true" googlemaps="lat:77,lng:367" googlemaps1="lat:{{ jsonget:geometry.location.lat }},lng:{{ jsonget:geometry.location.lng }}" class="h50r"></div>
         </section>
     </section>
 </article>
