@@ -1,6 +1,6 @@
 <script src="https://3el.github.io/front/dist/front.js" template="../index"></script>
 
-<title>Organization</title>
+<title globalize="organization">Organization</title>
 
 <template>
     <aside index="0"></aside>
@@ -9,11 +9,11 @@
 
 <article class="pauto" json="words" storage="api" bind3="words:?id">
     <section id="words" datasource="{{ storage:api.organizations.endpoint }}?select=*&or=(id.eq.{# ?id #})" dataheader="{{ storage:api.organizations.headers }}">
-        <h1>Organization</h1>
+        <h1 globalize="organization">Organization</h1>
         <nav class="crumbs pointer p05 bos6 bocblack01 bw1 bcsnow mt05 br05 gray w0">
             <ol class="pl05">
                 <li><a href="./database" globalize="database">Database</a></li>
-                <li><a href="./database/organizations.html">Organizations</a></li>
+                <li><a href="./database/organizations.html" globalize="organization">Organizations</a></li>
                 <li>{{ jsonget:organization.eng }}</li>
             </ol>
         </nav>
