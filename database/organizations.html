@@ -35,7 +35,7 @@
         <section class="lg_p0 shade1">
             <div id="persons" class="box cards list br0- flc-" iterate="true" datasource="{{ storage:api.organizations.endpoint }}?" dataheader="{{ storage:api.organizations.headers }}" onerror="alert('Fetch error')" onsuccess="alert('Fetch OK')">
                 <a href="database/organization.html?id={{ jsonget:id }}">
-                    <figure class="p1 bcwhite">
+                    <figure class="p1 bcwhite bcwhitesmoke_h">
                         <p class="f2 pl1" filteron="true">{{ jsonget:organization.eng }}</p>
                         <img class="tar f0" src="" jsonget="geometry.location.country_code" jsonbefore="https://3el.github.io/front/dist/design/front/flags/famfamfam/" jsonafter=".gif">
                     </figure>
