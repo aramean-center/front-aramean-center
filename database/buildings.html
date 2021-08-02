@@ -34,10 +34,12 @@
         <label for="tabdemo1">Build ({{ jsonheader:content-range = split('/',1) }})</label>
         <section class="lg_p0 shade1">
             <div id="persons" class="box cards list br0- flc-" iterate="true" datasource="{{ storage:api.buildings.endpoint }}?" dataheader="{{ storage:api.buildings.headers }}" onerror="alert('Fetch error')" onsuccess="alert('Fetch OK')">
-                <figure class="p1 bcwhite">
-                    <p class="f2 pl1" filteron="true"><a href="database/building.html?id={{ jsonget:id }}">{{ jsonget:name.eng }}</a></p>
-                    <img class="tar f0" src="" jsonget="geometry.location.country_code" jsonbefore="https://3el.github.io/front/dist/design/front/flags/famfamfam/" jsonafter=".gif">
-                </figure>
+                <a href="database/building.html?id={{ jsonget:id }}">
+                    <figure class="p1 bcwhite">
+                        <p class="f2 pl1" filteron="true">{{ jsonget:name.eng }}</p>
+                        <img class="tar f0" src="" jsonget="geometry.location.country_code" jsonbefore="https://3el.github.io/front/dist/design/front/flags/famfamfam/" jsonafter=".gif">
+                    </figure>
+                </a>
             </div>        
         </section>
     </nav>
