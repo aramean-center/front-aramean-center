@@ -1,0 +1,43 @@
+{
+    "name": "Aramaic",
+    "code": "arc",
+    "direction": "rtl",
+    "translations":
+        {
+            "about": "About",
+            "about_us": "About Us",
+            "building": "Building",
+            "buildings": "Buildings",
+            "cookie": "Cookie",
+            "country": "Country",
+            "country_of_birth": "Country of birth",
+            "database": "Database",
+            "date_of_birth": "Date of birth",
+            "email": "E-mail",
+            "explore": "Explore",
+            "first_name": "First Name",
+            "finish_registration": "Finish registration",
+            "go_to_startpage": "Go to startpage",
+            "last_name": "Last Name",
+            "learn": "Learn",
+            "listen": "Listen",
+            "middle_name": "Middle Name",
+            "music": "ܙܡܪܐ",
+            "name": "ܫܡܗܐ",
+            "organization": "Organization",
+            "page_not_found": "Page not found",
+            "participate": "Participate",
+            "persons": "Persons",
+            "policy": "Policy",
+            "register_now": "Register now",
+            "search": "Search",
+            "submit_registration": "Submit registration",
+            "thank_you!": "!ܬܘܕܝ",
+            "watch": "Watch",
+
+            "page_home_title": "Register yourself as an ethnic Aramean",
+            "page_home_text": "Register to help us share information with the <a class=\"red\" target=\"_blank\" href=\"https://aramean.institute\">Aramean Institute</a> and other Aramean-related organizations.",
+            "page_register_title": "Register yourself as an ethnic Aramean",
+            "page_register_complete": "Your registration will be reviewed within 24 hours."
+        }
+}
