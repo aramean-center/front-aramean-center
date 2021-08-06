@@ -1,0 +1,29 @@
+<script src="https://3el.github.io/front/dist/front.js" template="../../index"></script>
+
+<title globalize="psalm">Psalm</title>
+
+<template>
+    <aside index="0"></aside>
+    <aside index="1"></aside>
+</template>
+
+<article class="pauto">
+    <section id="words" iterate="psalms" datasource="./assets/json/psalms.json">
+        <h1 globalize="psalm">Psalm</h1>
+        <nav class="crumbs pointer p05 bos6 bocblack01 bw1 bcsnow mt05 br05 gray w0">
+            <ol class="pl05">
+                <li><a href="./database" globalize="database">Database</a></li>
+                <li><a href="./database/psalms.html" globalize="psalms">Psalms</a></li>
+                <li>{{ jsonget:title.syr }}</li>
+            </ol>
+        </nav>
+        <div class="box fdr- shade1 mt1 br0- lh2">
+            <h6 class="p1 bcwhitesmoke black08 fwb">{{ jsonget:title.syr }}</h6>
+            <figure class="pauto bcwhite">
+                <h3>
+                    {{ jsonget:psalm.syr }}
+                </h3>
+            </figure>
+        </div>
+    </section>
+</article>

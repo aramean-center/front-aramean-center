@@ -16,4 +16,17 @@
             <h7 class="pb1" jsonget="char.swe"></h7>
         </figure>
     </div>
+
+    <h2 globalize="alphabet">Psalms</h2>
+    <hr class="bcred">
+    <section class="lg_p0 shade1">
+        <div id="psalms" class="box cards list br0-" json="true" iterate="psalms" datasource="./assets/json/psalms.json">
+            <a href="./read/psalm/?id={{ jsonget:id }}">
+                <figure class="p1 bcwhite bcblack001_h">
+                    <p class="f2 pl1">{{ jsonget:title.syr }}</p>
+                    <p class="tar"></p>
+                </figure>
+            </a>
+        </div>
+    </section>
 </section>
