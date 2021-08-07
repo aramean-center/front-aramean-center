@@ -8,7 +8,7 @@
 </template>
 
 <article class="pauto">
-    <section id="words" iterate="hymns" datasource="./assets/json/hymns.json">
+    <section id="words" json="true" datasource="./assets/json/hymns.json" jsonfilter="id:1">
         <h1 globalize="hymns">Hymns</h1>
         <nav class="crumbs pointer p05 bos6 bocblack01 bw1 bcsnow mt05 br05 gray w0">
             <ol class="pl05">
@@ -21,7 +21,7 @@
             <h6 class="p1 bcwhitesmoke black08 fwb">{{ jsonget:title.syr }}</h6>
             <figure class="pauto bcwhite">
                 <h3>
-                    {{ jsonget:psalm.syr }}
+                    {{ jsonget:hymn.syr }}
                 </h3>
             </figure>
         </div>
