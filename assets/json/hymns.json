@@ -7,10 +7,10 @@
             "syr": "ܥܠ ܒܝܬ ܕܝܢܐ"
         },
         "hymn":
-            {
-                "nld": "Ik kwam de Rechtbank binnen en terwijl ik passeerde zag ik één die onderdrukt werd en één onderdrukker. Zij stonden daar en confronteerden elkaar. Hij die onderdrukt werd stond aan de rechterzijde en zocht de engelen op en raakte bevriend met de kinderen des hemels. En de onderdrukker stond aan de linkerzijde en raakte bevriend met Satan en zocht alle ellende op. \"Maak mij waardig, o Heer, dat ik in Uw Koninkrijk tezamen met zij die onderdrukt worden zal zijn aan Uw rechterzijde. Halleluja, eer aan U.\"",
-                "syr": "ܥܰܠ ܒܶܝܬ̣ ܕܺܝܢܳܐ. ܥܳܒܰܪ ܗܘܺܝܬ̣ ܘܰܚܙܺܝܬ̣܇ ܚܰܕ ܛܠܺܝܡܳܐ ܘܚܰܕ ܛܳܠܽܘܡܳܐ܇ ܕܩܳܝܡܺܝܢ ܬܰܡܳܢ܇ ܘܒܰܚܕ̈ܳܕܶܐ ܡܦܰܚܡܺܝܢ. ܩܳܐܶܡ ܛܠܺܝܡܳܐ. ܒܓܰܒܳܐ ܕܝܰܡܺܝܢܳܐ. ܘܰܟܪܺܝܟ̣ܺܝܢ ܠܶܗ ܡܰܠܐܟ̣̈ܶܐ܇ ܘܰܥܒܺܝܕ ܚܰܒܪܳܐ܇ ܠܰܒܢ̈ܰܝ ܡܰܠܟܽܘܬ̣ܳܐ. ܘܗܰܘ ܛܳܠܽܘܡܳܐ܇ ܒܓܰܒܳܐ ܕܣܶܡܳܠܐ܇ ܘܰܥܒܺܝܕ ܚܰܒܪܳܐ ܠܣܳܛܳܢܳܐ. ܘܰܟܪܺܝܟ̣ܺܝܢ ܠܶܗ ܟܽܠܗܽܘܢ ܕܽܘܘ̈ܳܢܶܐ܇ ܐܱܫܘܳܢܝ̱ ܡܳܪܰܢ܇ ܕܐܶܗܘܶܐ ܒܡܰܠܟܽܘܬ̣ܳܟ. ܥܰܡ ܛܠܺܝܡ̈ܶܐ ܕܡܶܢ ܝܰܡܺܝܢܳܟ ܗ̄ ܠܳܟ ܫܽܘܒܚܳܐ܀"
-            }
+        {
+            "nld": "Ik kwam de Rechtbank binnen en terwijl ik passeerde zag ik één die onderdrukt werd en één onderdrukker. Zij stonden daar en confronteerden elkaar. Hij die onderdrukt werd stond aan de rechterzijde en zocht de engelen op en raakte bevriend met de kinderen des hemels. En de onderdrukker stond aan de linkerzijde en raakte bevriend met Satan en zocht alle ellende op. \"Maak mij waardig, o Heer, dat ik in Uw Koninkrijk tezamen met zij die onderdrukt worden zal zijn aan Uw rechterzijde. Halleluja, eer aan U.\"",
+            "syr": "ܥܰܠ ܒܶܝܬ̣ ܕܺܝܢܳܐ. ܥܳܒܰܪ ܗܘܺܝܬ̣ ܘܰܚܙܺܝܬ̣܇ ܚܰܕ ܛܠܺܝܡܳܐ ܘܚܰܕ ܛܳܠܽܘܡܳܐ܇ ܕܩܳܝܡܺܝܢ ܬܰܡܳܢ܇ ܘܒܰܚܕ̈ܳܕܶܐ ܡܦܰܚܡܺܝܢ. ܩܳܐܶܡ ܛܠܺܝܡܳܐ. ܒܓܰܒܳܐ ܕܝܰܡܺܝܢܳܐ. ܘܰܟܪܺܝܟ̣ܺܝܢ ܠܶܗ ܡܰܠܐܟ̣̈ܶܐ܇ ܘܰܥܒܺܝܕ ܚܰܒܪܳܐ܇ ܠܰܒܢ̈ܰܝ ܡܰܠܟܽܘܬ̣ܳܐ. ܘܗܰܘ ܛܳܠܽܘܡܳܐ܇ ܒܓܰܒܳܐ ܕܣܶܡܳܠܐ܇ ܘܰܥܒܺܝܕ ܚܰܒܪܳܐ ܠܣܳܛܳܢܳܐ. ܘܰܟܪܺܝܟ̣ܺܝܢ ܠܶܗ ܟܽܠܗܽܘܢ ܕܽܘܘ̈ܳܢܶܐ܇ ܐܱܫܘܳܢܝ̱ ܡܳܪܰܢ܇ ܕܐܶܗܘܶܐ ܒܡܰܠܟܽܘܬ̣ܳܟ. ܥܰܡ ܛܠܺܝܡ̈ܶܐ ܕܡܶܢ ܝܰܡܺܝܢܳܟ ܗ̄ ܠܳܟ ܫܽܘܒܚܳܐ܀"
+        }
         },
         {
         "id": 2,
@@ -37,6 +37,18 @@
             "nld": "Bij uw poorten, o Kerk, bevinden zich hoeders, dag en nacht om u van het kwaad te behoeden. Simon is uw fundament, en Paulus is uw architect en Johannes is benoemd als peetvader en is geliefd. Halleluja, halleluja, en David is de lier van de heilige Geest. Op Simon Petrus heeft onze Heer Zijn Kerk gebouwd. En op 72 pijlers heeft Hij het verstevigd. Vanuit het hoge en grote gebergte Ararat, heeft de architect zijn bouwwerken in het hoge gebouwd. Halleluja, halleluja, gezegend is hij die Zijn Kerk heeft gebouwd en het altaar erin heeft gevestigd.",
             "syr": "ܥܰܠ ܬܰܪ̈ܥܰܝܟܝ̱ ܥܺܕܬܳܐ ܢܳܛܽܘܪ̈ܶܐ ܩܳܝܡܺܝܢ܇ ܒܠܶܠܝܳܐ ܘܒܺܐܝܡܳܡܳܐ ܡܶܢ ܒܺܝܫܳܐ ܢܳܛܪܺܝܢ. ܫܶܡܥܽܘܢ ܫܶܬܶܐܣܬܳܐ ܘܦܰܘܠܽܘܣ ܐܰܪܕܺܝܟܠܳܐ܇ ܘܝܽܘܚܰܢܳܢ ܕܰܥܒܺܝܕ ܫܰܘܫܒܺܝܢܳܐ ܘܪܳܚܡܳܐ. ܗ̄ܘܗ̄ ܕܰܘܺܝܕ ܟܶܢܳܪܳܐ ܕܪܽܘܚܳܐ ܩܰܕܺܝܫܳܐ܀ ܥܰܠ ܫܶܡܥܽܘܢ ܟܺܐܦܳܐ: ܡܳܪܰܢ ܥܺܕܬܶܗ ܒܢܳܐ. ܘܥܰܠ ܫܰܒܥܝܺܢ ܘܰܬܪܶܝܢ ܥܰܡܽܘܕܺܝ̈ܢ ܐܰܬܩܢܳܗ̇. ܡܶܢ ܛܘܪ̈ܰܝ ܩܰܪܕܽܘ ܪܳܡܳܐ ܘܰܡܥܰܠܝܳܐ. ܐܰܪܕܺܝܟܠܐܳ ܕܰܒܢܳܐ ܒܰܡܪ̈ܰܘܡܶܐ ܡܰܥܡܪܶܗ ܗ̄ܘܗ̄ ܒܪܺܝܟ ܕܰܒܢܳܐ ܠܥܺܕܬܶܗ ܘܐܰܬܩܶܢ ܒܳܗ̇ ܡܰܕܒܚܳܐ܀"
         }
-
+        },
+        {
+        "id": 4,
+        "title":
+        {
+            "syr_lat": "Abo ahid",
+            "syr": "ܐܒܐ ܐܚܝܕ"
+        },
+        "hymn":
+        {
+            "nld": "De Almachtige Vader van alles, de Maker van hemel en aarde, van al wat zichtbaar en onzichtbaar is. En in één Heer Jezus Christus, eniggeboren Zoon van God, die uit de Vader geboren is voor alle eeuwen. Licht uit licht, ware God uit de ware God, geboren en niet geschapen en wezenlijk gelijk is aan zijn Vader, door wie alles geschapen is. Hij is voor ons mensen, en omwille van onze verlossing uit de hemel neergedaald. En Hij heeft het vlees aangenomen door de Heilige Geest uit de Maagd Maria, de moeder van God, en is mens geworden. En Hij werd voor ons gekruisigd in de dagen van Pontius Pilatus. Hij heeft geleden en is gestorven en begraven. Hij is verrezen op de derde dag, zoals Hij gewild heeft. Hij is opgevaren ten hemel, en is gezeten aan de rechterhand van zijn Vader. En Hij zal wederkomen in grote glorie, om te oordelen over levenden en doden, aan wiens Koninkrijk geen einde komt. En wij geloven in één Heilige Geest die de levenschenkende Heer van alles is. En voortkomt uit de Vader en met de Vader en de Zoon wordt aanbeden en verheerlijkt, die gesproken heeft door profeten en de apostelen. En wij geloven in één heilige, universele en apostolische kerk. Wij belijden één doopsel tot vergeving van de zonden. Wij verwachten de opstanding van de doden en het nieuwe leven in de komende wereld. Amen. Zegen mij, o Heer. Laten we recht opstaan.",
+            "syr": "ܐܰܒܳܐ ܐܰܚܺܝܕ ܟܽܠ ܥܳܒܽܘܕܳܐ ܕܰܫܡܰܝܳܐ ܘܕܰܪܥܳܐ. ܘܰܕܟܽܠܗܶܝܢ ܐܰܝܠܶܝܢ ܕܡܶܬܚܰܙ̈ܝܳܢ ܘܰܕܠܳܐ ܡܶܬܚܰܙ̈ܝܳܢ. ܘܰܒܚܰܕ ܡܳܪܝܳܐ ܝܶܫܽܘܥ ܡܫܺܝܚܳܐ ܝܺܚܝܕܳܝܳܐ ܒܪܳܐ ܕܰܐܠܗܳܐ. ܗܰܘ ܕܡܶܢ ܐܰܒܳܐ ܐܶܬ̣ܝܺܠܶܕ ܩܕܳܡ ܟܽܠܗܽܘܢ ܥܳܠܡ̈ܶܐ ܢܽܘܗܪܳܐ ܕܡܶܢ ܢܽܘܗܪܳܐ. ܐܰܠܗܳܐ ܫܰܪܺܝܪܳܐ ܕܡܶܢ ܐܰܠܗܳܐ ܫܰܪܺܝܪܳܐ. ܝܺܠܺܝܕܳܐ ܘܠܳܐ ܥܒܺܝܕܳܐ. ܘܰܫܘܶܐ ܒܐܘܣܺܝܰܐ ܠܰܐܒܽܘܗܝ. ܕܒܺܐܝܕܶܗ ܗܘܳܐ ܟܽܠ. ܗܰܘ ܕܡܶܛܽܠܳܬ̣ܰܢ ܒܢܰܝ̈ܢܳܫܳܐ ܘܡܶܛܽܠ ܦܽܘܪܩܳܢܰܢ. ܢܚܶܬ̣ ܡܶܢ ܫܡܰܝܳܐ ܘܐܶܬ̣ܓܰܫܰܡ ܡܶܢ ܪܽܘܚܳܐ ܩܰܕܺܝܫܳܐ ܘܡܶܢ ܡܰܪܝܰܡ ܒܬ̣ܽܘܠܬܳܐ ܝܳܠܕܰܬ̣ ܐܳܠܗܳܐ ܘܰܗܘܳܐ ܒܰܪܢܳܫܳܐ. ܘܐܶܨܛܠܶܒ ܚܠܳܦܰܝܢ ܒܝܰܘܡܰܝ̈ ܦܶܢܛܺܝܘܳܣ ܦܺܝܠܰܛܳܘܣ. ܚܰܫ ܘܡܺܝܬ̣ ܘܐܶܬ̣ܩܒܰܪ ܘܩܳܡ ܠܰܬܠܳܬ̣ܳܐ ܝܰܘܡ̈ܝܢ ܐܰܝܟ ܕܰܨܒܳܐ. ܘܰܣܠܶܩ ܠܰܫܡܰܝܳܐ ܘܝܺܬ̣ܶܒ ܡܶܢ ܝܰܡܺܝܢܳܐ ܕܐܰܒܽܘܗܝ. ܘܬܽܘܒ ܐܳܬ̣ܶܐ ܒܫܽܘܒܚܳܐ ܪܰܒܳܐ ܠܰܡܕܳܢ ܠܚܰܝ̈ܶܐ ܘܰܠܡܺܝ̈ܬ̣ܶܐ. ܗܰܘ ܕܰܠܡܰܠܟܽܘܬ̣ܶܗ ܫܽܘܠܳܡܳܐ ܠܳܐ ܐܺܝܬ̣. ܘܰܒܚܰܕ ܪܽܘܚܳܐ ܩܰܕܺܝܫܳܐ ܕܐܺܝܬ̣ܰܘܗܝ ܡܳܪܝܳܐ ܡܰܚܝܳܢܳܐ ܕܟܽܠ. ܗܰܘ ܕܡܶܢ ܐܰܒܳܐ ܢܳܦܶܩ ܘܥܰܡ ܐܰܒܳܐ ܘܥܰܡ ܒܪܳܐ ܡܶܣܬܓ̣ܶܕ ܘܡܶܫܬܰܒܰܚ. ܗܰܘ ܕܡܰܠܶܠ ܒܰܢܒܺܝ̈ܶܐ ܘܒܰܫܠܺܝ̈ܚܶܐ. ܘܒܰܚܕܳܐ ܥܺܕܬܳܐ ܩܰܕܺܫܬܳܐ ܩܰܬܽܘܠܺܝܩܺܝ ܘܰܫܠܺܝ̣ܚܳܝ̣ܬܳܐ. ܘܡܰܘܕܶܢܰܢ ܕܰܚܕܳܐ ܗܺܝ ܡܰܥܡܽܘܕܺܝܬ̣ܳܐ ܠܫܽܘܒܩܳܢܳܐ ܕܰܚܛܳܗ̈ܶܐ. ܘܰܡܣܰܟܶܝܢܰܢ ܠܰܩܝܳܡܬܳܐ ܕܡܺܝ̈ܬ̣ܶܐ ܘܰܠܚܰܝ̈ܶܐ ܚܰܕ̈ܬ̣ܶܐ ܕܰܒܥܳܠܡܳܐ ܕܰܥܬܺܝܕ. ܐܰܡܺܝܢ ܒܰܪܶܟ̣ܡܳܪܝ̱܀ ܣܛܰܘܡܶܢܩܰܐܠܳܘܣ ܩܽܘܪܝܶܐܠܰܝܣܳܘܢ܀"
+        }
     }
 ]
