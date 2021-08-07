@@ -11,7 +11,7 @@
     <h2 globalize="hymns">Hymns</h2>
     <hr class="bcred">
     <section class="lg_p0 shade1">
-        <div id="psalms" class="box cards list br0-" json="true" iterate="hymns" datasource="./assets/json/hymns.json">
+        <div id="hymns" class="box cards list br0-" json="true" iterate="hymns" datasource="./assets/json/hymns.json">
             <a href="./read/hymn/?id={{ jsonget:id }}">
                 <figure class="p1 bcwhite bcblack001_h">
                     <p class="f2 pl1">{{ jsonget:title.syr }}</p>
@@ -21,7 +21,7 @@
         </div>
     </section>
     
-    <h2 class="mt2" globalize="alphabet">Psalms</h2>
+    <h2 class="mt2" globalize="psalms">Psalms</h2>
     <hr class="bcred">
 
     <h2 class="mt2" globalize="alphabet">Alphabet</h2>
