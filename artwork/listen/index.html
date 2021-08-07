@@ -12,7 +12,7 @@
     <hr class="bcred">
     <div id="music" class="box cards gut5- br0- flc-" iterate="true" datasource="{{ storage:api.persons.endpoint }}?and=(artwork.not.is.null)&artwork->>music=not.is.null" dataheader="{{ storage:api.persons.headers }}" onerror="alert('Fetch error')" onsuccess="alert('Fetch OK')">
         <figure class="p1 bcwhite">
-            <a href="listen/music?person={{ jsonget:id }}&id={{ jsonget:artwork.music.album.id }}">
+            <a href="./artwork/listen/music?person={{ jsonget:id }}&id={{ jsonget:artwork.music.album.id }}">
             <p class="tac"><i class="icon icon128 circled pr0">&#9834;</i></p>
             <h7 class="fwb" jsonget="artwork.music.album.title.eng"></h7>
             <p class="f2 pl1"><a href="database/person.html?id={{ jsonget:id }}">{{ jsonget:first_name.eng }} {{ jsonget:middle_name.eng }} {{ jsonget:last_name.eng }}</a></p>
