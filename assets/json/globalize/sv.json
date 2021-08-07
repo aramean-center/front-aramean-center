@@ -55,6 +55,8 @@
             "page_home_discover_text": "Upptäck människor, platser, monument, kyrkor, skolor, organisationer och mycket mer.",
             "page_register_title": "Registrera dig själv som etnisk Araméer",
             "page_register_text": "Registrera dig för att dela information med Arameiska Institutet och andra organisationer som berör arameiska frågor.",
+            "page_register_agree_terms": "Jag godkänner <a href=\"#\" class=\"tdu\">villkoren</a>.",
+            "page_register_agree_database": "Jag skulle vilja bli listad som deltagare i den offentliga databasen.",
             "page_register_complete": "Din registrering kommer att granskas inom 24 timmar."
         }
 }

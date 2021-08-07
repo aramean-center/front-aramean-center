@@ -52,6 +52,8 @@
             "page_home_discover_text": "Discover people, places, monuments, churches, schools, organizations and much more.",
             "page_register_title": "Register yourself as an ethnic Aramean",
             "page_register_text": "Register yourself to share information with the Aramean Institute and other organizations concerned with Aramean questions.",
+            "page_register_agree_terms": "I agree to the <a href=\"#\" class=\"tdu\">terms and conditions</a>.",
+            "page_register_agree_database": "I would like to be listed as a participant in the public database. ",
             "page_register_complete": "Your registration will be reviewed within 24 hours."
         }
 }
