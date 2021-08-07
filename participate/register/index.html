@@ -9,8 +9,8 @@
 
 <article class="wc_xl bcwhite shade1">
     <section id="register" class="pauto" storage="api">
-        <h1 globalize="page_register_title">Register yourself as an ethnic Aramean</h1>
-        <p>Register yourself to help us share information with the Aramean Institute and related organizations.<br>Personal data will be used for research purposes.</p>
+        <h1 globalize="page_register_title"></h1>
+        <h6 class="mt1" globalize="page_register_text"></h6>
         <hr class="mt2">
 
         <form class="gaph2-" method="post" datasource="{{ storage:api.persons_collection.endpoint }}" dataheader="{{ storage:api.persons_collection.headers }}" ondone="dom.hide('register');dom.show('complete')">
