@@ -13,15 +13,29 @@
             }
         },
         {
-            "id": 2,
-            "title":
+        "id": 2,
+        "title":
         {
             "syr_lat": "'Al haw tar'o",
-            "syr": "ܗܘ ܬܪܥܐ ܒܪܝܐ"
+            "syr": "ܥܠ ܗܘ ܬܪܥܐ ܒܪܝܐ"
         },
         "hymn":
         {
+            "nld": "Achter de buitendeur bevond zich huilend Simon: \"Rabbi, open Uw deur, ik ben Uw discipel. Hemel en aarde huilen om mij, omdat ik de sleutels van het Hemelse Koninkrijk heb verloren.\"",
             "syr": "ܥܰܠ ܗܰܘ ܬܰܪܥܳܐ ܒܰܪܳܝܳܐ. ܝܳܬ̣ܶܒ ܗ̱ܘܳܐ ܫܶܡܥܽܘܢ ܘܒܳܟ̣ܶܐ. ܪܰܒܺܝ ܦܬܰܚ ܬܰܪܥܳܟ. ܕܶܐܢܳܐܗܘ ܬܰܠܡܺܝܕܳܟ. ܫܡܰܝܳܐ ܘܰܐܪܥܳܐ ܥܠܰܝ ܢܶܒܟ̣ܽܘܢ. ܕܰܩܠܺܝ̈ܕܶܐ ܕܡܰܠܟܽܘܬ̣ܳܐ ܐܰܘܒܕܶܬ̣܀"
+        }
+        },
+        {
+        "id": 3,
+        "title":
+        {
+            "syr_lat": "'Al tar'ayk 'ito",
+            "syr": "ܥܠ ܬܪ̈ܥܝܟܝ ܥܕܬܐ"
+        },
+        "hymn":
+        {
+            "nld": "Bij uw poorten, o Kerk, bevinden zich hoeders, dag en nacht om u van het kwaad te behoeden. Simon is uw fundament, en Paulus is uw architect en Johannes is benoemd als peetvader en is geliefd. Halleluja, halleluja, en David is de lier van de heilige Geest. Op Simon Petrus heeft onze Heer Zijn Kerk gebouwd. En op 72 pijlers heeft Hij het verstevigd. Vanuit het hoge en grote gebergte Ararat, heeft de architect zijn bouwwerken in het hoge gebouwd. Halleluja, halleluja, gezegend is hij die Zijn Kerk heeft gebouwd en het altaar erin heeft gevestigd.",
+            "syr": "ܥܰܠ ܬܰܪ̈ܥܰܝܟܝ̱ ܥܺܕܬܳܐ ܢܳܛܽܘܪ̈ܶܐ ܩܳܝܡܺܝܢ܇ ܒܠܶܠܝܳܐ ܘܒܺܐܝܡܳܡܳܐ ܡܶܢ ܒܺܝܫܳܐ ܢܳܛܪܺܝܢ. ܫܶܡܥܽܘܢ ܫܶܬܶܐܣܬܳܐ ܘܦܰܘܠܽܘܣ ܐܰܪܕܺܝܟܠܳܐ܇ ܘܝܽܘܚܰܢܳܢ ܕܰܥܒܺܝܕ ܫܰܘܫܒܺܝܢܳܐ ܘܪܳܚܡܳܐ. ܗ̄ܘܗ̄ ܕܰܘܺܝܕ ܟܶܢܳܪܳܐ ܕܪܽܘܚܳܐ ܩܰܕܺܝܫܳܐ܀ ܥܰܠ ܫܶܡܥܽܘܢ ܟܺܐܦܳܐ: ܡܳܪܰܢ ܥܺܕܬܶܗ ܒܢܳܐ. ܘܥܰܠ ܫܰܒܥܝܺܢ ܘܰܬܪܶܝܢ ܥܰܡܽܘܕܺܝ̈ܢ ܐܰܬܩܢܳܗ̇. ܡܶܢ ܛܘܪ̈ܰܝ ܩܰܪܕܽܘ ܪܳܡܳܐ ܘܰܡܥܰܠܝܳܐ. ܐܰܪܕܺܝܟܠܐܳ ܕܰܒܢܳܐ ܒܰܡܪ̈ܰܘܡܶܐ ܡܰܥܡܪܶܗ ܗ̄ܘܗ̄ ܒܪܺܝܟ ܕܰܒܢܳܐ ܠܥܺܕܬܶܗ ܘܐܰܬܩܶܢ ܒܳܗ̇ ܡܰܕܒܚܳܐ܀"
         }
 
     }
