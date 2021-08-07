@@ -1,6 +1,6 @@
 <script src="https://3el.github.io/front/dist/front.js" template="../../index"></script>
 
-<title globalize="psalm">Psalm</title>
+<title globalize="hymns">Hymns</title>
 
 <template>
     <aside index="0"></aside>
@@ -8,12 +8,12 @@
 </template>
 
 <article class="pauto">
-    <section id="words" iterate="psalms" datasource="./assets/json/psalms.json">
-        <h1 globalize="psalm">Psalm</h1>
+    <section id="words" iterate="hymns" datasource="./assets/json/hymns.json">
+        <h1 globalize="hymns">Hymns</h1>
         <nav class="crumbs pointer p05 bos6 bocblack01 bw1 bcsnow mt05 br05 gray w0">
             <ol class="pl05">
                 <li><a href="./database" globalize="database">Database</a></li>
-                <li><a href="./database/psalms.html" globalize="psalms">Psalms</a></li>
+                <li><a href="./database/psalms.html" globalize="psalms">Hymns</a></li>
                 <li>{{ jsonget:title.syr }}</li>
             </ol>
         </nav>
