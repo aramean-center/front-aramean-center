@@ -42,11 +42,11 @@
             <li globalize="persons">Persons</li>
         </ol>
     </nav>
-    <nav class="tabs mt1" json="persons">
-        <input type="radio" name="panelalive" id="tabalive" checked="">
-        <label for="tabalive">Alive ({{ jsonheader:content-range = split('/',1) }})</label>
-        <section class="lg_p0 shade1">
-            <div id="persons" class="box cards list br0-" iterate="true" datasource="{{ storage:api.persons.endpoint }}?and=(death.is.null)" dataheader="{{ storage:api.persons.headers }}">
+    <nav class="tabs mt1" id="test">
+        <input type="radio" name="panel" id="tabalive" checked>
+        <label for="tabalive" id="alive">Alive ({# alive #})</label>
+        <section class="lg_p0 shade1" json="personsalive" bind3="alive:alive" bindvalue="{{ jsonheader:content-range = split('/',1) }}">
+            <div id="personsalive" class="box cards list br0-" iterate="true" datasource="{{ storage:api.persons.endpoint }}?and=(death.is.null)" dataheader="{{ storage:api.persons.headers }}">
                 <a href="database/person.html?id={{ jsonget:id }}">
                     <figure class="p1 bcwhite bcblack001_h">
                         <img src="" jsonget="birth.country_code" jsonbefore="https://3el.github.io/front/dist/design/front/flags/famfamfam/" jsonafter=".gif" class="f0">
@@ -56,6 +56,20 @@
                 </a>
             </div>
         </section>
+
+        <!--<input type="radio" name="panel" id="tabdead">
+        <label for="tabdead" id="dead">Dead ({# dead #})</label>
+        <section class="lg_p0 shade1" json="personsdead" bind="dead:dead" bindvalues="{{ jsonheader:content-range = split('/',1) }}">
+            <div id="personsdead" class="box cards list br0-" iterate="true" datasource="{{ storage:api.persons.endpoint }}?and=(death.not.is.null)" dataheader="{{ storage:api.persons.headers }}">
+                <a href="database/person.html?id={{ jsonget:id }}">
+                    <figure class="p1 bcwhite bcblack001_h">
+                        <img src="" jsonget="birth.country_code" jsonbefore="https://3el.github.io/front/dist/design/front/flags/famfamfam/" jsonafter=".gif" class="f0">
+                        <p class="f2 pl1" filteron="true">{{ jsonget:first_name.swe }} {{ jsonget:middle_name.swe }} {{ jsonget:last_name.swe }}</p>
+                        <p class="tar" jsonget="death.date"></p>
+                    </figure>
+                </a>
+            </div>
+        </section>-->
     </nav>
 
 </section>
