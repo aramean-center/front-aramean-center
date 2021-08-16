@@ -45,7 +45,7 @@
     <nav class="tabs mt1" id="test">
         <input type="radio" name="panel" id="tabalive" checked>
         <label for="tabalive" id="alive">Alive ({# alive #})</label>
-        <section class="lg_p0 shade1" json="personsalive" bind3="alive:alive" bindvalue="{{ jsonheader:content-range = split('/',1) }}">
+        <section class="lg_p0 shade1" json="personsalive" bind="alive:alive" bindvalue="{{ jsonheader:content-range = split('/',1) }}">
             <div id="personsalive" class="box cards list br0-" iterate="true" datasource="{{ storage:api.persons.endpoint }}?and=(death.is.null)" dataheader="{{ storage:api.persons.headers }}">
                 <a href="database/person.html?id={{ jsonget:id }}">
                     <figure class="p1 bcwhite bcblack001_h">
@@ -59,7 +59,7 @@
 
         <!--<input type="radio" name="panel" id="tabdead">
         <label for="tabdead" id="dead">Dead ({# dead #})</label>
-        <section class="lg_p0 shade1" json="personsdead" bind="dead:dead" bindvalues="{{ jsonheader:content-range = split('/',1) }}">
+        <section class="lg_p0 shade1" json="personsdead" bind="dead:dead" bindvalue="{{ jsonheader:content-range = split('/',1) }}">
             <div id="personsdead" class="box cards list br0-" iterate="true" datasource="{{ storage:api.persons.endpoint }}?and=(death.not.is.null)" dataheader="{{ storage:api.persons.headers }}">
                 <a href="database/person.html?id={{ jsonget:id }}">
                     <figure class="p1 bcwhite bcblack001_h">

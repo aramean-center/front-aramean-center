@@ -7,7 +7,7 @@
     <aside index="1"></aside>
 </template>
 
-<article class="pauto" storage="api" json="words" bind3="words:?id">
+<article class="pauto" storage="api" json="words" bind="words:?id">
     <section id="words" datasource="{{ storage:api.persons.endpoint }}?select=*&or=(id.eq.{# ?id #})" dataheader="{{ storage:api.persons.headers }}">
         <h1 globalize="person">Person</h1>
         <nav class="crumbs pointer p05 bos6 bocblack01 bw1 bcsnow mt05 br05 gray w0">
