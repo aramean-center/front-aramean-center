@@ -29,11 +29,11 @@
             <li globalize="organizations">Organizations</li>
         </ol>
     </nav>
-    <nav class="tabs mt1" json="persons">
-        <input type="radio" name="paneldemo" id="tabdemo1" checked="">
-        <label for="tabdemo1" id="organizations">Organizations ({# organizations #})</label>
-        <section class="lg_p0 shade1" bind="organizations:organizations" bindvalue="{{ jsonheader:content-range = split('/',1) }}">
-            <div id="persons" class="box cards list br0-" iterate="true" datasource="{{ storage:api.organizations.endpoint }}?" dataheader="{{ storage:api.organizations.headers }}" onerror="alert('Fetch error')" onsuccess="alert('Fetch OK')">
+    <nav class="tabs mt1">
+        <input type="radio" name="paneldemo" id="tabdemo1" checked>
+        <label for="tabdemo1" id="organization">Organizations ({# organization #})</label>
+        <section class="lg_p0 shade1" json="organizations" bind="organization:organization" bindvalue="{{ jsonheader:content-range = split('/',1) }}">
+            <div id="organizations" class="box cards list br0-" iterate="true" datasource="{{ storage:api.organizations.endpoint }}?" dataheader="{{ storage:api.organizations.headers }}" onerror="alert('Fetch error')" onsuccess="alert('Fetch OK')">
                 <a href="database/organization.html?id={{ jsonget:id }}">
                     <figure class="p1 bcwhite bcblack001_h">
                         <p class="f2 pl1" filteron="true">{{ jsonget:organization.eng }}</p>
