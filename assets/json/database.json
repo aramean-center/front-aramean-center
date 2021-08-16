@@ -29,6 +29,16 @@
             },
             "url": "organizations.html",
             "description": "In this database you will find information about organizations under Aramean operation."
+        },
+        {
+            "id": 3,
+            "title":
+            {
+                "eng": "Words",
+                "swe": "Ord"
+            },
+            "url": "words.html",
+            "description": "In this database you will find Aramaic (Syriac) words."
         }
     ]
 }
