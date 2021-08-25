@@ -22,19 +22,22 @@
             <figure>
                 <p class="pl05">
                     <i class="dimgray w20r fs08">Surayt</i>
-                    <b>{{ jsonget:word.syt }}</b>
+                    <b if="{{ jsonget:word.syt }};;hide">{{ jsonget:word.syt }}</b>
+                    <a href="javascript:alert('Beta!')" class="red fs08" if="!{{ jsonget:word.syt }};;hide" globalize="add_the_missing_word"></a>
                 </p>
             </figure>
             <figure>
                 <p class="pl05">
                     <i class="dimgray w20r fs08">Sureth</i>
-                    <b>{{ jsonget:word.syh }}</b>
+                    <b if="{{ jsonget:word.syh }};;hide">{{ jsonget:word.syh }}</b>
+                    <a href="javascript:alert('Beta!')" class="red fs08" if="!{{ jsonget:word.syh }};;hide" globalize="add_the_missing_word"></a>
                 </p>
             </figure>
             <figure>
                 <p class="pl05">
                     <i class="dimgray w20r fs08">Soray</i>
-                    <b>{{ jsonget:word.syn }}</b>
+                    <b if="{{ jsonget:word.syn }};;hide">{{ jsonget:word.syn }}</b>
+                    <a href="javascript:alert('Beta!')" class="red fs08" if="!{{ jsonget:word.syn }};;hide" globalize="add_the_missing_word"></a>
                 </p>
             </figure>
             <figure>

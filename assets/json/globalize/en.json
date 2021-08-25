@@ -6,6 +6,8 @@
         {
             "about": "About",
             "about_us": "About Us",
+            "add_word": "Add word",
+            "add_the_missing_word": "Add the missing word",
             "alphabet": "Alphabet",
             "building": "Building",
             "buildings": "Buildings",
@@ -18,6 +20,7 @@
             "ethnicity": "Ethnicity",
             "email": "E-mail",
             "explore": "Explore",
+            "fill_in_the_missing_word": "Fill in the missing word",
             "first_name": "First Name",
             "finish_registration": "Finish registration",
             "gender": "Gender",
