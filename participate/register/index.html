@@ -26,26 +26,37 @@
 
             <i globalize="date_of_birth">Date of birth</i>
             <div class="box gut2-">
-                <select class="phdark bw1 bos8 bocblack02" name="birth_date_year" variable="i:1900" iterate="140;i++">
+                <select class="phdark bw1 bos8 bocblack02" name="birth_date_year" variable="i:1900" iterate="140;i++" required>
+                    <option value="" iterate="0" disabled selected>-</option>
                     <option>{{ i }}</option>
                 </select>
-                <select class="phdark bw1 bos8 bocblack02" name="birth_date_month" variable="i:01" iterate="12;i++">
+                <select class="phdark bw1 bos8 bocblack02" name="birth_date_month" variable="i:01" iterate="12;i++" required>
+                    <option value="" iterate="0" disabled selected>-</option>
                     <option>{{ i }}</option>
                 </select>
-                <select class="phdark bw1 bos8 bocblack02" name="birth_date_day" variable="i:01" iterate="31;i++">
+                <select class="phdark bw1 bos8 bocblack02" name="birth_date_day" variable="i:01" iterate="31;i++" required>
+                    <option value="" iterate="0" disabled selected>-</option>
                     <option>{{ i }}</option>
                 </select>
             </div>
 
             <i globalize="country_of_birth">Country of birth</i>
             <div class="group">
-                <select class="phdark bw1 bos8 bocblack02" name="birth_country" iterate="true" json="true" datasource="{{ storage:api.countries.endpoint }}?order=country->>eng" dataheader="{{ storage:api.countries.headers }}">
+                <select class="phdark bw1 bos8 bocblack02" name="birth_country" iterate="true" json="true" datasource="{{ storage:api.countries.endpoint }}?order=country->>eng" dataheader="{{ storage:api.countries.headers }}" required>
+                    <option value="" iterate="0" disabled selected>-</option>
                     <option value="{{ jsonget:id }}" jsonget="country.eng">{{ jsonget:country.eng }}</option>
                 </select>
             </div>
+            <!--<i globalize="country_of_residence">Country of residence</i>
+            <div class="group">
+                <select class="phdark bw1 bos8 bocblack02" name="residence_country" iterate="true" json="true" datasource="{{ storage:api.countries.endpoint }}?order=country->>eng" dataheader="{{ storage:api.countries.headers }}" required>
+                    <option value="" iterate="0" disabled selected>-</option>
+                    <option value="{{ jsonget:id }}" jsonget="country.eng">{{ jsonget:country.eng }}</option>
+                </select>
+            </div>-->
             <hr>
-            <div class="group db" globalize="page_register_agree_terms" required>
-                <input name="terms" type="checkbox" value="1" class="mr05">Terms
+            <div class="group db" globalize="page_register_agree_terms">
+                <input name="terms" type="checkbox" value="1" class="mr05" required>Terms
             </div>
             <div class="group db" globalize="page_register_agree_database">
                 <input name="participate" type="checkbox" value="1" class="mr05" checked>Enlist
