@@ -42,18 +42,16 @@
 
             <i globalize="country_of_birth">Country of birth</i>
             <div class="group">
-                <select class="phdark bw1 bos8 bocblack02" name="birth_country" iterate="true" json="true" datasource="{{ storage:api.countries.endpoint }}?order=country->>eng" dataheader="{{ storage:api.countries.headers }}" required>
+                <select class="phdark bw1 bos8 bocblack02" id="birth_country" name="birth_country" iterate="true" json="true" datasource="{{ storage:api.countries.endpoint }}?order=country->>eng" dataheader="{{ storage:api.countries.headers }}" ondone="_.populate(this.aEl)" populate="residence_country" required>
                     <option value="" iterate="0" disabled selected>-</option>
                     <option value="{{ jsonget:id }}" jsonget="country.eng">{{ jsonget:country.eng }}</option>
                 </select>
             </div>
-            <!--<i globalize="country_of_residence">Country of residence</i>
+
+            <i globalize="country_of_residence">Country of residence</i>
             <div class="group">
-                <select class="phdark bw1 bos8 bocblack02" name="residence_country" iterate="true" json="true" datasource="{{ storage:api.countries.endpoint }}?order=country->>eng" dataheader="{{ storage:api.countries.headers }}" required>
-                    <option value="" iterate="0" disabled selected>-</option>
-                    <option value="{{ jsonget:id }}" jsonget="country.eng">{{ jsonget:country.eng }}</option>
-                </select>
-            </div>-->
+                <select class="phdark bw1 bos8 bocblack02" id="residence_country" name="residence_country"></select>
+            </div>
             <hr>
             <div class="group db" globalize="page_register_agree_terms">
                 <input name="terms" type="checkbox" value="1" class="mr05" required>Terms
