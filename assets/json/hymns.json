@@ -3,6 +3,7 @@
         "id": 1,
         "title":
         {
+            "eng:": "About the Court",
             "syr_lat": "'Al beth dino",
             "syr": "ܥܠ ܒܝܬ ܕܝܢܐ"
         },
@@ -16,6 +17,7 @@
         "id": 2,
         "title":
         {
+            "eng": "Behind the outer door",
             "syr_lat": "'Al haw tar'o",
             "syr": "ܥܠ ܗܘ ܬܪܥܐ ܒܪܝܐ"
         },
@@ -29,6 +31,7 @@
         "id": 3,
         "title":
         {
+            "eng": "At your gates, O Church",
             "syr_lat": "'Al tar'ayk 'ito",
             "syr": "ܥܠ ܬܪ̈ܥܝܟܝ ܥܕܬܐ"
         },
@@ -42,6 +45,7 @@
         "id": 4,
         "title":
         {
+            "eng": "Almighty Father",
             "syr_lat": "Abo ahid",
             "syr": "ܐܒܐ ܐܚܝܕ"
         },
