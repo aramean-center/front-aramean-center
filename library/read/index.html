@@ -8,7 +8,7 @@
 </template>
 
 <section id="register" class="pauto" storage="api">
-    <h2 globalize="hymns">Hymns</h2>
+    <h2 globalize="hymns" id="hymns">Hymns</h2>
     <hr class="bcred">
     <section class="lg_p0 shade1">
         <div id="hymns" class="box cards list br0-" json="true" iterate="hymns" datasource="./assets/json/hymns.json">
@@ -21,10 +21,10 @@
         </div>
     </section>
     
-    <h2 class="mt2" globalize="psalms">Psalms</h2>
+    <h2 class="mt2" globalize="psalms"  id="psalms">Psalms</h2>
     <hr class="bcred">
 
-    <h2 class="mt2" globalize="alphabet">Alphabet</h2>
+    <h2 class="mt2" globalize="alphabet" id="alphabet">Alphabet</h2>
     <hr class="bcred">
     <div class="box cards gut5- br0- bcwhite-" json="true" iterate="alphabet" datasource="./assets/json/learn.json">
         <figure jsonset="id" class="p05 black08">
