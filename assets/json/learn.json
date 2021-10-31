@@ -2,134 +2,134 @@
     "alphabet":[
         {
             "char": {
-                "swe": "A",
-                "arc": "ܐ"
+                "arc": "ܐ",
+                "lat": "A"
             }
         },
         {
             "char": {
-                "swe": "B",
-                "arc": "ܒ"
+                "arc": "ܒ",
+                "lat": "B"
             }
         },
         {
             "char": {
-                "swe": "G",
-                "arc": "ܓ"
+                "arc": "ܓ",
+                "lat": "G"
             }
         },
         {
             "char": {
-                "swe": "D",
-                "arc": "ܕ"
+                "arc": "ܕ",
+                "lat": "D"
             }
         },
         {
             "char": {
-                "swe": "H",
-                "arc": "ܗ"
+                "arc": "ܗ",
+                "lat": "H"
             }
         },
         {
             "char": {
-                "swe": "O",
-                "arc": "ܘ"
+                "arc": "ܘ",
+                "lat": "O"
             }
         },
         {
             "char": {
-                "swe": "Z",
-                "arc": "ܙ"
+                "arc": "ܙ",
+                "lat": "Z"
             }
         },
         {
             "char": {
-                "swe": "H",
-                "arc": "ܚ"
+                "arc": "ܚ",
+                "lat": "Ḥ"
             }
         },
         {
             "char": {
-                "swe": "T",
-                "arc": "ܛ"
+                "arc": "ܛ",
+                "lat": "Ṭ"
             }
         },
         {
             "char": {
-                "swe": "Y",
-                "arc": "ܝ"
+                "arc": "ܝ",
+                "lat": "Y"
             }
         },
         {
             "char": {
-                "swe": "K",
-                "arc": "ܟ"
+                "arc": "ܟ",
+                "lat": "K"
             }
         },
         {
             "char": {
-                "swe": "L",
-                "arc": "ܠ"
+                "arc": "ܠ",
+                "lat": "L"
             }
         },
         {
             "char": {
-                "swe": "M",
-                "arc": "ܡ"
+                "arc": "ܡ",
+                "lat": "M"
             }
         },
         {
             "char": {
-                "swe": "N",
-                "arc": "ܢ"
+                "arc": "ܢ",
+                "lat": "N"
             }
         },
         {
             "char": {
-                "swe": "S",
-                "arc": "ܣ"
+                "arc": "ܣ",
+                "lat": "S"
             }
         },
         {
             "char": {
-                "swe": "E",
-                "arc": "ܥ"
+                "arc": "ܥ",
+                "lat": "E"
             }
         },
         {
             "char": {
-                "swe": "P",
-                "arc": "ܦ"
+                "arc": "ܦ",
+                "lat": "F"
             }
         },
         {
             "char": {
-                "swe": "S",
-                "arc": "ܨ"
+                "arc": "ܨ",
+                "lat": "Ṣ"
             }
         },
         {
             "char": {
-                "swe": "Q",
-                "arc": "ܩ"
+                "arc": "ܩ",
+                "lat": "Q"
             }
         },
         {
             "char": {
-                "swe": "R",
-                "arc": "ܪ"
+                "arc": "ܪ",
+                "lat": "R"
             }
         },
         {
             "char": {
-                "swe": "S",
-                "arc": "ܫ"
+                "arc": "ܫ",
+                "lat": "Š"
             }
         },
         {
             "char": {
-                "swe": "T",
-                "arc": "ܬ"
+                "arc": "ܬ",
+                "lat": "T"
             }
         }
     ]
