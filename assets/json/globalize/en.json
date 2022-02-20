@@ -26,6 +26,7 @@
             "finish_registration": "Finish registration",
             "gender": "Gender",
             "go_to_startpage": "Go to startpage",
+            "go_to_registration": "Go to registration",
             "hymn": "Hymn",
             "hymns": "Hymns",
             "last_name": "Last Name",
@@ -35,6 +36,7 @@
             "middle_name": "Middle Name",
             "music": "Music",
             "name": "Name",
+            "not_available": "Not available",
             "organization": "Organization",
             "page_not_found": "Page not found",
             "participate": "Participate",
@@ -53,6 +55,11 @@
             "videos": "Videos",
             "years_0": "{0} years",
             "watch": "Watch",
+
+            "page_participate_text": "Participate in the collection of data to enrich the Aramean heritage.",
+            "page_participate_ethnic_text": "Register yourself as ethnic Aramean",
+            "page_participate_dictionary_text": "Add or update Aramaic words in the Aramaic Dictionary",
+            "page_participate_places_text": "Add or update Aramean places owned by Arameans",
 
             "page_home_title": "Register yourself as an ethnic Aramean",
             "page_home_text": "Register yourself to share information with the <a class=\"red\" target=\"_blank\" href=\"https://aramean.institute\">Aramean Institute</a> and other organizations that serve the Aramean people.",

@@ -27,6 +27,7 @@
             "finish_registration": "Slutför registration",
             "gender": "Kön",
             "go_to_startpage": "Gå till startsidan",
+            "go_to_registration": "Gå till registreringen",
             "hymn": "Hymn",
             "hymns": "Hymner",
             "last_name": "Efternamn",
@@ -36,6 +37,7 @@
             "music": "Musik",
             "middle_name": "Mellannamn",
             "name": "Namn",
+            "not_available": "Inte tillgänglig",
             "organization": "Organisation",
             "organizations": "Organisationer",
             "page_not_found": "Sidan hittas inte",
@@ -56,6 +58,11 @@
             "videos": "Videor",
             "watch": "Titta",
 
+            "page_participate_text": "Delta i insamlingen av data för att berika det arameiska arvet.",
+            "page_participate_ethnic_text": "Registrera dig själv som etnisk Araméer",
+            "page_participate_dictionary_text": "Lägg till eller uppdatera arameiska ord i den arameiska ordboken",
+            "page_participate_places_text": "Lägg till eller uppdatera arameiska platser som ägs av arameer",
+            
             "page_home_title": "Registrera dig själv som etnisk Araméer",
             "page_home_text": "Registrera dig för att dela information med <a class=\"red\" target=\"_blank\" href=\"https://aramean.institute\">Arameiska Institutet</a> och andra organisationer som betjänar det arameiska folket.",
             "page_home_discover_text": "Upptäck människor, platser, monument, kyrkor, skolor, organisationer och mycket mer.",
