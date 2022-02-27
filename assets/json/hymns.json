@@ -5,7 +5,8 @@
         {
             "eng": "About the Court",
             "syr_lat": "'Al beth dino",
-            "syr": "ܥܠ ܒܝܬ ܕܝܢܐ"
+            "syr": "ܥܠ ܒܝܬ ܕܝܢܐ",
+            "swe": "Om domstolen"
         },
         "hymn":
         {
@@ -19,7 +20,8 @@
         {
             "eng": "Behind the outer door",
             "syr_lat": "'Al haw tar'o",
-            "syr": "ܥܠ ܗܘ ܬܪܥܐ ܒܪܝܐ"
+            "syr": "ܥܠ ܗܘ ܬܪܥܐ ܒܪܝܐ",
+            "swe": "Bakom ytterdörren"
         },
         "hymn":
         {
@@ -33,7 +35,8 @@
         {
             "eng": "At your gates, O Church",
             "syr_lat": "'Al tar'ayk 'ito",
-            "syr": "ܥܠ ܬܪ̈ܥܝܟܝ ܥܕܬܐ"
+            "syr": "ܥܠ ܬܪ̈ܥܝܟܝ ܥܕܬܐ",
+            "swe": "Vid dina portar, o kyrka"
         },
         "hymn":
         {
@@ -62,7 +65,8 @@
         {
             "eng": "Father of truth",
             "syr_lat": "Abo dqushto",
-            "syr": "ܐܒܐ ܕܩܘܫܬܐ"
+            "syr": "ܐܒܐ ܕܩܘܫܬܐ",
+            "swe": "Sanningens fader"
         },
         "hymn":
         {
@@ -76,7 +80,8 @@
         {
             "eng": "Father in heaven, hear us",
             "syr_lat": "Abun dbashmayo 'ni lan",
-            "syr": "ܐܒܘܢ ܕܒܫܡܝܐ ܥܢܝ ܠܢ"
+            "syr": "ܐܒܘܢ ܕܒܫܡܝܐ ܥܢܝ ܠܢ",
+            "swe": "Fader i himlen, hör oss"
         },
         "hymn":
         {
@@ -90,7 +95,8 @@
         {
             "eng": "About the Merchandisers",
             "syr_lat": "Ag tagore",
-            "syr": "ܐܝܟ ܬܓܪ̈ܐ"
+            "syr": "ܐܝܟ ܬܓܪ̈ܐ",
+            "swe": "Om handelsmännen"
         },
         "hymn":
         {
@@ -104,7 +110,8 @@
         {
             "eng": "Give us rest and mercy",
             "syr_lat": "Anih uhaso",
-            "syr": "ܐܢܝܚ ܘܚܣܐ"
+            "syr": "ܐܢܝܚ ܘܚܣܐ",
+            "swe": "Ge oss vila och nåd"
         },
         "hymn":
         {
@@ -119,7 +126,8 @@
         {
             "eng": "Be thankful, O Church",
             "syr_lat": "Awdoy 'ito",
-            "syr": "ܐܘܕܝ ܥܕܬܐ"
+            "syr": "ܐܘܕܝ ܥܕܬܐ",
+            "swe": "Var tacksam, o kyrka"
         },
         "hymn":
         {
@@ -134,7 +142,8 @@
         {
             "eng": "As he was and is",
             "syr_lat": "Aykano dithaw",
-            "syr": "ܐܝܟܢܐ ܕܐܝܬܘܗܝ"
+            "syr": "ܐܝܟܢܐ ܕܐܝܬܘܗܝ",
+            "swe": "Som han var och är"
         },
         "hymn":
         {
