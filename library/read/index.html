@@ -1,4 +1,4 @@
-<script src="https://3el.github.io/front/dist/front.js" template="../index"></script>
+<script src="https://3el.github.io/front/dist/front.js" template="../../index"></script>
 
 <title globalize="read">Read</title>
 
@@ -14,7 +14,7 @@
         <div id="hymns" class="box cards list br0-" json="true" iterate="hymns" datasource="./assets/json/hymns.json">
             <a href="./library/read/hymn/?id={{ jsonget:id }}">
                 <figure class="p1 bcwhite bcblack001_h">
-                    <p class="f2 pl1">{{ jsonget:title.eng }}</p>
+                    <p class="f2 pl1" jsonget="title.{% localeCode %}"></p>
                     <p class="tar fs08">{{ jsonget:title.syr }}</p>
                 </figure>
             </a>
