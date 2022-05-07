@@ -1,11 +1,12 @@
 {
-    "name": "Aramaic",
+    "name": "ܐܪܡܝܐ",
     "code": "arc",
     "direction": "rtl",
     "translations":
         {
             "about": "About",
             "about_us": "About Us",
+            "alphabet": "ܐܠܦ ܒܝܬ",
             "building": "ܒܢܝܬܐ",
             "buildings": "ܒܢܝܬܐ",
             "cookie": "Cookie",
