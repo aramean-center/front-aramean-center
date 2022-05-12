@@ -68,7 +68,7 @@
             "page_home_discover_text": "Upptäck människor, platser, monument, kyrkor, skolor, organisationer och mycket mer.",
             "page_register_title": "Registrera dig själv som etnisk Araméer",
             "page_register_text": "Dela information och berik det arameiska arvet med oss och andra organisationer som gynnar det arameiska folket.",
-            "page_register_agree_terms": "Jag godkänner <a href=\"#\" class=\"tdu\">villkoren</a>.",
+            "page_register_agree_terms": "Jag godkänner <a href=\"#terms\" class=\"tdu\">villkoren</a>.",
             "page_register_agree_database": "Jag skulle vilja bli listad som deltagare i den offentliga databasen.",
             "page_register_complete": "Din registrering kommer att granskas inom 24 timmar."
         }
