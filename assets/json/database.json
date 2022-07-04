@@ -1,44 +1,40 @@
 {
-    "database":[
-        {
-            "id": 1,
-            "title":
-            {
-                "eng": "Persons",
-                "swe": "Personer"
-            },
-            "url": "persons.html",
-            "description": "In this database you will find information on people registered as being of Aramean descent."
-        },
-        {
-            "id": 2,
-            "title":
-            {
-                "eng": "Buildings",
-                "swe": "Byggnader"
-            },
-            "url": "buildings.html",
-            "description": "In this database you will find information on buildings owned or rented by Arameans."
-        },
-        {
-            "id": 3,
-            "title":
-            {
-                "eng": "Organizations",
-                "swe": "Organisationer"
-            },
-            "url": "organizations.html",
-            "description": "In this database you will find information about organizations under Aramean operation."
-        },
-        {
-            "id": 3,
-            "title":
-            {
-                "eng": "Words",
-                "swe": "Ord"
-            },
-            "url": "words.html",
-            "description": "In this database you will find Aramaic words in all dialects."
-        }
-    ]
+  "database": [
+    {
+      "id": 1,
+      "title": {
+        "eng": "Persons",
+        "swe": "Personer"
+      },
+      "url": "persons.html",
+      "description": "In this database you will find information on people registered as being of Aramean descent."
+    },
+    {
+      "id": 2,
+      "title": {
+        "eng": "Buildings",
+        "swe": "Byggnader"
+      },
+      "url": "buildings.html",
+      "description": "In this database you will find information on buildings owned or rented by Arameans."
+    },
+    {
+      "id": 3,
+      "title": {
+        "eng": "Organizations",
+        "swe": "Organisationer"
+      },
+      "url": "organizations.html",
+      "description": "In this database you will find information about organizations under Aramean operation."
+    },
+    {
+      "id": 3,
+      "title": {
+        "eng": "Words",
+        "swe": "Ord"
+      },
+      "url": "words.html",
+      "description": "In this database you will find Aramaic words in all dialects."
+    }
+  ]
 }

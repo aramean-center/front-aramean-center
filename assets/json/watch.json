@@ -1,120 +1,120 @@
 {
-    "videos":[
-        {
-            "id": 1,
-            "title": "Who were the Aramaeans? (Early Aramaean Kingdoms of the Iron Age)",
-            "thumbnail": "https://img.youtube.com/vi/P-OL13x9WNI/0.jpg",
-            "url": "https://www.youtube.com/watch?v=P-OL13x9WNI"
-        },
-        {
-            "id": 2,
-            "title": "The last Aramean christians in Tur Abdin",
-            "thumbnail": "https://img.youtube.com/vi/34lgZpXB6jo/0.jpg",
-            "url": "https://www.youtube.com/watch?v=34lgZpXB6jo"
-        },
-        {
-            "id": 3,
-            "title": "THE HIDDEN PEARL Documentary History Of Arameans People",
-            "thumbnail": "https://img.youtube.com/vi/IJc-h4wWAvg/1.jpg",
-            "url": "https://www.youtube.com/watch?v=IJc-h4wWAvg"
-        },
-        {
-            "id": 4,
-            "title": "Arameans of Jerusalem, Israel (The holy land)",
-            "thumbnail": "https://img.youtube.com/vi/kUm1vWqan-8/1.jpg",
-            "url": "https://www.youtube.com/watch?v=kUm1vWqan-8&t=81s"
-        },
-        {
-            "id": 5,
-            "title": "Trailer SON Of Aram Movie I Arameans (Israel 2015)",
-            "thumbnail": "https://img.youtube.com/vi/Rj38cu0VYBs/3.jpg",
-            "url": "https://www.youtube.com/watch?v=Rj38cu0VYBs"
-        },
-        {
-            "id": 6,
-            "title": "Arameans (Suryoye) in ConIFA World Football Cup",
-            "thumbnail": "https://img.youtube.com/vi/N7m-WFgHieQ/0.jpg",
-            "url": "https://www.youtube.com/watch?v=N7m-WFgHieQ"
-        },
-        {
-            "id": 7,
-            "title": "Arameans and Israelis have shared origins",
-            "thumbnail": "https://img.youtube.com/vi/OAxe00pXWCE/0.jpg",
-            "url": "https://www.youtube.com/watch?v=OAxe00pXWCE"
-        },
-        {
-            "id": 8,
-            "title": "Hidden Heritage: Aramean Christians Fighting for Israel",
-            "thumbnail": "https://img.youtube.com/vi/IUwqGvNP51o/0.jpg",
-            "url": "https://www.youtube.com/watch?v=IUwqGvNP51o"
-        },
-        {
-            "id": 9,
-            "title": "The Aramaic Christian community of the Upper Galilee",
-            "thumbnail": "https://img.youtube.com/vi/8FdIoph7c9Q/0.jpg",
-            "url": "https://www.youtube.com/watch?v=8FdIoph7c9Q"
-        },
-        {
-            "id": 10,
-            "title": "2 Kings 5-8: Elisha and the Arameans",
-            "thumbnail": "https://img.youtube.com/vi/CKorwf41JzU/0.jpg",
-            "url": "https://www.youtube.com/watch?v=CKorwf41JzU"
-        }
-    ],
-    "gifs":[
-        {
-            "id": 1,
-            "thumbnail": "https://gif.aramean.center/aramean-homer.gif"
-        },
-        {
-            "id": 2,
-            "thumbnail": "https://gif.aramean.center/aramean-dancer.gif"
-        },
-        {
-            "id": 3,
-            "thumbnail": "https://gif.aramean.center/aramean-soccer-love.gif"
-        },
-        {
-            "id": 4,
-            "thumbnail": "https://gif.aramean.center/aramean-bubble-flag1.gif"
-        },
-        {
-            "id": 5,
-            "thumbnail": "https://gif.aramean.center/aramean-burning-flag1.gif"
-        },
-        {
-            "id": 6,
-            "thumbnail": "https://gif.aramean.center/aramean-burning-flag2.gif"
-        },
-        {
-            "id": 7,
-            "thumbnail": "https://gif.aramean.center/aramean-waving-flag.gif"
-        },
-        {
-            "id": 8,
-            "thumbnail": "https://gif.aramean.center/aramean-eagle1.gif"
-        },
-        {
-            "id": 9,
-            "thumbnail": "https://gif.aramean.center/aramean-infrared.gif"
-        },
-        {
-            "id": 10,
-            "thumbnail": "https://gif.aramean.center/aramean-ardo-democratic1.gif"
-        },
-        {
-            "id": 11,
-            "thumbnail": "https://gif.aramean.center/aramean-ardo-democratic2.gif"
-        }
-    ],
-    "graphics":[
-        {
-            "id": 12,
-            "video_url": "https://aramean.center/assets/video/aramean-flag-1.mp4"
-        },
-        {
-            "id": 13,
-            "video_url": "https://aramean.center/assets/video/aramean-flag-2.mp4"
-        }
-    ]
+  "videos": [
+    {
+      "id": 1,
+      "title": "Who were the Aramaeans? (Early Aramaean Kingdoms of the Iron Age)",
+      "thumbnail": "https://img.youtube.com/vi/P-OL13x9WNI/0.jpg",
+      "url": "https://www.youtube.com/watch?v=P-OL13x9WNI"
+    },
+    {
+      "id": 2,
+      "title": "The last Aramean christians in Tur Abdin",
+      "thumbnail": "https://img.youtube.com/vi/34lgZpXB6jo/0.jpg",
+      "url": "https://www.youtube.com/watch?v=34lgZpXB6jo"
+    },
+    {
+      "id": 3,
+      "title": "THE HIDDEN PEARL Documentary History Of Arameans People",
+      "thumbnail": "https://img.youtube.com/vi/IJc-h4wWAvg/1.jpg",
+      "url": "https://www.youtube.com/watch?v=IJc-h4wWAvg"
+    },
+    {
+      "id": 4,
+      "title": "Arameans of Jerusalem, Israel (The holy land)",
+      "thumbnail": "https://img.youtube.com/vi/kUm1vWqan-8/1.jpg",
+      "url": "https://www.youtube.com/watch?v=kUm1vWqan-8&t=81s"
+    },
+    {
+      "id": 5,
+      "title": "Trailer SON Of Aram Movie I Arameans (Israel 2015)",
+      "thumbnail": "https://img.youtube.com/vi/Rj38cu0VYBs/3.jpg",
+      "url": "https://www.youtube.com/watch?v=Rj38cu0VYBs"
+    },
+    {
+      "id": 6,
+      "title": "Arameans (Suryoye) in ConIFA World Football Cup",
+      "thumbnail": "https://img.youtube.com/vi/N7m-WFgHieQ/0.jpg",
+      "url": "https://www.youtube.com/watch?v=N7m-WFgHieQ"
+    },
+    {
+      "id": 7,
+      "title": "Arameans and Israelis have shared origins",
+      "thumbnail": "https://img.youtube.com/vi/OAxe00pXWCE/0.jpg",
+      "url": "https://www.youtube.com/watch?v=OAxe00pXWCE"
+    },
+    {
+      "id": 8,
+      "title": "Hidden Heritage: Aramean Christians Fighting for Israel",
+      "thumbnail": "https://img.youtube.com/vi/IUwqGvNP51o/0.jpg",
+      "url": "https://www.youtube.com/watch?v=IUwqGvNP51o"
+    },
+    {
+      "id": 9,
+      "title": "The Aramaic Christian community of the Upper Galilee",
+      "thumbnail": "https://img.youtube.com/vi/8FdIoph7c9Q/0.jpg",
+      "url": "https://www.youtube.com/watch?v=8FdIoph7c9Q"
+    },
+    {
+      "id": 10,
+      "title": "2 Kings 5-8: Elisha and the Arameans",
+      "thumbnail": "https://img.youtube.com/vi/CKorwf41JzU/0.jpg",
+      "url": "https://www.youtube.com/watch?v=CKorwf41JzU"
+    }
+  ],
+  "gifs": [
+    {
+      "id": 1,
+      "thumbnail": "https://gif.aramean.center/aramean-homer.gif"
+    },
+    {
+      "id": 2,
+      "thumbnail": "https://gif.aramean.center/aramean-dancer.gif"
+    },
+    {
+      "id": 3,
+      "thumbnail": "https://gif.aramean.center/aramean-soccer-love.gif"
+    },
+    {
+      "id": 4,
+      "thumbnail": "https://gif.aramean.center/aramean-bubble-flag1.gif"
+    },
+    {
+      "id": 5,
+      "thumbnail": "https://gif.aramean.center/aramean-burning-flag1.gif"
+    },
+    {
+      "id": 6,
+      "thumbnail": "https://gif.aramean.center/aramean-burning-flag2.gif"
+    },
+    {
+      "id": 7,
+      "thumbnail": "https://gif.aramean.center/aramean-waving-flag.gif"
+    },
+    {
+      "id": 8,
+      "thumbnail": "https://gif.aramean.center/aramean-eagle1.gif"
+    },
+    {
+      "id": 9,
+      "thumbnail": "https://gif.aramean.center/aramean-infrared.gif"
+    },
+    {
+      "id": 10,
+      "thumbnail": "https://gif.aramean.center/aramean-ardo-democratic1.gif"
+    },
+    {
+      "id": 11,
+      "thumbnail": "https://gif.aramean.center/aramean-ardo-democratic2.gif"
+    }
+  ],
+  "graphics": [
+    {
+      "id": 12,
+      "video_url": "https://aramean.center/assets/video/aramean-flag-1.mp4"
+    },
+    {
+      "id": 13,
+      "video_url": "https://aramean.center/assets/video/aramean-flag-2.mp4"
+    }
+  ]
 }
