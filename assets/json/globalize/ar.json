@@ -27,6 +27,7 @@
             "watch": "راقب",
 
             "page_home_title": "سجل نفسك كعرق آرامي",
+            "page_register_agree_terms": "I agree to the <a href=\"#terms\" modalurl=\"policy\/privacy/\" class=\"tdu\">terms and conditions</a>.",
             "page_home_text": "سجل لمساعدتنا في مشاركة المعلومات مع <a class=\"red\" target=\"_blank\" href=\"https://aramean.institute\"> المعهد الآرامي </a> والمنظمات الأخرى ذات الصلة باللغة الآرامية .",
             "page_register_title": "سجل نفسك كعرق آرامي"
         }

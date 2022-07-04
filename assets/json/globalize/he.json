@@ -4,17 +4,20 @@
     "direction": "rtl",
     "translations":
         {
+            "about": "אודות",
+            "about_us": "עלינו",
             "country_of_birth": "ארץ לידה",
             "country_of_residence": "מדינת מגורים",
             "database": "מאגר מידע",
             "date_of_birth": "תאריך לידה",
             "email": "אימייל",
             "explore": "לחקור",
-            "female": "Female",
+            "female": "נקבה",
             "first_name": "שם פרטי",
             "last_name": "שם משפחה",
             "listen": "להקשיב",
-            "male": "Male",
+            "male": "זכר",
+            "mission": "משימה",
             "music": "מוּסִיקָה",
             "middle_name": "שם אמצעי",
             "participate": "להשתתף",
@@ -30,7 +33,7 @@
 
             "page_home_title": "רשום את עצמך כארמי אתני",
             "page_home_text": "הירשם כדי לשתף מידע עם <a class=\"red\" target=\"_blank\" href=\"https://aramean.institute\">המכון הארמי</a> וארגונים אחרים המשרתים את העם הארמי.",
-            "page_register_agree_terms": "אני מסכים ל <a href=\"#\" class=\"tdu\">התנאים וההגבלות</a>.",
+            "page_register_agree_terms": "אני מסכים ל <a href=\"#terms\" modalurl=\"policy\/privacy/\" class=\"tdu\">התנאים וההגבלות</a>.",
             "page_register_title": "רשום את עצמך כארמי אתני",
             "page_register_text": "שתף מידע והעשיר את המורשת הארמית איתנו ועם ארגונים אחרים המועילים לעם הארמי."
         }
