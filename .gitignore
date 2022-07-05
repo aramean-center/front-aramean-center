@@ -1,5 +1,6 @@
 ~$*
 .**/
+*.front.nu
 .AppleDouble
 .env
 .DS_Store
