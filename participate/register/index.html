@@ -29,24 +29,20 @@
 
             <i globalize="date_of_birth">Date of birth</i>
             <div class="box gut2-">
-                <select class="phdark bw1 bos8 bocblack02" name="birth_date_year" variable="i:1900" iterate="140;i++" required>
-                    <option value="" skip disabled selected>-</option>
+                <select class="phdark bw1 bos8 bocblack02" name="birth_date_year" variable="i:1900" iterate="140;i++" placeholder="-" required>
                     <option>{{ i }}</option>
                 </select>
-                <select class="phdark bw1 bos8 bocblack02" name="birth_date_month" variable="i:01" iterate="12;i++" required>
-                    <option value="" skip disabled selected>-</option>
+                <select class="phdark bw1 bos8 bocblack02" name="birth_date_month" variable="i:01" iterate="12;i++" placeholder="-" required>
                     <option>{{ i }}</option>
                 </select>
-                <select class="phdark bw1 bos8 bocblack02" name="birth_date_day" variable="i:01" iterate="31;i++" required>
-                    <option value="" skip disabled selected>-</option>
+                <select class="phdark bw1 bos8 bocblack02" name="birth_date_day" variable="i:01" iterate="31;i++" placeholder="-" required>
                     <option>{{ i }}</option>
                 </select>
             </div>
 
             <i globalize="country_of_birth">Country of birth</i>
             <div class="group">
-                <select class="phdark bw1 bos8 bocblack02" id="birth_country" name="birth_country" iterate="true" json="true" datasource="{{ storage:api.countries.endpoint }}?order=country->>eng" dataheader="{{ storage:api.countries.headers }}" ondone="_.populate(this.aEl)" populate="residence_country" required>
-                    <option value="" skip disabled selected>-</option>
+                <select class="phdark bw1 bos8 bocblack02" id="birth_country" name="birth_country" iterate="true" json="true" datasource="{{ storage:api.countries.endpoint }}?order=country->>eng" dataheader="{{ storage:api.countries.headers }}" ondone="_.populate(this.aEl)" populate="residence_country" placeholder="-" required>
                     <option value="{{ jsonget:id }}" jsonget="country.eng">{{ jsonget:country.eng }}</option>
                 </select>
             </div>
