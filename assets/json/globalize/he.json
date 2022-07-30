@@ -17,7 +17,7 @@
     "listen": "להקשיב",
     "male": "זכר",
     "mission": "משימה",
-    "music": "מוּסִיקָה",
+    "music": "מוסיקה",
     "middle_name": "שם אמצעי",
     "participate": "להשתתף",
     "person": "אדם",
@@ -31,6 +31,7 @@
     "watch": "לצפות",
     "page_home_title": "רשום את עצמך כארמי אתני",
     "page_home_text": "הירשם כדי לשתף מידע עם <a class=\"red\" target=\"_blank\" href=\"https://aramean.institute\">המכון הארמי</a> וארגונים אחרים המשרתים את העם הארמי.",
+    "page_home_discover_text": "מצא אנשים, מקומות, אנדרטאות, כנסיות, בתי ספר, ארגונים ועוד הרבה יותר.",
     "page_register_agree_terms": "אני מסכים ל <a href=\"#terms\" modalurl=\"policy\/privacy/\" class=\"tdu\">התנאים וההגבלות</a>.",
     "page_register_title": "רשום את עצמך כארמי אתני",
     "page_register_text": "שתף מידע והעשיר את המורשת הארמית איתנו ועם ארגונים אחרים המועילים לעם הארמי."
