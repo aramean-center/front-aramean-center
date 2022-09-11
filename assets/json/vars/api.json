@@ -5,8 +5,8 @@
       "headers": "apikey:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlIjoiYW5vbiIsImlhdCI6MTYyMDc2MTg0NCwiZXhwIjoxOTM2MzM3ODQ0fQ.xEa_GuNypFdHSdQVLCd0beoL_v8jhWKjSTypX6kn-sg;Prefer:count=exact"
     },
     "persons_collection": {
-      "endpoint": "https://tmqmoxcasyhxxxqknevp.supabase.co/rest/v1/persons",
-      "headers": "apikey:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlIjoiYW5vbiIsImlhdCI6MTYyNTM0NjM2MSwiZXhwIjoxOTQwOTIyMzYxfQ.3PDCNsUHb4gVwtRi_GTDA93sk3l9Usmd6YdA2OHxbY0"
+      "endpoint": "https://kxbdavyawgmhowkjaqtj.supabase.co/rest/v1/persons",
+      "headers": "apikey:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imt4YmRhdnlhd2dtaG93a2phcXRqIiwicm9sZSI6ImFub24iLCJpYXQiOjE2NjI1NDg1OTgsImV4cCI6MTk3ODEyNDU5OH0.fktNrLOpFwt4qFhbTeSvRRJqgsfs8K0nY2iaJBzvU6c"
     },
     "organizations": {
       "endpoint": "https://gqfktgknxmguhxgkajat.supabase.co/rest/v1/organizations",
