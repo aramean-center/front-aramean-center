@@ -67,6 +67,7 @@
     "page_register_title": "Register yourself as an ethnic Aramean",
     "page_register_text": "Share information and enrich the Aramean heritage with us and other organizations that benefit the Aramean people.",
     "page_register_agree_terms": "I agree to the <a href=\"#terms\" modalurl=\"policy\/privacy/\" class=\"tdu\">terms and conditions</a>.",
+    "page_register_agree_iam_aramean": "I am Aramean and I acknowledge my Aramean identity.",
     "page_register_agree_database": "I would like to be listed as a participant in the public database. ",
     "page_register_complete": "Your registration will be reviewed within 24 hours."
   }
