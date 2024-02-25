@@ -10,7 +10,7 @@
 <section id="register" class="pauto" storage="api" json="music">
     <h2 globalize="music">Music</h2>
     <hr class="bcred">
-    <div id="music" class="box cards gut5- br0- flc-" iterate="true" datasource="{{ storage:api.persons.endpoint }}?and=(artwork.not.is.null)&artwork->>music=not.is.null" dataheader="{{ storage:api.persons.headers }}" onerror="alert('Fetch error')" onsuccess="alert('Fetch OK')">
+    <div id="music" class="box cards gut5- br0- flc-" iterate="true" datasource="{{ storage:api.persons.endpoint }}?select=id,first_name,middle_name,last_name,artwork&and=(artwork.not.is.null)&artwork->>music=not.is.null" dataheader="{{ storage:api.persons.headers }}" onerror="alert('Fetch error')" onsuccess="alert('Fetch OK')">
         <figure class="p1 bcwhite">
             <a href="./library/listen/music?person={{ jsonget:id }}&id={{ jsonget:artwork.music.album.id }}">
             <p class="tac"><i class="icon icon128 circled pr0">&#9834;</i></p>
