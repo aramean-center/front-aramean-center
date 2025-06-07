@@ -8,7 +8,7 @@
 </template>
 
 <article class="pauto" storage="api" json="words" bind="words:?id">
-    <section id="words" datasource="{{ storage:api.words.endpoint }}?select=*&or=(id.eq.{# ?id #})" dataheader="{{ storage:api.words.headers }}">
+    <section id="words" datasource="{{ storage:api.words.endpoint }}&column=*&where=id.eq.({# ?id #})" dataheader="{{ storage:api.words.headers }}">
         <h1 globalize="word">{{ jsonget:word.eng }}</h1>
         <nav class="crumbs pointer p05 bos6 bocblack01 bw1 bcsnow mt05 br05 gray w0">
             <ol class="pl05">

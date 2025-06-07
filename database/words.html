@@ -40,7 +40,7 @@
         <input type="radio" name="panel" id="tabalive" checked>
         <label for="tabalive" id="alive">Words ({# alive #})</label>
         <section class="lg_p0 shade1" json="personsalive" bind="alive:alive" bindvalue="{{ jsonheader:content-range = split('/',1) }}">
-            <div id="personsalive" class="box cards list br0-" iterate="true" datasource="{{ storage:api.words.endpoint }}?select=*&word->>eng=ilike.*" dataheader="{{ storage:api.words.headers }}">
+            <div id="personsalive" class="box cards list br0-" iterate="true" datasource="{{ storage:api.words.endpoint }}&column=*&where=word->>eng.ilike.(*)" dataheader="{{ storage:api.words.headers }}">
                 <a href="database/word.html?id={{ jsonget:id }}">
                     <figure class="p1 bcwhite bcblack001_h">
                         <p class="f2 pl1" filteron="true">{{ jsonget:word.eng }}</p>

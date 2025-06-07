@@ -8,7 +8,7 @@
 </template>
 
 <article class="pauto" json="words" storage="api" bind="words:?id">
-    <section id="words" datasource="{{ storage:api.organizations.endpoint }}?select=*&or=(id.eq.{# ?id #})" dataheader="{{ storage:api.organizations.headers }}">
+    <section id="words" datasource="{{ storage:api.organizations.endpoint }}&column=*&where=id.eq({# ?id #})" dataheader="{{ storage:api.organizations.headers }}">
         <h1 globalize="organization">Organization</h1>
         <nav class="crumbs pointer p05 bos6 bocblack01 bw1 bcsnow mt05 br05 gray w0">
             <ol class="pl05">
