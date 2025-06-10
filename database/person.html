@@ -8,7 +8,7 @@
 </template>
 
 <article class="pauto" storage="api" json="person" bind="person:?id" enum="1:male;2:female">
-    <section id="person" datasource="{{ storage:api.persons.endpoint }}?select=id,first_name,middle_name,last_name,birth&or=(id.eq.{# ?id #})" dataheader="{{ storage:api.persons.headers }}">
+    <section id="person" datasource="{{ storage:api.persons.endpoint }}?select=id,first_name,middle_name,last_name,birth&where=id.eq({# ?id #})" dataheader="{{ storage:api.persons.headers }}">
         <h1 globalize="person">Person</h1>
         <nav class="crumbs pointer p05 bos6 bocblack01 bw1 bcsnow mt05 br05 gray w0">
             <ol class="pl05">
