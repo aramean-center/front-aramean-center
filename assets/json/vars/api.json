@@ -1,27 +1,27 @@
 {
   "api": {
     "persons": {
-      "endpoint": "https://api.aleptra.com/humanology/select/?table=private.human",
+      "endpoint": "https://api.aleptra.com/humanology/?table=private.human",
       "headers": "apikey:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlIjoiYW5vbiIsImlhdCI6MTYyMDc2MTg0NCwiZXhwIjoxOTM2MzM3ODQ0fQ.xEa_GuNypFdHSdQVLCd0beoL_v8jhWKjSTypX6kn-sg;Prefer:count=exact"
     },
     "persons_collection": {
-      "endpoint": "https://api.aleptra.com/humanology/insert/?table=protected.human",
+      "endpoint": "https://api.aleptra.com/humanology/?table=protected.human",
       "headers": "apikey:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imt4YmRhdnlhd2dtaG93a2phcXRqIiwicm9sZSI6ImFub24iLCJpYXQiOjE2NjI1NDg1OTgsImV4cCI6MTk3ODEyNDU5OH0.fktNrLOpFwt4qFhbTeSvRRJqgsfs8K0nY2iaJBzvU6c"
     },
     "organizations": {
-      "endpoint": "https://api.aleptra.com/organizology/select/?table=organization",
+      "endpoint": "https://api.aleptra.com/organizology/?table=organization",
       "headers": "apikey:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlIjoiYW5vbiIsImlhdCI6MTYyMDc2MTg0NCwiZXhwIjoxOTM2MzM3ODQ0fQ.xEa_GuNypFdHSdQVLCd0beoL_v8jhWKjSTypX6kn-sg;Prefer:count=exact"
     },
     "buildings": {
-      "endpoint": "https://api.aleptra.com/geography/select/?table=geography_building",
+      "endpoint": "https://api.aleptra.com/geography/?table=geography_building",
       "headers": "apikey:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlIjoiYW5vbiIsImlhdCI6MTYyMTA0Mzc4NywiZXhwIjoxOTM2NjE5Nzg3fQ.vok7K5RJkQTP25mLjJ09co5neL4wxt5O1oIdd9E9m40;Prefer:count=exact"
     },
     "countries": {
-      "endpoint": "https://api.aleptra.com/geography/select/?table=geography_country",
+      "endpoint": "https://api.aleptra.com/geography/?table=geography_country",
       "headers": "apikey:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlIjoiYW5vbiIsImlhdCI6MTYyMTA0Mzc4NywiZXhwIjoxOTM2NjE5Nzg3fQ.vok7K5RJkQTP25mLjJ09co5neL4wxt5O1oIdd9E9m40"
     },
     "words": {
-      "endpoint": "https://api.aleptra.com/humanology/select/?table=human_language_word",
+      "endpoint": "https://api.aleptra.com/humanology/?table=human_language_word",
       "headers": "apikey:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlIjoiYW5vbiIsImlhdCI6MTYyMTc4OTE1OCwiZXhwIjoxOTM3MzY1MTU4fQ.AhcMTJs8FwpE-CL_TvxGyQuo8E4PUjHhQ_qOshlv6BU;Prefer:count=exact"
     }
   }
