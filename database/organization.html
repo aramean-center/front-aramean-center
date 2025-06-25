@@ -20,9 +20,13 @@
         <div class="box cards list mt1 br0- flc-">
             <h6 class="p1 bcwhitesmoke black08 fwb">{{ jsonget:organization.eng }}</h6>
             <figure class="p1 bcwhite">
-                <p>Category: {{ jsonget:organization.category }}</p>
-                <p>Type: {{ jsonget:organization.kind }}</p>
-                <p>Purpose: {{ jsonget:organization.purpose }}</p>
+                <p>Category: {{ jsonget:category }}</p>
+            </figure>
+            <figure class="p1 bcwhite">
+                <p>Type: {{ jsonget:kind }}</p>
+            </figure>
+            <figure class="p1 bcwhite">
+                <p>Purpose: {{ jsonget:purpose }}</p>
             </figure>
         </div>
 
