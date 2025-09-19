@@ -49,7 +49,7 @@
         <input type="radio" name="panel" id="tabalive" checked>
         <label for="tabalive" id="alive">Alive ({# alive #})</label>
         <section class="lg_p0 shade1" json="personsalive" bind="alive:alive" bindvalue="{{ jsonheader:content-range = split('/',1) }}">
-            <div id="personsalive" class="box cards list br0-" iterate="true" datasource="{{ storage:api.persons.endpoint }}&select=id,first_name,middle_name,last_name,birth,gender&where=death.eq(null),ethnicity.cs([1])" dataheader="{{ storage:api.persons.headers }}">
+            <div id="personsalive" class="box cards list br0-" iterate="true" datasource="{{ storage:api.persons.endpoint }}&column=id,first_name,middle_name,last_name,birth,gender&where=death.eq(null),ethnicity.cs([1])" dataheader="{{ storage:api.persons.headers }}">
                 <a href="database/person.html?id={{ jsonget:id }}">
                     <figure class="p1 bcwhite bcblack001_h">
                         <img src="" jsonget="birth.country_code" jsonbefore="https://cdn.front.nu/dist/design/front/flags/famfamfam/" jsonafter=".gif" class="f0">
