@@ -1,69 +1,97 @@
 <!doctype html>
-<html lang="en;auto" cache="no">
-<head>
-    <title>Aramean Center</title>
-    <meta http-equiv="X-UA-Compatible" content="ie=edge;ie=10;chrome=1"/>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta property="og:url" content="https://www.aramean.center"/>
-    <meta property="og:type" content="website"/>
-    <meta property="og:title" content="Aramean Center"/>
-    <meta property="og:description" content="The Aramean Center is a central hub focusing on Arameans."/>
-    <meta property="og:image" content="https://www.aramean.center/assets/img/logo_fb.png"/>
-    <base env="local:/;prod:/">
-    <link type="image/x-icon" href="./favicon.ico" rel="shortcut icon">
-    <link type="text/css" href="https://cdn.front.nu/dist/front.css" rel="stylesheet">
-    <link type="text/css" href="https://cdn.front.nu/dist/design/front/theme/front.css" rel="stylesheet">
-    <script src="https://cdn.front.nu/dist/front.js" lib="nav;json;globalize" store="assets/json/vars/api:api" plug="gmaps" font="assets/font/estrangela-adiabene.woff:estrangela-adiabene;assets/font/serta-antioch.woff:serta-antioch"></script>
-    <script src="https://www.googletagmanager.com/gtag/js?id=G-4Z8JXR2XX0" async></script>
-    <script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'G-P9H397G1GV')</script>
-</head>
-<body>
-    <div id="navloader" class="navloader pa t0 w100 bcred d0"><div id="navprogress" class="bcwhite04"></div></div>
-    <header class="topbar bcwhite h4 shade1 gap3- fwb- syellow- ttu-" selective="true">
-        <a href="#menu" class="button bcred xl_du white- br0 mr0"><i class="icon32">≡</i></a>
-        <figure><a href="./"><img class="mh80p" src="assets/img/logo.png"></a></figure>
-        <a class="z09 black08 xl_dn" href="library/watch" globalize="watch">Watch</a>
-        <a class="z09 black08 xl_dn" href="library/listen" globalize="listen">Listen</a>
-        <a class="z09 black08 xl_dn" href="library/read" globalize="read">Read</a>
-        <a class="z09 bc0 black lg_dn h50 br1 fr mr0 button" href="database/" globalize="database">Database</a>
-        <a class="z09 bcred lg_dn h50 br1 button ml1" href="participate/" globalize="participate">Participate</a>
+<html lang="en" cache="no">
 
-        <div id="menu" class="modal menu">
-            <nav class="topbar flc0 shade h4 gap3- br0-">
-                <a href="#" class="button bcred xl_du yellow-"><i class="icon32">&#10060;</i></a>
-                <figure class="pl2 pr2"><img src="assets/img/logo.svg" class="mh80p"></figure>
-            </nav>
-            <section>
-                <nav class="sidebar pt2 w100 fs13 gaph2- red- bcwhitesmoke pointer afr">
-                    <a href="library/watch" globalize="watch">Watch</a>
-                    <hr class="p0">
-                    <a href="library/listen" globalize="listen">Listen</a>
-                    <hr class="p0">
-                    <a href="library/read" globalize="read">Read</a>
-                </nav>
-                <nav class="sidebar z08 mt2 red- gaph2- pointer afr">
-                    <h7 class="black08 tac" globalize="participate">Participate</h7>
-                    <hr>
-                    <a href="participate/register" globalize="register_ethnicity">Register ethnicity</a>
-                </nav>
-                <nav class="sidebar z08 mt2 red- gaph2- pointer afr">
-                    <h7 class="black08 tac" globalize="database">Database</h7>
-                    <hr>
-                    <a href="database/persons.html" globalize="persons">Persons</a>
-                    <a href="database/buildings.html" globalize="buildings">Buildings</a>
-                    <a href="database/organizations.html" globalize="organizations">Organizations</a>
-                    <a href="database/words.html" globalize="words">Words</a>
-                </nav>
-            </section>
-        </div>
-    </header>
-    <aside class="xl_dn"></aside>
-    <main class="bcsnow" include="home.html"></main>
-    <aside class="lg_dn"></aside>
-    <footer>
-        <div eventlistener="offline" eventaction="dom.show('offline')" id="offline" class="alert pf b1 l1 bcred white snack d0"><i class=icon>⚠</i> Connection lost...</div>
-        <div eventlistener="online" eventaction="dom.hide('offline')"></div>
-    </footer>
+<head>
+  <title>Aramean Center</title>
+  <meta http-equiv="X-UA-Compatible" content="ie=edge;ie=10;chrome=1" />
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta property="og:url" content="https://www.aramean.center" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Aramean Center" />
+  <meta property="og:description" content="The Aramean Center is a central hub focusing on Arameans." />
+  <meta property="og:image" content="https://www.aramean.center/assets/img/logo_fb.png" />
+  <base hrefhost="/" href="/">
+  <link type="image/x-icon" href="./favicon.ico" rel="shortcut icon">
+  <link type="text/css" href="https://cdn.front.nu/dist/front.css" rel="stylesheet">
+  <link type="text/css" href="https://cdn.front.nu/dist/design/front/theme/front.css" rel="stylesheet">
+  <script src="http://cdn.front.nu/nightly/front.js" module="navigate;data;screen;globalize;form;chronotize;overlay"
+    plugin="map" var="api;enum"
+    conf="debug:false;debugLocalhost:true;varsDir:assets/json/vars;storageKey:aramean_center"
+    navigate-conf="startpage:/;startpageLocal:/" globalize-conf="folder:assets/json/locales;ttl:3600000"
+    map--conf="googleKey:AIzaSyAev1q4GNC-VlKYxWQXWfuPQ3pexINKOEY;googleTarget:#map"
+    font="assets/font/estrangela-adiabene.woff:estrangela-adiabene;assets/font/serta-antioch.woff:serta-antioch"></script>
+</head>
+
+<body navigate-onloaded="hide:*header[1];hide:*main[1]">
+
+  <div id="navloader" class="navloader pa t0 bcwhite05" width="100%" height="2" hide>
+    <div bgcolor="red" height="2"></div>
+  </div>
+  <header class="topbar shade1 gap3- fwb- syellow- ttu-" bgcolor="white" screen-xxs="height:[3.5rem];paddingright:[0]"
+    screen-md="height:[4rem];paddingright:[1.5rem]">
+    <button radius="0" click="show:*main[1]" onclicked="hide:*header[0];show:*header[1]" bgcolor="red" height="100%"
+      class="xl_du white- mr0"><i class="icon32">≡</i></button>
+    <figure>
+      <a href="./"><img screen-xxs="maxheight:[80%]" screen-xs="maxheight:[70%]" src="assets/img/logo.png"></a>
+    </figure>
+    <a class="z09 black08 xl_dn" href="library/watch" globalize="watch">Watch</a>
+    <a class="z09 black08 xl_dn" href="library/listen" globalize="listen">Listen</a>
+    <a class="z09 black08 xl_dn" href="library/read" globalize="read">Read</a>
+    <a class="z09 bc0 black lg_dn h50 br1 fr mr0 button" href="database/" globalize="database">Database</a>
+    <a class="z09 bcred lg_dn h50 br1 button ml1" href="participate/" globalize="participate">Participate</a>
+  </header>
+  <aside></aside>
+  <main bgcolor="snow" include="_includes/home.html"></main>
+  <aside></aside>
+
+  <!-- header for menu -->
+  <header bgcolor="white" class="topbar shade1" screen-xxs="height:[3.5rem];paddingright:[0]"
+    screen-md="height:[4rem];paddingright:[1.5rem]" zindex="1000" hide>
+    <button radius="0" click="show:*main[0];show:*header[0]" onclicked="hide:*header[1];hide:*main[1]" bgcolor="red"
+      height="100%"><i class="icon32">&#10060;</i></button>
+    <figure paddingleft="2rem">
+      <img screen-xxs="maxheight:[80%]" screen-xs="maxheight:[70%]" src="assets/img/logo.png">
+    </figure>
+  </header>
+  <!---->
+
+  <!-- main for menu -->
+  <main bgcolor="white" padding="1.5rem" zindex="20" hide>
+    <section>
+      <nav width="100%" class="sidebar fs13" bgcolor="snow" height="unset">
+        <hr padding="0" margin="0">
+        <a color="red" href="library/watch" globalize-get="watch" paddingleft="1rem">Watch</a>
+        <hr padding="0" margin="0">
+        <a color="red" href="library/listen" globalize-get="listen" paddingleft="1rem">Listen</a>
+        <hr padding="0" margin="0">
+        <a color="red" href="library/read" globalize-get="read" paddingleft="1rem">Read</a>
+        <hr padding="0" margin="0">
+      </nav>
+
+      <h7 margin="1rem auto" fontsize="80%" color="darkgray" globalize="participate">Participate</h7>
+      <nav class="sidebar z09" bgcolor="snow" height="unset">
+        <hr padding="0" margin="0">
+        <a color="red" href="participate/register" globalize="register_ethnicity" paddingleft="1rem">Register
+          ethnicity</a>
+        <hr padding="0" margin="0">
+      </nav>
+
+      <h7 margin="1rem auto" margintop="2rem" fontsize="80%" color="darkgray" globalize="participate">Database</h7>
+      <nav class="sidebar z09 red-" bgcolor="snow" height="unset">
+        <hr padding="0" margin="0">
+        <a href="database/persons.html" globalize="persons" paddingleft="1rem">Persons</a>
+        <hr padding="0" margin="0">
+        <a href="database/buildings.html" globalize="buildings" paddingleft="1rem">Buildings</a>
+        <hr padding="0" margin="0">
+        <a href="database/organizations.html" globalize="organizations" paddingleft="1rem">Organizations</a>
+        <hr padding="0" margin="0">
+        <a href="database/words.html" globalize="words" paddingleft="1rem">Words</a>
+        <hr padding="0" margin="0">
+      </nav>
+    </section>
+  </main>
+  <!---->
 </body>
+
 </html>

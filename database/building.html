@@ -1,33 +1,36 @@
-<script src="https://cdn.front.nu/dist/front.js" template="../index"></script>
-
+<script src="http://cdn.front.nu/nightly/front.js"></script>
+<template srcdoc="../../index" src="../../_templates/default"></template>
 <title>Building</title>
 
-<template>
-    <aside index="0"></aside>
-    <aside index="1"></aside>
-</template>
+<article class="pauto">
+	<section
+	  id="building"
+    bindquery="id:id"
+    bindasset="endpoint:api.buildings.endpoint"
+    data-src="{endpoint}&select=*&where=id.eq({id})"
+    data-header="Accept:application/json+single"
+		data-onsuccess="map--run:#map"
+	>
+		<h1 globalize-get="building">Building</h1>
+		<nav class="crumbs pointer p05 bos6 bocblack01 bw1 bcsnow mt05 br05 gray w0">
+			<ol class="pl05">
+				<li><a href="./database" globalize-get="database">Database</a></li>
+				<li><a href="./database/buildings.html" globalize-get="buildings">Buildings</a></li>
+				<li data-get="name.eng"></li>
+			</ol>
+		</nav>
+		<div class="box cards list mt1 br0- flc-">
+			<h6 class="p1 bcwhitesmoke black08 fwb" bold data-get="name.eng"></h6>
+			<figure class="p1 bcwhite">
+				<p>Name: <span data-get="name.eng"></span></p>
+			</figure>
+		</div>
 
-<article class="pauto" json="words" storage="api" bind="words:?id">
-    <section id="words" datasource="{{ storage:api.buildings.endpoint }}&column=*&where=id.eq({# ?id #})" dataheader="{{ storage:api.buildings.headers }}">
-        <h1 globalize="building">Building</h1>
-        <nav class="crumbs pointer p05 bos6 bocblack01 bw1 bcsnow mt05 br05 gray w0">
-            <ol class="pl05">
-                <li><a href="./database" globalize="database">Database</a></li>
-                <li><a href="./database/buildings.html" globalize="buildings">Buildings</a></li>
-                <li>{{ jsonget:name.eng }}</li>
-            </ol>
-        </nav>
-        <div class="box cards list mt1 br0- flc-">
-            <h6 class="p1 bcwhitesmoke black08 fwb">{{ jsonget:name.eng }}</h6>
-            <figure class="p1 bcwhite">
-                <p>Name: {{ jsonget:name.eng }}
-            </figure>
-        </div>
-
-        <section class="bcwhite p2 shade1">
-            <h2 globalize="location">Location</h2>
-            <hr class="bcred">
-            <div id="gmaps" gmaps="lat:{{ jsonget:geometry.location.lat }},lng:{{ jsonget:geometry.location.lng }}" class="h50r"></div>
-        </section>
-    </section>
+		<section class="bcwhite p2 shade1">
+			<h2 globalize-get="location">Location</h2>
+			<hr class="bcred">
+			<div id="map" data-set="lat:geometry.location.lat;lng:geometry.location.lng"
+				map--lat="{lat}" map--lng="{lng}" height="40rem"></div>
+		</section>
+	</section>
 </article>

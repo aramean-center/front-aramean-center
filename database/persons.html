@@ -1,78 +1,65 @@
-<script src="https://cdn.front.nu/dist/front.js" template="../index"></script>
-<title globalize="persons">Persons</title>
-<template>
-    <aside index="0"></aside>
-    <aside index="1">
-        <nav class="sidebar bcwhite w15r xxxl_w20r">
-            <h5 class="p1 mt1" globalize="search">Search</h5>
-            <hr>
-            <div class="p1">
-                <small class="pb1 ttu" globalize="name">Name</small>
-                <input type="text" onkeyup="filter()">
-            </div>
-            <div class="p1">
-                <small class="pb1 ttu" globalize="country_of_birth">Country of birth</small>
-                <select>
-                    <option>All</option>
-                </select>
-            </div>
-            <div class="p1">
-                <small class="pb1 ttu" globalize="country_of_residence">Country of residence</small>
-                <select>
-                    <option>All</option>
-                </select>
-            </div>
-            <small class="p1 ttu" globalize="styles">Group</small>
-            <ul>
-                <li><a><i class="icon24 pr05">&#9642;</i> Assyrian</a></li>
-                <li><a><i class="icon24 pr05">&#9642;</i> Chaldean</a></li>
-                <li><a><i class="icon24 pr05">&#9642;</i> Syriac</a></li>
-                <li><a><i class="icon24 pr05">&#9642;</i> Maronite</a></li>
-                <li><a><i class="icon24 pr05">&#9642;</i> Melkite</a></li>
-                <li><a><i class="icon24 pr05">&#9642;</i> Mhallami</a></li>
-                <li><a><i class="icon24 pr05">&#9642;</i> Sabian</a></li>
-            </ul>
-         </nav>
-     </aside>
-</template>
+<script src="http://cdn.front.nu/nightly/front.js"></script>
+<template srcdoc="../../index" src="../../_templates/persons"></template>
+<title globalize-get="persons">Persons</title>
 
-<section class="pauto" storage="api">
+<section class="pauto">
+  <h1 globalize-get="persons">Persons</h1>
+  <nav class="crumbs pointer p05 bos6 bocblack01 bw1 bcsnow mt05 br05 gray w0">
+    <ol class="pl05">
+      <li><a href="./database" globalize-get="database">Database</a></li>
+      <li globalize-get="persons">Persons</li>
+    </ol>
+  </nav>
+  <nav class="tabs mt1" id="test">
+    <input type="radio" name="panel" id="tabalive" checked>
+    <label for="tabalive" id="alive" ondata-bindheaderchange="split:[/][1];insertafterbegin:[Alive (];insertbeforeend:[)]"></label>
+    <section class="lg_p0 shade1">
+      <div id="personsalive" class="box cards list br0-"
+        onifbindfield="([{search}]![])/insertbeforeend:#.data-src:[,first_name->>eng.ilike({search}*)]"
+        bindasset="endpoint:api.persons.endpoint"
+        data-src="{endpoint}&column=id,first_name,middle_name,last_name,birth,gender&where=death.eq(null),ethnicity.cs([1])"
+        data-header="Prefer:count=exact"
+        data-bindheader="content-range:#alive"
+        data-iterate="true"
+        data-loader="#loader"
+        data-onempty="#empty"
+      >
+        <a data-set="id:id" href="database/person.html?id={id}">
+          <figure class="p1 bcwhite bcblack001_h">
+            <img data-set="code:birth.country_code"
+              setsrc="https://cdn.front.nu/dist/design/front/flags/famfamfam/{code}.gif" class="f0">
+            <p class="f2 pl1">
+              <span bindglobal="l:globalize.code" data-get="first_name.{l:eng}"></span>&nbsp;<span
+                bindglobal="l:globalize.code" data-set="m:middle_name.{l:eng}"
+                onifdata-set="([{m}]![])/settext:[{m}&nbsp;]"></span><span bindglobal="l:globalize.code"
+                data-get="last_name.{l:eng}"></span>
+            </p>
+            <p class="tar" data-get="birth.date" chronotize-age></p>
+          </figure>
+        </a>
+      </div>
+      <div id="empty" color="gray" padding="2rem" hide align="center">No matches found.</div>
+      <div id="loader" class="loader" flex></div>
+    </section>
 
-    <h1 globalize="persons">Persons</h1>
-    <nav class="crumbs pointer p05 bos6 bocblack01 bw1 bcsnow mt05 br05 gray w0">
-        <ol class="pl05">
-            <li><a href="./database" globalize="database">Database</a></li>
-            <li globalize="persons">Persons</li>
-        </ol>
-    </nav>
-    <nav class="tabs mt1" id="test">
-        <input type="radio" name="panel" id="tabalive" checked>
-        <label for="tabalive" id="alive">Alive ({# alive #})</label>
-        <section class="lg_p0 shade1" json="personsalive" bind="alive:alive" bindvalue="{{ jsonheader:content-range = split('/',1) }}">
-            <div id="personsalive" class="box cards list br0-" iterate="true" datasource="{{ storage:api.persons.endpoint }}&column=id,first_name,middle_name,last_name,birth,gender&where=death.eq(null),ethnicity.cs([1])" dataheader="{{ storage:api.persons.headers }}">
-                <a href="database/person.html?id={{ jsonget:id }}">
-                    <figure class="p1 bcwhite bcblack001_h">
-                        <img src="" jsonget="birth.country_code" jsonbefore="https://cdn.front.nu/dist/design/front/flags/famfamfam/" jsonafter=".gif" class="f0">
-                        <p class="f2 pl1" filteron="true">{{ jsonget:first_name.swe }} {{ jsonget:middle_name.swe }} {{ jsonget:last_name.swe }}</p>
-                        <p class="tar" jsonget="birth.date" format="age" globalize="years_0;0"></p>
-                    </figure>
-                </a>
-            </div>
-        </section>
-
-        <input type="radio" name="panel" id="tabdead">
-        <label for="tabdead" id="dead" hide>Dead ({# dead #})</label>
-        <section class="lg_p0 shade1" run="false" json="personsdead" bind="dead:dead" bindvalue="{{ jsonheader:content-range = split('/',1) }}">
-            <div id="personsdead" class="box cards list br0-" iterate="true" datasource="{{ storage:api.persons.endpoint }}?and=(death.not.is.null)" dataheader="{{ storage:api.persons.headers }}">
-                <a href="database/person.html?id={{ jsonget:id }}">
-                    <figure class="p1 bcwhite bcblack001_h">
-                        <img src="" jsonget="birth.country_code" jsonbefore="https://cdn.front.nu/dist/design/front/flags/famfamfam/" jsonafter=".gif" class="f0">
-                        <p class="f2 pl1" filteron="true">{{ jsonget:first_name.swe }} {{ jsonget:middle_name.swe }} {{ jsonget:last_name.swe }}</p>
-                        <p class="tar" jsonget="death.date"></p>
-                    </figure>
-                </a>
-            </div>
-        </section>
-    </nav>
-
+    <!--<input type="radio" name="panel" id="tabdead">
+    <label for="tabdead" id="dead" hide>Dead ({# dead #})</label>
+    <section class="lg_p0 shade1" run="false" json="personsdead" bind="dead:dead"
+      bindvalue="{{ jsonheader:content-range = split('/',1) }}">
+      <div id="personsdead" class="box cards list br0-" data-iterate="true"
+        bindasset="endpoint:api.persons.endpoint"
+        data-src="{endpoint}?and=(death.not.is.null)"
+        data-header="">
+        <a data-set="id:id" href="database/person.html?id={id}">
+          <figure class="p1 bcwhite bcblack001_h">
+            <img data-get="birth.country_code"
+              jsonbefore="https://cdn.front.nu/dist/design/front/flags/famfamfam/" jsonafter=".gif" class="f0">
+            <p class="f2 pl1" filteron="true" data-set="firstname:first_name.swe">{firstname} {{ data-get:middle_name.swe }} {{
+              data-get:last_name.swe }}</p>
+            <p class="tar" data-get="death.date"></p>
+          </figure>
+        </a>
+      </div>
+    </section>-->
+  </nav>
 </section>

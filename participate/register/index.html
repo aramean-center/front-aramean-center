@@ -1,77 +1,108 @@
-<script src="https://cdn.front.nu/dist/front.js" template="../../index"></script>
-
-<title globalize="register_ethnicity">Register ethnicity</title>
-
-<template>
-    <aside index="0"></aside>
-    <aside index="1"></aside>
-</template>
-
-<dialog id="terms" class="modal w70 xl_w100p br0 bos0" draggable="true"></dialog>
-<a href="#" class="backdrop" target="_self"></a>
+<script src="http://cdn.front.nu/nightly/front.js"></script>
+<template srcdoc="../../index" src="../../_templates/default"></template>
+<title globalize-get="register_ethnicity">Register ethnicity</title>
 
 <article class="wc_xl bcwhite shade1">
-    <section id="register" class="pauto" storage="api">
-        <h1 globalize="page_register_title"></h1>
-        <h6 class="mt1" globalize="page_register_text"></h6>
-        <hr class="mt2">
+	<section id="register" class="pauto" storage="api">
+		<h1 globalize-get="page_register_title"></h1>
+		<h6 margintop="1rem" marginbottom="2rem" globalize-get="page_register_text"></h6>
 
-        <form class="gaph2-" method="post" datasource="{{ storage:api.persons_collection.endpoint }}" dataheader="{{ storage:api.persons_collection.headers }}" ondone="dom.hide('register');dom.show('complete')">
-            <div class="group lg_fdc outline- gap2 lg_gap0">
-                <input name="first_name" type="text" class="f1 phdark bw1 bos8 bocblack02" placeholder="First Name" globalize="first_name"required>
-                <input name="middle_name" type="text" class="f1 phdark bw1 bos8 bocblack02" placeholder="Middle Name" globalize="middle_name">
-                <input name="last_name" type="text" class="f1 phdark bw1 bos8 bocblack02" placeholder="Last Name" globalize="last_name" required>
-            </div>
+		<form class="gaph2-" method="post" bindasset="endpoint:api.persons_collection.endpoint" action="{endpoint}"
+			data-onsuccess="hide:#register;show:#complete" data-onerror="show:#error">
 
-            <div class="group">
-                <input name="email" type="text" class="phdark f1 bw1 bos8 bocblack02" placeholder="E-mail" globalize="email" required>
-            </div>
+			<div class="group lg_fdc outline- gap2 lg_gap0">
+				<input name="first_name" type="text" class="f1 phdark bw1 bos8 bocblack02" placeholder="First Name"
+					globalize-get="first_name" form-invalid="#first_name_tip:[Please enter your first name]" required>
+				<small id="first_name_tip" color="red"></small>
+				<input name="middle_name" type="text" class="f1 phdark bw1 bos8 bocblack02" placeholder="Middle Name"
+					globalize-get="middle_name">
+				<input name="last_name" type="text" class="f1 phdark bw1 bos8 bocblack02" placeholder="Last Name"
+					globalize-get="last_name" form-invalid="#last_name_tip:[Please enter your last name]" required>
+				<small id="last_name_tip" color="red"></small>
+			</div>
 
-            <i globalize="date_of_birth">Date of birth</i>
-            <div class="box gut2-">
-                <select class="phdark bw1 bos8 bocblack02" name="birth_date_year" variable="i:1900" iterate="140;i++" placeholder="-" required>
-                    <option>{{ i }}</option>
-                </select>
-                <select class="phdark bw1 bos8 bocblack02" name="birth_date_month" variable="i:01" iterate="12;i++" placeholder="-" required>
-                    <option>{{ i }}</option>
-                </select>
-                <select class="phdark bw1 bos8 bocblack02" name="birth_date_day" variable="i:01" iterate="31;i++" placeholder="-" required>
-                    <option>{{ i }}</option>
-                </select>
-            </div>
+			<div class="group">
+				<input name="email" type="text" class="phdark f1 bw1 bos8 bocblack02" placeholder="E-mail" globalize-get="email"
+					form-invalid="#email_tip:[Please enter your email]" required>
+				<small id="email_tip" color="red"></small>
+			</div>
 
-            <i globalize="country_of_birth">Country of birth</i>
-            <div class="group">
-                <select class="phdark bw1 bos8 bocblack02" id="birth_country" name="birth_country" iterate="true" json="true" datasource="{{ storage:api.countries.endpoint }}&order=country->>eng" dataheader="{{ storage:api.countries.headers }}" ondone="_.populate(this.aEl)" populate="residence_country" placeholder="-" required>
-                    <option value="{{ jsonget:id }}" jsonget="country.eng">{{ jsonget:country.eng }}</option>
-                </select>
-            </div>
+			<i globalize-get="date_of_birth">Date of birth</i>
+			<div class="box gut2-">
+				<select class="phdark bw1 bos8 bocblack02" name="birth_date_year" iterate="1900;2025;i"
+					form-invalid="#birth_year_tip:[Please select your birth year]" required>
+					<option value="" iterate-skip>-</option>
+					<option>{i}</option>
+				</select>
+				<small id="birth_year_tip" color="red"></small>
+				<select class="phdark bw1 bos8 bocblack02" name="birth_date_month" iterate="01;12;i"
+					form-invalid="#birth_month_tip:[Please select your birth month]" required>
+					<option value="" iterate-skip>-</option>
+					<option>{i}</option>
+				</select>
+				<small id="birth_month_tip" color="red"></small>
+				<select class="phdark bw1 bos8 bocblack02" name="birth_date_day" iterate="01;31;i"
+					form-invalid="#birth_day_tip:[Please select your birth day]" required>
+					<option value="" iterate-skip>-</option>
+					<option>{i}</option>
+				</select>
+				<small id="birth_day_tip" color="red"></small>
+			</div>
 
-            <i globalize="country_of_residence">Country of residence</i>
-            <div class="group">
-                <select class="phdark bw1 bos8 bocblack02" id="residence_country" name="residence_country"></select>
-            </div>
-            <hr>
-            <div class="group db" globalize="page_register_agree_terms">
-                <input name="terms" type="checkbox" value="1" class="mr05" required>Terms
-            </div>
-            <div class="group db" globalize="page_register_agree_iam_aramean">
-                <input name="terms" type="checkbox" value="1" class="mr05" required>Aramean
-            </div>
-            <div class="group db" globalize="page_register_agree_database">
-                <input name="participate" type="checkbox" value="1" class="mr05" checked>Enlist
-            </div>
-            <div class="group mt1">
-                <input class="button h3" type="submit" value="Submit registration" globalize="submit_registration">
-            </div>
-        </form>
-    </section>
+			<i globalize-get="country_of_birth">Country of birth</i>
+			<div class="group">
+				<select class="phdark bw1 bos8 bocblack02" id="birth_country" name="birth_country" data-iterate="true"
+					bindasset="endpoint:api.countries.endpoint" data-src="{endpoint}&order=country->>eng"
+					data-onfinish="append:#residence_country:#birth_country"
+					form-invalid="#birth_country_tip:[Please select your country of birth]" required>
+					<option value="" data-iterate-skip>-</option>
+					<option data-set="id:id" value="{id}" data-get="country.eng"></option>
+				</select>
+				<small id="birth_country_tip" color="red"></small>
+			</div>
 
-    <section id="complete" class="pauto tac d0">
-        <h1 globalize="thank_you!">Thank you!</h1>
-        <p globalize="page_register_complete">Your registration will be reviewed within 24 hours.</p>
-        <i class="icon mt2">&#8962;</i><a href="/" globalize="go_to_startpage">Go to startpage</a>
-    </section>
+			<i globalize-get="country_of_residence">Country of residence</i>
+			<div class="group">
+				<select class="phdark bw1 bos8 bocblack02" id="residence_country" name="residence_country"
+					form-invalid="#residence_country_tip:[Please select your country of residence]" required></select>
+				<small id="residence_country_tip" color="red"></small>
+			</div>
+
+			<hr>
+
+			<div class="group db">
+				<input name="terms" type="checkbox" value="1" class="mr05" form-invalid="#terms_tip:[Please accept the terms]"
+					required>
+				<span inline globalize-get="page_register_agree_terms">Terms</span>
+				<small id="terms_tip" color="red"></small>
+			</div>
+			<div class="group db">
+				<input name="terms" type="checkbox" value="1" class="mr05" form-invalid="#aramean_tip:[Please confirm this]"
+					required>
+				<span inline globalize-get="page_register_agree_iam_aramean">Aramean</span>
+				<small id="aramean_tip" color="red"></small>
+			</div>
+			<div class="group db">
+				<input name="participate" type="checkbox" value="1" class="mr05" checked>
+				<span inline globalize-get="page_register_agree_database">Enlist</span>
+			</div>
+
+			<div id="error" bgcolor="red" color="yellow" margintop="1rem" marginbottom="2rem" padding="1rem" hide>Something went
+				wrong. Please try again.</div>
+			<div class="group mt1">
+				<input class="button h3" type="submit" value="Submit registration" globalize-get="submit_registration">
+			</div>
+
+		</form>
+
+	</section>
+
+	<section id="complete" class="pauto tac" hide>
+		<h1 globalize-get="thank_you!">Thank you!</h1>
+		<p globalize-get="page_register_complete">Your registration will be reviewed within 24 hours.</p>
+		<i class="icon mt2">&#8962;</i><a href="/" globalize-get="go_to_startpage">Go to startpage</a>
+	</section>
 </article>
 
-<section include="./footer.html"></section>
+<div include="_includes/terms.html"></div>
+<section include="_includes/footer.html"></section>

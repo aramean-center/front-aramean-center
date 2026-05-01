@@ -1,0 +1,43 @@
+<template>
+  <aside></aside>
+  <main inherit="false"></main>
+  <aside screen-xxs="hide" screen-xl="show">
+    <nav class="sidebar bcwhite w15r xxxl_w20r">
+      <h5 class="p1 mt1" globalize-get="search">Search</h5>
+      <hr>
+      <div class="p1">
+        <small class="pb1 ttu" globalize-get="name">Name</small>
+        <input
+          type="text"
+          id="search_name"
+          bindfield="search:#personsalive"
+          bindfieldif="lastPressedKey:Enter"
+          keyboard-key="Enter"
+          keyboard-action
+          keyboard-scope>
+      </div>
+      <div class="p1">
+        <small class="pb1 ttu" globalize-get="country_of_birth">Country of birth</small>
+        <select>
+          <option>All</option>
+        </select>
+      </div>
+      <div class="p1">
+        <small class="pb1 ttu" globalize-get="country_of_residence">Country of residence</small>
+        <select>
+          <option>All</option>
+        </select>
+      </div>
+      <small class="p1 ttu" globalize-get="styles">Group</small>
+      <ul>
+        <li><a><i class="icon24 pr05">&#9642;</i> Assyrian</a></li>
+        <li><a><i class="icon24 pr05">&#9642;</i> Chaldean</a></li>
+        <li><a><i class="icon24 pr05">&#9642;</i> Syriac</a></li>
+        <li><a><i class="icon24 pr05">&#9642;</i> Maronite</a></li>
+        <li><a><i class="icon24 pr05">&#9642;</i> Melkite</a></li>
+        <li><a><i class="icon24 pr05">&#9642;</i> Mhallami</a></li>
+        <li><a><i class="icon24 pr05">&#9642;</i> Sabian</a></li>
+      </ul>
+    </nav>
+  </aside>
+</template>

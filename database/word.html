@@ -1,171 +1,282 @@
-<script src="https://cdn.front.nu/dist/front.js" template="../index"></script>
-
+<script src="http://cdn.front.nu/nightly/front.js"></script>
+<template srcdoc="../../index" src="../../_templates/default"></template>
 <title>Word</title>
 
-<template>
-    <aside index="0"></aside>
-    <aside index="1"></aside>
-</template>
-
 <article class="pauto" storage="api" json="words" bind="words:?id">
-    <section id="words" datasource="{{ storage:api.words.endpoint }}&column=*&where=id.eq({# ?id #})" dataheader="{{ storage:api.words.headers }}">
-        <h1 globalize="word">{{ jsonget:word.eng }}</h1>
-        <nav class="crumbs pointer p05 bos6 bocblack01 bw1 bcsnow mt05 br05 gray w0">
-            <ol class="pl05">
-                <li><a href="./database" globalize="database">Database</a></li>
-                <li><a href="./database/words.html" globalize="words">Words</a></li>
-                <li>{{ jsonget:word.eng }}</li>
-            </ol>
-        </nav>
-        <div class="box bcwhite- cards list mt1 br0- bo0- p1-">
-            <h6 class="p1 bcwhitesmoke black08 fwb">Aramaic (Modern)</h6>
-            <figure>
-                <p class="pl05">
-                    <i class="dimgray w20r fs08">Surayt</i>
-                    <b font="serta-antioch">{{ jsonget:word.syt }}</b>
-                    <a href="javascript:alert('Beta! syt')" class="red fs08" if="!{{ jsonget:word.syt }};;hide" globalize="add_the_missing_word"></a>
-                </p>
-            </figure>
-            <figure>
-                <p class="pl05">
-                    <i class="dimgray w20r fs08">Sureth</i>
-                    <b font="estrangela-adiabene">{{ jsonget:word.syh }}</b>
-                    <a href="javascript:alert('Beta! syh')" class="red fs08" if="!{{ jsonget:word.syh }};;hide" globalize="add_the_missing_word"></a>
-                </p>
-            </figure>
-            <figure>
-                <p class="pl05">
-                    <i class="dimgray w20r fs08">Soray</i>
-                    <b font="estrangela-adiabene">{{ jsonget:word.syn }}</b>
-                    <a href="javascript:alert('Beta! syn')" class="red fs08" if="!{{ jsonget:word.syn }};;hide" globalize="add_the_missing_word"></a>
-                </p>
-            </figure>
-            <figure>
-                <p class="pl05">
-                    <i class="dimgray w20r fs08">Soreth</i>
-                    <b font="estrangela-adiabene">{{ jsonget:word.hrt }}</b>
-                    <a href="javascript:alert('Beta! hrt')" class="red fs08" if="!{{ jsonget:word.hrt }};;hide" globalize="add_the_missing_word"></a>
-                </p>
-            </figure>
-            <figure>
-                <p class="pl05">
-                    <i class="dimgray w20r fs08">Suryo</i>
-                    <b font="serta-antioch">{{ jsonget:word.lhs }}</b>
-                    <a href="javascript:alert('Beta! lhs')" class="red fs08" if="!{{ jsonget:word.lhs }};;hide" globalize="add_the_missing_word"></a>
-                </p>
-            </figure>
-            <figure>
-                <p class="pl05">
-                    <i class="dimgray w20r fs08">Suryon</i>
-                    <b>{{ jsonget:word.amw }}</b>
-                    <a href="javascript:alert('Beta! amw')" class="red fs08" if="!{{ jsonget:word.amw }};;hide" globalize="add_the_missing_word"></a>
-                </p>
-            </figure>
-            <figure>
-                <p class="pl05">
-                    <i class="dimgray w20r fs08">Suryoyo</i>
-                    <b>{{ jsonget:word.syr }}</b>
-                    <a href="javascript:alert('Beta! syr')" class="red fs08" if="!{{ jsonget:word.syr }};;hide" globalize="add_the_missing_word"></a>
-                </p>
-            </figure>
-            <figure>
-                <p class="pl05">
-                    <i class="dimgray w20r fs08">Lishanid Janan</i>
-                    <b>{{ jsonget:word.bjf }}</b>
-                    <a href="javascript:alert('Beta! bjf')" class="red fs08" if="!{{ jsonget:word.bjf }};;hide" globalize="add_the_missing_word"></a>
-                </p>
-            </figure>
-            <figure>
-                <p class="pl05">
-                    <i class="dimgray w20r fs08">Lishana Deni</i>
-                    <b>{{ jsonget:word.lsd }}</b>
-                    <a href="javascript:alert('Beta! lsd')" class="red fs08" if="!{{ jsonget:word.lsd }};;hide" globalize="add_the_missing_word"></a>
-                </p>
-            </figure>
-            <figure>
-                <p class="pl05">
-                    <i class="dimgray w20r fs08">Lishana Didan</i>
-                    <b>{{ jsonget:word.trg }}</b>
-                    <a href="javascript:alert('Beta! trg')" class="red fs08" if="!{{ jsonget:word.trg }};;hide" globalize="add_the_missing_word"></a>
-                </p>
-            </figure>
-            <figure>
-                <p class="pl05">
-                    <i class="dimgray w20r fs08">Lishana Noshan</i>
-                    <b>{{ jsonget:word.aij }}</b>
-                    <a href="javascript:alert('Beta! aij')" class="red fs08" if="!{{ jsonget:word.aij }};;hide" globalize="add_the_missing_word"></a>
-                </p>
-            </figure>
-            <h6 class="p1 bcwhitesmoke black08 fwb">Aramaic (Late)</h6>
-            <figure class="pauto lh2 bcwhite">
-                <p class="pl05">
-                    <i class="dimgray w20r fs08">Suryaya</i>
-                    <b>{{ jsonget:word.syc }}</b>
-                    <a href="javascript:alert('Beta! syc')" class="red fs08" if="!{{ jsonget:word.syc }};;hide" globalize="add_the_missing_word"></a>
-                </p>
-            </figure>
-            <figure>
-                <p class="pl05">
-                    <i class="dimgray w20r fs08">Ratna</i>
-                    <b>{{ jsonget:word.mid }}</b>
-                    <a href="javascript:alert('Beta! mid')" class="red fs08" if="!{{ jsonget:word.mid }};;hide" globalize="add_the_missing_word"></a>
-                </p>
-            </figure>
+  <section
+    id="words"
+    bindquery="id:id"
+    bindasset="endpoint:api.words.endpoint"
+    data-src="{endpoint}&column=*&where=id.eq({id})"
+    data-header="Accept:application/json+single"
+  >
+    <h1 globalize-get="word" data-get="word.eng"></h1>
+    <nav class="crumbs pointer p05 bos6 bocblack01 bw1 bcsnow mt05 br05 gray w0">
+      <ol class="pl05">
+        <li><a href="./database" globalize-get="database">Database</a></li>
+        <li><a href="./database/words.html" globalize-get="words">Words</a></li>
+        <li data-get="word.eng"></li>
+      </ol>
+    </nav>
+    <div class="box bcwhite- cards list mt1 br0- bo0- p1-">
+      <h6 class="p1 bcwhitesmoke black08 fwb">Aramaic (Modern)<small>1200 AD</small></h6>
 
-            <h6 class="p1 bcwhitesmoke black08 fwb">Aramaic (Middle)</h6>
-            <figure>
-                <p class="pl05">
-                    <i class="dimgray w20r fs08">Aramaya</i>
-                    <b>{{ jsonget:word.syc }}</b>
-                    <a href="javascript:alert('Beta! sam')" class="red fs08" if="!{{ jsonget:word.sam }};;hide" globalize="add_the_missing_word"></a>
-                </p>
-            </figure>
-            <figure>
-                <p class="pl05">
-                    <i class="dimgray w20r fs08">Aramit</i>
-                    <b>{{ jsonget:word.sam }}</b>
-                    <a href="javascript:alert('Beta! sam')" class="red fs08" if="!{{ jsonget:word.sam }};;hide" globalize="add_the_missing_word"></a>
-                </p>
-            </figure>
-            <figure>
-                <p class="pl05">
-                    <i class="dimgray w20r fs08">Ivrit</i>
-                    <b>{{ jsonget:word.tmr }}</b>
-                    <a href="javascript:alert('Beta! tmr')" class="red fs08" if="!{{ jsonget:word.tmr }};;hide" globalize="add_the_missing_word"></a>
-                </p>
-            </figure>
-            <figure>
-                <p class="pl05">
-                    <i class="dimgray w20r fs08">Mandayi</i>
-                    <b>{{ jsonget:word.myz }}</b>
-                    <a href="javascript:alert('Beta! myz')" class="red fs08" if="!{{ jsonget:word.myz }};;hide" globalize="add_the_missing_word"></a>
-                </p>
-            </figure>
+      <!-- Surayt -->
+      <figure>
+        <p class="pl05">
+          <i class="dimgray w20r fs08">Surayt</i>
+          <b data-get="word.syt"></b>
+          <a href="javascript:alert('Beta! syt')"
+            color="red"
+            fontsize="80%"
+            data-set="w:word.syt"
+            if="([{w}]:[])/show?hide"
+            globalize-get="add_the_missing_word"></a>
+        </p>
+      </figure>
 
-            <h6 class="p1 bcwhitesmoke black08 fwb">Aramaic (Official)</h6>
-            <figure>
-                <p class="pl05">
-                    <i class="dimgray w20r fs08">Aramaya</i>
-                    <b>{{ jsonget:word.arc }}</b>
-                    <a href="javascript:alert('Beta! arc')" class="red fs08" if="!{{ jsonget:word.arc }};;hide" globalize="add_the_missing_word"></a>
-                </p>
-            </figure>
+      <!-- Sureth -->
+      <figure>
+        <p class="pl05">
+          <i class="dimgray w20r fs08">Sureth</i>
+          <b data-get="word.syh"></b>
+          <a href="javascript:alert('Beta! syh')"
+            color="red"
+            fontsize="80%"
+            data-set="w:word.syh"
+            if="([{w}]:[])/show?hide"
+            globalize-get="add_the_missing_word"></a>
+        </p>
+      </figure>
 
-            <h6 class="p1 bcwhitesmoke black08 fwb">Aramaic (Ancient)</h6>
-            <figure>
-                <p class="pl05">
-                    <i class="dimgray w20r fs08">Arama</i>
-                    <b>{{ jsonget:word.oar }}</b>
-                    <a href="javascript:alert('Beta! oar')" class="red fs08" if="!{{ jsonget:word.oar }};;hide" globalize="add_the_missing_word"></a>
-                </p>
-            </figure>
-            <figure>
-                <p class="pl05">
-                    <i class="dimgray w20r fs08">Aram</i>
-                    <b>{{ jsonget:word.aar }}</b>
-                    <a href="javascript:alert('Beta! aar')" class="red fs08" if="!{{ jsonget:word.aar }};;hide" globalize="add_the_missing_word"></a>
-                </p>
-            </figure>
-        </div>
-    </section>
+      <!-- Soray -->
+      <figure>
+        <p class="pl05">
+          <i class="dimgray w20r fs08">Soray</i>
+          <b data-get="word.syn" font="estrangela-adiabene"></b>
+          <a href="javascript:alert('Beta! syn')"
+            color="red"
+            fontsize="80%"
+            data-set="w:word.syn"
+            if="([{w}]:[])/show?hide"
+            globalize-get="add_the_missing_word"></a>
+        </p>
+      </figure>
+
+      <!-- Soreth -->
+      <figure>
+        <p class="pl05">
+          <i class="dimgray w20r fs08">Soreth</i>
+          <b font="estrangela-adiabene" data-get="word.hrt"></b>
+          <a
+            href="javascript:alert('Beta! hrt')"
+            color="red"
+            fontsize="80%"
+            data-set="w:word.hrt"
+            if="([{w}]:[])/show?hide"
+            globalize-get="add_the_missing_word"></a>
+        </p>
+      </figure>
+
+      <!-- Suryo -->
+      <figure>
+        <p class="pl05">
+          <i class="dimgray w20r fs08">Suryo</i>
+          <b font="serta-antioch" data-get="word.lhs"></b>
+          <a
+            href="javascript:alert('Beta! lhs')"
+            color="red"
+            fontsize="80%"
+            data-set="w:word.lhs"
+            if="([{w}]:[])/show?hide"
+            globalize-get="add_the_missing_word"></a>
+        </p>
+      </figure>
+
+      <!-- Suryon -->
+      <figure>
+        <p class="pl05">
+          <i class="dimgray w20r fs08">Suryon</i>
+          <b data-get="word.amw"></b>
+          <a href="javascript:alert('Beta! amw')"
+            color="red"
+            fontsize="80%"
+            data-set="w:word.amw"
+            if="([{w}]:[])/show?hide"
+            globalize-get="add_the_missing_word"></a>
+        </p>
+      </figure>
+
+      <!-- Suryoyo -->
+      <figure>
+        <p class="pl05">
+          <i class="dimgray w20r fs08">Suryoyo</i>
+          <b data-get="word.syr"></b>
+          <a href="javascript:alert('Beta! syr')"
+            color="red"
+            fontsize="80%"
+            data-set="w:word.syr"
+            if="([{w}]:[])/show?hide"
+            globalize-get="add_the_missing_word"></a>
+        </p>
+      </figure>
+
+      <!-- Lishanid Janan -->
+      <figure>
+        <p class="pl05">
+          <i class="dimgray w20r fs08">Lishanid Janan</i>
+          <b data-get="word.bjf"></b>
+          <a href="javascript:alert('Beta! bjf')" class="red fs08"
+            color="red"
+            fontsize="80%"
+            data-set="w:word.bjf"
+            if="([{w}]:[])/show?hide"
+            globalize-get="add_the_missing_word"></a>
+        </p>
+      </figure>
+
+      <!-- Lishana Deni -->
+      <figure>
+        <p class="pl05">
+          <i class="dimgray w20r fs08">Lishana Deni</i>
+          <b data-get="word.lsd"></b>
+          <a href="javascript:alert('Beta! lsd')"
+            color="red"
+            fontsize="80%"
+            data-set="w:word.lsd"
+            if="([{w}]:[])/show?hide"
+            globalize-get="add_the_missing_word"></a>
+        </p>
+      </figure>
+
+      <!-- Lishana Didan -->
+      <figure>
+        <p class="pl05">
+          <i class="dimgray w20r fs08">Lishana Didan</i>
+          <b data-get="word.trg"></b>
+          <a href="javascript:alert('Beta! trg')"
+            color="red"
+            fontsize="80%"
+            data-set="w:word.trg"
+            if="([{w}]:[])/show?hide"
+            globalize-get="add_the_missing_word"></a>
+        </p>
+      </figure>
+
+      <!-- Lishana Noshan -->
+      <figure>
+        <p class="pl05">
+          <i class="dimgray w20r fs08">Lishana Noshan</i>
+          <b data-get="word.aij"></b>
+          <a href="javascript:alert('Beta! aij')"
+            color="red"
+            fontsize="80%"
+            data-set="w:word.aij"
+            if="([{w}]:[])/show?hide"
+            globalize-get="add_the_missing_word"></a>
+        </p>
+      </figure>
+      <h6 class="p1 bcwhitesmoke black08 fwb">Aramaic (Late)<small>200 AD - 1200 AD</small></h6>
+
+      <!-- Mandai -->
+      <figure>
+        <p class="pl05">
+          <i class="dimgray w20r fs08">Mandai</i>
+          <b data-get="word.mid"></b>
+          <a href="javascript:alert('Beta! mid')"
+            color="red"
+            fontsize="80%"
+            data-set="w:word.mid"
+            if="([{w}]:[])/show?hide"
+            globalize-get="add_the_missing_word"></a>
+        </p>
+      </figure>
+
+      <!-- Suryaya -->
+      <figure class="pauto lh2 bcwhite">
+        <p class="pl05">
+          <i class="dimgray w20r fs08">Suryaya</i>
+          <b data-get="word.syc"></b>
+          <a href="javascript:alert('Beta! syc')"
+            color="red"
+            fontsize="80%"
+            data-set="w:word.syc"
+            if="([{w}]:[])/show?hide"
+            globalize-get="add_the_missing_word"></a>
+        </p>
+      </figure>
+      <h6 class="p1 bcwhitesmoke black08 fwb">Aramaic (Middle)<small>300 BC - 200 AD</small></h6>
+
+      <!-- Mandaya -->
+      <figure>
+        <p class="pl05">
+          <i class="dimgray w20r fs08">Mandaya</i>
+          <b data-get="word.myz"></b>
+          <a href="javascript:alert('Beta! myz')"
+            color="red"
+            fontsize="80%"
+            data-set="w:word.myz"
+            if="([{w}]:[])/show?hide"
+            globalize-get="add_the_missing_word"></a>
+        </p>
+      </figure>
+
+      <!-- Shomraya -->
+      <figure>
+        <p class="pl05">
+          <i class="dimgray w20r fs08">Shomraya</i>
+          <b data-get="word.sam"></b>
+          <a href="javascript:alert('Beta! sam')"
+            color="red"
+            fontsize="80%"
+            data-set="w:word.sam"
+            if="([{w}]:[])/show?hide"
+            globalize-get="add_the_missing_word"></a>
+        </p>
+      </figure>
+
+      <!-- Aramit -->
+      <figure>
+        <p class="pl05">
+          <i class="dimgray w20r fs08">Aramit</i>
+          <b data-get="word.tmr"></b>
+          <a href="javascript:alert('Beta! tmr')"
+            color="red"
+            fontsize="80%"
+            data-set="w:word.tmr"
+            if="([{w}]:[])/show?hide"
+            globalize-get="add_the_missing_word"></a>
+        </p>
+      </figure>
+      <h6 class="p1 bcwhitesmoke black08 fwb">Aramaic (Imperial)<small>700 BC - 300 BC</small></h6>
+
+      <!-- Aramaya -->
+      <figure>
+        <p class="pl05">
+          <i class="dimgray w20r fs08">Aramaya</i>
+          <b data-get="word.arc"></b>
+          <a href="javascript:alert('Beta! arc')"
+            color="red" fontsize="80%"
+            data-set="w:word.arc"
+            if="([{w}]:[])/show?hide"
+            globalize-get="add_the_missing_word"></a>
+        </p>
+      </figure>
+      <h6 class="p1 bcwhitesmoke black08 fwb">Aramaic (Ancient)<small>1100 BC - 300 BC</small></h6>
+
+      <!-- Aram -->
+      <figure>
+        <p class="pl05">
+          <i class="dimgray w20r fs08">Aram</i>
+          <b data-get="word.oar"></b>
+          <a href="javascript:alert('Beta! oar')"
+            color="red"
+            fontsize="80%"
+            data-set="w:word.oar"
+            if="([{w}]:[])/show?hide"
+            globalize-get="add_the_missing_word"></a>
+        </p>
+      </figure>
+    </div>
+  </section>
 </article>

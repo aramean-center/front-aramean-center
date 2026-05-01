@@ -1,0 +1,21 @@
+<template>
+  <aside></aside>
+  <main inherit="false"></main>
+  <aside screen-xxs="hide" screen-xl="show">
+    <nav class="sidebar bcwhite w15r xxxl_w20r">
+      <h5 class="p1 mt1" globalize-get="search">Search</h5>
+      <hr>
+      <div class="p1">
+        <small class="pb1 ttu" globalize-get="name">Name</small>
+        <input type="text" id="search_name" bindfield="search:#buildings" bindfieldif="lastPressedKey:Enter"
+          keyboard-key="Enter" keyboard-action keyboard-scope>
+      </div>
+      <div class="p1">
+        <small class="pb1 ttu" globalize-get="country">Country</small>
+        <select data-src="assets/json/vars/enum.json" data-iterate="text.country" bindfield="country:#buildings">
+          <option value="0" data-iterate-skip selected>All</option>
+          <option data-get="[*]." data-set="id:[*]" value="{id}"></option>
+        </select>
+      </div>
+  </aside>
+</template>

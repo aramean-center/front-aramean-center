@@ -1,6 +1,7 @@
-<script src="http://cdn.front.nu/nightly/front.js"></script>
+<script src="https://cdn.front.nu/nightly/front.js"></script>
 <template srcdoc="../../index" src="../../_templates/default"></template>
 <title>Person</title>
+
 <article class="pauto">
   <section
     id="person"
@@ -29,11 +30,11 @@
         <figure class="pauto bcwhite lh2">
           <p>
             <i globalize-get="first_name" color="dimgray" width="10rem">First name</i><span data-get="first_name.swe"></span><br>
-            <i globalize-get="middle_name" color="dimgray" width="10rem">Middle name</i><span data-set="m:middle_name.swe" onifdata-set="([{m}]:[])/settext:[-]?settext:[{m}]"></span><br>
+            <i globalize-get="middle_name" color="dimgray" width="10rem">Middle name</i><span data-set="m:middle_name.swe" onifdata-set="([{m}]:[])/settext:[-]">{m}</span><br>
             <i globalize-get="last_name" color="dimgray" width="10rem">Last name</i><span data-get="last_name.swe"></span><br><br>
-            <i globalize-get="gender" color="dimgray" width="10rem">Gender</i><span data-get="gender:gender" maptext="gender.{gender}"></span><br>
+            <i globalize-get="gender" color="dimgray" width="10rem">Gender</i><span data-get="gender" maptext="gender"></span><br>
             <i globalize-get="date_of_birth" color="dimgray" width="10rem">Date of birth</i><span data-get="birth.date" format="Y-m-d"></span><br>
-            <i globalize-get="country_of_birth" color="dimgray" width="10rem">Country of birth</i><span data-get="country:birth.country_code" maptext="country.{country}"></span>
+            <i globalize-get="country_of_birth" color="dimgray" width="10rem">Country of birth</i><span data-get="birth.country_code"></span>
           </p>
           <p>
             <i globalize-get="ethnicity" color="dimgray" width="10rem">Ethnicity</i>Aramean

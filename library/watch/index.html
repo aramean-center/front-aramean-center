@@ -1,36 +1,34 @@
-<script src="https://cdn.front.nu/dist/front.js" template="../../index"></script>
-
-<title globalize="watch">Watch</title>
+<script src="https://cdn.front.nu/nightly/front.js"></script>
+<template srcdoc="../../index" src="../../_templates/default"></template>
+<title globalize-get="watch">Watch</title>
 
 <section id="register" class="pauto" storage="api">
+	<h2 globalize-get="videos">Videos</h2>
+	<hr class="bcred">
+	<div class="box cards gut5- br0- bcwhite-" data-src="./assets/json/watch.json" data-iterate="videos">
+		<a data-set="url:url" href="{url}" target="_blank">
+			<figure class="p1 z09 black08">
+				<img class="w100 m0a" data-get="thumbnail">
+				<figcaption class="fwb p05" data-get="title"></figcaption>
+			</figure>
+		</a>
+	</div>
 
-    <h2 globalize="videos">Videos</h2>
-    <hr class="bcred">
-    <div class="box cards gut5- br0- bcwhite-" json="true" iterate="videos" datasource="./assets/json/watch.json">
-        <a jsonget="url" if="{{ jsonget:url_target }};0;target:_self" target="_blank">
-            <figure jsonset="id" class="p1 z09 black08">
-                <img class="w100 m0a" jsonget="thumbnail">
-                <figcaption class="fwb p05" jsonget="title"></figcaption>
-            </figure>
-        </a>
-    </div>
+	<h2 globalize-get="gifs">GIFs</h2>
+	<hr class="bcred">
+	<div class="box cards gut5- br0- bcwhite-" data-src="./assets/json/watch.json" data-iterate="gifs">
+		<figure class="p05 z09 black08">
+			<img class="w100 m0a" data-get="thumbnail">
+		</figure>
+	</div>
 
-    <h2 globalize="gifs">GIFs</h2>
-    <hr class="bcred">
-    <div class="box cards gut5- br0- bcwhite-" json="true" iterate="gifs" datasource="./assets/json/watch.json">
-        <figure jsonset="id" class="p05 z09 black08">
-            <img class="w100 m0a" jsonget="thumbnail">
-        </figure>
-    </div>
-
-    <h2 globalize="graphics">Graphics</h2>
-    <hr class="bcred">
-    <div class="box cards gut5- br0- bcwhite-" json="true" iterate="graphics" datasource="./assets/json/watch.json">
-        <figure jsonset="id" class="p05 z09 black08">
-            <video class="w100" controls>
-                <source src="{{ jsonget:video_url }}" type="video/mp4">
-            </video>
-        </figure>
-    </div>
-
+	<h2 globalize-get="graphics">Graphics</h2>
+	<hr class="bcred">
+	<div class="box cards gut5- br0- bcwhite-" data-src="./assets/json/watch.json" data-iterate="graphics">
+		<figure class="p05 z09 black08">
+			<video class="w100" controls>
+				<source data-get="video_url" type="video/mp4">
+			</video>
+		</figure>
+	</div>
 </section>

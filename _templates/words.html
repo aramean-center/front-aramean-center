@@ -1,0 +1,28 @@
+<template>
+  <aside></aside>
+  <main inherit="false"></main>
+  <aside screen-xxs="hide" screen-xl="show">
+    <nav class="sidebar bcwhite w15r xxxl_w20r">
+      <h5 class="p1 mt1" globalize-get="search">Search</h5>
+      <hr>
+      <div class="p1">
+        <small class="pb1 ttu" globalize-get="word">Word</small>
+        <input type="text" bindfield="search:#personsalive" bindfieldif="lastPressedKey:Enter"
+          keyboard-key="Enter" keyboard-action keyboard-scope>
+      </div>
+      <div class="p1">
+        <small class="pb1 ttu" globalize-get="category">Category</small>
+        <select>
+          <option>All</option>
+        </select>
+      </div>
+      <small class="p1 ttu" globalize-get="class">Class</small>
+      <ul>
+        <li><a><i class="icon24 pr05">&#9642;</i> Noun</a></li>
+        <li><a><i class="icon24 pr05">&#9642;</i> Verb</a></li>
+        <li><a><i class="icon24 pr05">&#9642;</i> Adjective</a></li>
+        <li><a><i class="icon24 pr05">&#9642;</i> Adverb</a></li>
+      </ul>
+    </nav>
+  </aside>
+</template>

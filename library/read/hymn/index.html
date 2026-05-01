@@ -1,29 +1,27 @@
-<script src="https://cdn.front.nu/dist/front.js" template="../../../index"></script>
+<script src="http://cdn.front.nu/nightly/front.js"></script>
+<template srcdoc="../../../index" src="../../../_templates/default"></template>
+<title globalize-get="hymns">Hymns</title>
 
-<title globalize="hymns">Hymns</title>
-
-<template>
-    <aside index="0"></aside>
-    <aside index="1"></aside>
-</template>
-
-<article class="pauto" bind="hymn:?id">
-    <section id="hymn" json="true" datasource="./assets/json/hymns.json" jsonfilter="id:{# ?id #}">
-        <h1 globalize="hymns">Hymns</h1>
-        <nav class="crumbs pointer p05 bos6 bocblack01 bw1 bcsnow mt05 br05 gray w0">
-            <ol class="pl05">
-                <li><a href="./database" globalize="database">Database</a></li>
-                <li><a href="./database/hymns.html" globalize="hymns">Hymns</a></li>
-                <li>{{ jsonget:title.syr }}</li>
-            </ol>
-        </nav>
-        <div dir="rtl" class="box fdr- shade1 mt1 br0- lh2">
-            <h6 class="p1 bcwhitesmoke black08 fwb">{{ jsonget:title.syr }}</h6>
-            <figure class="pauto bcwhite">
-                <h3>
-                    {{ jsonget:hymn.syr }}
-                </h3>
-            </figure>
-        </div>
-    </section>
+<article class="pauto">
+  <section
+    bindquery="id:id"
+    data-src="./assets/json/hymns.json"
+    data-iterate="true"
+    data-filteritem="id:'{id}'"
+  >
+    <h1 globalize-get="hymns">Hymns</h1>
+    <nav class="crumbs pointer p05 bos6 bocblack01 bw1 bcsnow mt05 br05 gray w0">
+      <ol class="pl05">
+        <li><a href="./database" globalize-get="database">Database</a></li>
+        <li><a href="./library/read/" globalize-get="hymns">Hymns</a></li>
+        <li data-get="title.syr"></li>
+      </ol>
+    </nav>
+    <div dir="rtl" class="box fdr- shade1 mt1 br0- lh2">
+      <h6 class="p1 bcwhitesmoke black08 fwb" data-get="title.syr"></h6>
+      <figure class="pauto bcwhite">
+        <h3 data-get="hymn.syr"></h3>
+      </figure>
+    </div>
+  </section>
 </article>
