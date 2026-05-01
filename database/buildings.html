@@ -12,10 +12,14 @@
   </nav>
   <nav class="tabs mt1" id="test">
     <input type="radio" name="panel" id="tabalive" checked>
-    <label for="tabalive" id="alive"
+    <label
+      for="tabalive"
+      id="alive"
       ondata-bindheaderchange="split:[/][1];insertafterbegin:[Buildings (];insertbeforeend:[)]"></label>
     <section class="lg_p0 shade1">
-      <div id="buildings" class="box cards list br0-"
+      <div
+        id="buildings"
+        class="box cards list br0-"
         bindasset="endpoint:api.buildings.endpoint"
         onbindfield="if:([{search}]![])/insertbeforeend:#.data-src:[&where=name->>eng.ilike(*{search}*)]"
         data-src="{endpoint}&column=*"
@@ -24,14 +28,14 @@
         data-iterate="true"
         data-loader="#loader"
         data-onempty="#empty"
-        >
+      >
         <a data-set="id:id" href="database/building.html?id={id}">
-          <figure class="p1 bcwhite bcblack001_h">
-            <p class="f2 pl1">
+          <figure padding="1rem" bgcolor="white" height="1.5rem">
+            <p class="f2" paddingleft="0.5rem">
               <span bindglobal="l:globalize.code" data-get="name.{l:eng}"></span>
             </p>
             <img data-set="code:geometry.location.country_code" setsrc="https://cdn.front.nu/dist/design/front/flags/famfamfam/{code}.gif" align="right" class="f0">
-           </figure>
+          </figure>
         </a>
       </div>
       <div id="empty" color="gray" padding="2rem" hide align="center">No matches found.</div>
