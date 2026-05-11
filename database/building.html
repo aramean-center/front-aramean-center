@@ -10,6 +10,8 @@
     data-src="{endpoint}&select=*&where=id.eq({id})"
     data-header="Accept:application/json+single"
 		data-onsuccess="map--run:#map"
+		data-set="title:name.eng"
+    data-onfinish="doctitle:[{title}]"
 	>
 		<h1 globalize-get="building">Building</h1>
 		<nav class="crumbs pointer p05 bos6 bocblack01 bw1 bcsnow mt05 br05 gray w0">
