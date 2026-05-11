@@ -1,6 +1,6 @@
 <script src="https://cdn.front.nu/nightly/front.js"></script>
 <template srcdoc="../../../index" src="../../../_templates/default"></template>
-<title globalize-get="hymns">Hymns</title>
+<title></title>
 
 <article class="pauto">
   <section
@@ -8,6 +8,8 @@
     data-src="./assets/json/hymns.json"
     data-iterate="true"
     data-filteritem="id:'{id}'"
+    data-set="title:0.title.syr"
+    data-onfinish="doctitle:[{title} | Hymn]"
   >
     <h1 globalize-get="hymns">Hymns</h1>
     <nav class="crumbs pointer p05 bos6 bocblack01 bw1 bcsnow mt05 br05 gray w0">
