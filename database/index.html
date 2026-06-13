@@ -5,9 +5,11 @@
 <section id="database" class="pauto" storage="api">
   <h2 globalize-get="database">Database</h2>
   <hr class="bcred">
-  <div class="box cards gut5- br0- bcwhite-" data-iterate="database" data-src="./assets/json/database.json" data-loader="#loader">
-    <a data-set="url:url" href="database/{url}">
-      <figure class="p05 black08">
+  <div grid screen-xxs="gridcolumns:[1fr]" screen-md="gridcolumns:[1fr 1fr]" screen-lg="gridcolumns:[1fr 1fr 1fr]"
+  screen-xl="gridcolumns:[1fr 1fr 1fr 1fr]" screen-xxl="gridcolumns:[1fr 1fr 1fr 1fr 1fr]" screen-wide="gridcolumns:[1fr 1fr 1fr 1fr 1fr 1fr]"
+  class="br0-" data-iterate="database" data-src="./assets/json/database.json" data-loader="#loader">
+    <a data-set="url:url" href="database/{url}" boxshadow="1px 1px 1px 0px rgba(0,0,0, .07)">
+      <figure flex flexdirection="column" class="p05 black08">
         <h4 class="fwb p1" data-get="title.eng"></h4>
         <h7 class="p1 pt0" data-get="description"></h7>
       </figure>

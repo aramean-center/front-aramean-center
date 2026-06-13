@@ -6,11 +6,13 @@
   <h2 globalize-get="music">Music</h2>
   <hr bgcolor="red">
   <div id="music" class="box cards gut5- br0- flc-"
+grid screen-xxs="gridcolumns:[1fr]" screen-md="gridcolumns:[1fr 1fr]"
+  screen-xl="gridcolumns:[1fr 1fr 1fr]" screen-xxl="gridcolumns:[1fr 1fr 1fr 1fr]" screen-wide="gridcolumns:[1fr 1fr 1fr 1fr 1fr]"
     data-iterate="true"
     bindasset="endpoint:api.persons.endpoint"
     data-src="{endpoint}&select=id,first_name,middle_name,last_name,artwork&where=artwork.neq(null),artwork->>music.neq(null)"
   >
-    <figure align="center" padding="1rem" bgcolor="white">
+    <figure align="center" padding="1rem" bgcolor="white" boxshadow="1px 1px 1px 0px rgba(0,0,0, .07)">
       <a data-set="pid:id;aid:artwork.music.album.id" href="./library/listen/music/?person={pid}&id={aid}">
         <p><i class="icon icon128 circled pr0">&#9834;</i></p>
         <h7 data-get="artwork.music.album.title.eng" lineheight="1.3" bold></h7>
