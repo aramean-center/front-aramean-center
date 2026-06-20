@@ -8,7 +8,7 @@
 		<h6 margintop="1rem" marginbottom="2rem" globalize-get="page_register_text"></h6>
 
 		<form class="gaph2-" method="post" bindasset="endpoint:api.persons_collection.endpoint" action="{endpoint}"
-			data-onsuccess="hide:#register;show:#complete" data-onerror="show:#error">
+			data-onsuccess="hide:#register;show:#complete" form-throttle="2000" data-onerror="show:#error">
 
 			<div class="group lg_fdc outline- gap2 lg_gap0">
 				<input name="first_name" type="text" class="f1 bw1 bos8 bocblack02" placeholder="First Name"
