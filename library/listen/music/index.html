@@ -1,31 +1,35 @@
 <script src="https://cdn.front.nu/nightly/front.js"></script>
 <template srcdoc="../../../index" src="../../../_templates/default"></template>
 <title globalize-get="listen">Music</title>
-<script>
-	console.log("search:", location.search);
-</script>
-<section class="pauto">
-	<h1 globalize-get="music">Music</h1>
-	<nav class="tabs mt1">
-		<input type="radio" name="paneldemo" id="tabdemo1" checked="">
-		<label for="tabdemo1">Album</label>
-		<section class="lg_p0">
-			<div id="tracks" class="box cards list br0- flc-"
-				bindasset="endpoint:api.persons.endpoint"
-				bindquery="pid:person"
-				data-src="{endpoint}&select=artwork&where=id.eq({pid})"
-				data-iterate="artwork.music.single.tracks"
-				data-header="Accept:application/json+single"
-			>
-				<figure bgcolor="white" padding="1rem">
-					<p class="f2 pl1" data-get="title.eng"></p>
-					<audio controls="controls" preload="none">
-						<source
-							data-get="id:google_drive_id"
-							src="https://www.googleapis.com/drive/v3/files/{id}?alt=media&key=AIzaSyAev1q4GNC-VlKYxWQXWfuPQ3pexINKOEY">
-					</audio>
-				</figure>
-			</div>
-		</section>
-	</nav>
-</section>
+<article class="pauto">
+	<section id="tracks">
+    <h1 globalize-get="music">Music</h1>
+    <nav class="tabs mt1">
+      <input type="radio" name="paneldemo" id="tabdemo1" checked="">
+      <label for="tabdemo1">Album</label>
+      <section class="lg_p0">
+        <div id="tracks" class="box cards list br0- flc-"
+          bindasset="endpoint:api.persons.endpoint"
+          bindquery="pid:person"
+          data-src="{endpoint}&select=artwork&where=id.eq({pid})"
+          data-iterate="artwork.music.single.tracks"
+          data-header="Accept:application/json+single"
+          data-onempty="show:#music-not-found"
+        >
+          <figure bgcolor="white" padding="1rem">
+            <p class="f2 pl1" data-get="title.eng"></p>
+            <audio controls="controls" preload="none">
+              <source
+                data-get="id:google_drive_id"
+                src="https://www.googleapis.com/drive/v3/files/{id}?alt=media&key=AIzaSyAev1q4GNC-VlKYxWQXWfuPQ3pexINKOEY">
+            </audio>
+          </figure>
+        </div>
+      </section>
+    </nav>
+  </section>
+	<section id="music-not-found" onshow="hide:#tracks" hide>
+		<h1 globalize-get="music">Music</h1>
+		<p globalize-get="music_not_found" color="darkgray">Music not found.</p>
+	</section>
+</article>

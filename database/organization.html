@@ -3,9 +3,10 @@
 <title globalize-get="organization">Organization</title>
 
 <article class="pauto" json="words" storage="api" bind="words:?id">
-		<section id="building" bindquery="id:id" bindasset="endpoint:api.organizations.endpoint"
+		<section id="organization" bindquery="id:id" bindasset="endpoint:api.organizations.endpoint"
 			data-src="{endpoint}&select=*&where=id.eq({id})"
 			data-header="Accept:application/json+single"
+			data-onempty="show:#organization-not-found"
 			data-onsuccess="map--run:#map"
 			data-set="title:organization.eng"
     	data-onfinish="doctitle:[{title}]">
@@ -36,5 +37,9 @@
 			<div id="map" data-set="lat:geometry.location.lat;lng:geometry.location.lng" map--lat="{lat}" map--lng="{lng}"
 				height="40rem"></div>
 		</section>
+	</section>
+	<section id="organization-not-found" onshow="hide:#organization" hide>
+		<h1 globalize-get>Organization</h1>
+		<p globalize-get="organization_not_found" color="darkgray">Organization not found.</p>
 	</section>
 </article>

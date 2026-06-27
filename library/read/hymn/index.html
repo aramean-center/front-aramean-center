@@ -4,10 +4,12 @@
 
 <article class="pauto">
   <section
+    id="hymn"
     bindquery="id:id"
     data-src="./assets/json/hymns.json"
     data-iterate="true"
     data-filteritem="id:'{id}'"
+    data-onempty="show:#hymn-not-found"
     data-set="title:0.title.eng"
     data-onfinish="doctitle:[{title}]"
   >
@@ -25,5 +27,9 @@
         <h3 data-get="hymn.syr"></h3>
       </figure>
     </div>
+  </section>
+  <section id="hymn-not-found" onshow="hide:#hymn" hide>
+    <h1 globalize-get="hymns">Hymns</h1>
+    <p globalize-get="hymn_not_found" color="darkgray">Hymn not found.</p>
   </section>
 </article>

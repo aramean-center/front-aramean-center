@@ -9,6 +9,7 @@
     bindasset="endpoint:api.buildings.endpoint"
     data-src="{endpoint}&select=*&where=id.eq({id})"
     data-header="Accept:application/json+single"
+		data-onempty="show:#building-not-found"
 		data-onsuccess="map--run:#map"
 		data-set="title:name.eng"
     data-onfinish="doctitle:[{title}]"
@@ -34,5 +35,9 @@
 			<div id="map" data-set="lat:geometry.location.lat;lng:geometry.location.lng"
 				map--lat="{lat}" map--lng="{lng}" height="40rem"></div>
 		</section>
+	</section>
+	<section id="building-not-found" onshow="hide:#building" hide>
+		<h1 globalize-get>Building</h1>
+		<p globalize-get="building_not_found" color="darkgray">Building not found.</p>
 	</section>
 </article>

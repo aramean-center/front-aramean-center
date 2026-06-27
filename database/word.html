@@ -9,6 +9,7 @@
     bindasset="endpoint:api.words.endpoint"
     data-src="{endpoint}&column=*&where=id.eq({id})"
     data-header="Accept:application/json+single"
+    data-onempty="show:#word-not-found"
     data-set="title:word.eng"
     data-onfinish="doctitle:[{title}]"
   >
@@ -280,5 +281,9 @@
         </p>
       </figure>
     </div>
+  </section>
+  <section id="word-not-found" onshow="hide:#words" hide>
+    <h1 globalize-get>Word</h1>
+    <p globalize-get="word_not_found" color="darkgray">Word not found.</p>
   </section>
 </article>
