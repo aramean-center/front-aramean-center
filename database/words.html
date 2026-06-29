@@ -3,38 +3,41 @@
 <title globalize-get="words">Words</title>
 
 <section class="pauto">
-	<h1 globalize-get="words">Words</h1>
-	<nav class="crumbs pointer p05 bos6 bocblack01 bw1 bcsnow mt05 br05 gray w0">
-		<ol class="pl05">
-			<li><a href="./database" globalize-get="database">Database</a></li>
-			<li globalize-get="words">Words</li>
-		</ol>
-	</nav>
-	<nav class="tabs mt1" id="test">
-		<input type="radio" name="panel" id="tabalive" checked>
-		<label for="tabalive" id="alive"
-			ondata-bindheaderchange="split:[/][1];insertafterbegin:[Words (];insertbeforeend:[)]"></label>
-		<section class="lg_p0 shade1">
-			<div id="personsalive" class="box cards list br0-"
-				onifbindfield="([{search}]![])/insertbeforeend:#.data-src:[word->>eng.ilike({search}*)]"
-				bindasset="endpoint:api.words.endpoint"
-				data-src="{endpoint}&column=*&where="
-				data-header="Prefer:count=exact"
-				data-bindheader="content-range:#alive"
-				data-iterate="true"
-				data-loader="#loader"
-				data-onempty="show:#empty"
-			>
-				<a data-set="id:id" href="database/word.html?id={id}">
-					<figure class="p1 bcwhite bcblack001_h">
-						<p class="f2" paddingleft="0.5rem">
-							<span bindglobal="l:globalize.code" data-get="word.{l:eng}"></span>
-						</p>
-					</figure>
-				</a>
-			</div>
-			<div id="empty" color="gray" padding="2rem" hide align="center">No matches found.</div>
-			<div id="loader" class="loader" flex></div>
-		</section>
-	</nav>
+  <h1 globalize-get="words">Words</h1>
+  <nav class="crumbs pointer p05 bos6 bocblack01 bw1 bcsnow mt05 br05 gray w0">
+    <ol class="pl05">
+      <li><a href="./database" globalize-get="database">Database</a></li>
+      <li globalize-get="words">Words</li>
+    </ol>
+  </nav>
+  <nav class="tabs mt1" id="test">
+    <input type="radio" name="panel" id="tabalive" checked>
+    <label for="tabalive" id="alive"
+      ondata-bindheaderchange="split:[/][1];insertafterbegin:[Words (];insertbeforeend:[)]"></label>
+    <section class="lg_p0 shade1">
+      <div id="personsalive" class="box cards list br0-"
+        onifbindfield="([{search}]![])/insertbeforeend:#.data-src:[word->>eng.ilike({search}*)]"
+        bindasset="endpoint:api.words.endpoint"
+        data-src="{endpoint}&column=*&where="
+        data-header="Prefer:count=exact"
+        data-bindheader="content-range:#alive"
+        data-iterate="true"
+        data-loader="#loader"
+        data-onempty="show:#empty"
+        data-onstatus="(404)/show:#error404"
+      >
+        <a data-set="id:id" href="database/word.html?id={id}">
+          <figure class="p1 bcwhite bcblack001_h">
+            <p class="f2" paddingleft="0.5rem">
+              <span bindglobal="l:globalize.code" data-get="word.{l:eng}"></span>
+            </p>
+          </figure>
+        </a>
+      </div>
+      <div id="empty" color="gray" padding="2rem" hide align="center">No words found.</div>
+      <div id="error404" color="red" padding="2rem" hide align="center">Unable to load words. Please refresh the page or
+        try again later.</div>
+      <div id="loader" class="loader" flex></div>
+    </section>
+  </nav>
 </section>

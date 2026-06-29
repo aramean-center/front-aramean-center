@@ -28,6 +28,7 @@
         data-iterate="true"
         data-loader="#loader"
         data-onempty="show:#empty"
+        data-onstatus="(404)/show:#error404"
       >
         <a data-set="id:id" href="database/building.html?id={id}">
           <figure padding="1rem" bgcolor="white" height="1.5rem">
@@ -38,7 +39,8 @@
           </figure>
         </a>
       </div>
-      <div id="empty" color="gray" padding="2rem" hide align="center">No matches found.</div>
+      <div id="empty" color="gray" padding="2rem" hide align="center">No buildings found.</div>
+      <div id="error404" color="red" padding="2rem" hide align="center">Unable to load buildings. Please refresh the page or try again later.</div>
       <div id="loader" class="loader" flex></div>
     </section>
   </nav>
